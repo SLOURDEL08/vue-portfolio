@@ -11,7 +11,11 @@ export default {
           DEFAULT: '#f5f3ef',
           // Vous pouvez ajouter des variantes si nécessaire
           light: '#ffffff',
-          dark: '#e6e4e0',
+          dark: '#1E1E21',
+        },
+           'secondary': {
+          DEFAULT: '#1E1E21',
+
         }
       }
     },

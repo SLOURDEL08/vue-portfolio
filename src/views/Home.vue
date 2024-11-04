@@ -1,25 +1,42 @@
 <template>
-  <div class=" bg-primary pt-0 p-14">
-    <div class="h-20" />
-<h1 class="text-[140px] mb-6 font-semibold tracking-[-14px] leading-none">Sébastien LOURDEL<br />
-Développeur web</h1>
-<div class="justify-between items-end  flex">
-      <h2 class="text-4xl font-medium">
-    (Arras, France)
-  </h2>
-  <div class="flex items-center  gap-2">
-    <div>
-        <svg class="w-14" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.5895 16.0032L5.98291 7.39664L7.39712 5.98242L16.0037 14.589V7.00324H18.0037V18.0032H7.00373V16.0032H14.5895Z"></path>
-            </svg>
-    </div>
-    <span class="text-4xl font-semibold">Scroll down</span>
+  <Header />
+
+  <ScaleSection
+    imagePath="/src/assets/wall.webp"
+    :minScale="1"
+    :maxScale="3"
+    :maxTranslateY="100"
+    :animationRange="3" 
+  />
+
+  <MainContent/>
+
+  <div v-for="project in firstProjects" :key="project.id">
+    <ScaleSection
+      :imagePath="project.imagePath"
+      variant="enhanced"
+      :linkPath="`/projects/${project.slug}`"
+    />
+    <ScaleContent
+      :title="project.title"
+      :description="project.description"
+      :tags="project.services"
+    />
   </div>
-</div>
 
-
-    </div>
+  <GridProject />
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import ScaleSection from '../components/ScaleSection.vue'
+import Header from '../components/Header.vue'
+import DefaultLayout from '../components/layouts/DefaultLayout.vue'
+import MainContent from '../components/MainContent.vue'
+import ScaleContent from '../components/ScaleContent.vue'
+import GridProject from '../components/GridProject.vue'
+import { getAllProjects } from '../data/projects'
+
+const projects = getAllProjects()
+const firstProjects = computed(() => projects.slice(0, 3))
 </script>

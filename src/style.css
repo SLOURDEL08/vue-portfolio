@@ -3,9 +3,42 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 html{
   font-family: "Inter", sans-serif;
-  background-color: black;
+  background-color: #1E1E21;
+}
+.fi{
+  color:white
 }
 
+.smart-title {
+  font-size: clamp(3rem, 2vw + 3rem, 6rem);
+   font-weight:600;
+  line-height: 0.9;
+  color:#1E1E21;
+}
+
+.smart-subtitle {
+  font-size: clamp(1.5rem, 2vw + 2rem, 4rem);
+   font-weight:500;
+  line-height: 1;
+    color:#1E1E21;
+
+}
+
+.smart-bigtitle {
+  font-size: clamp(2rem, 7vw + 3rem, 8.6rem);
+  font-weight:600;
+  letter-spacing:-8px;
+  line-height: 1;
+    color:#1E1E21;
+
+}
+
+.smart-desc {
+  font-size: clamp(1rem, 2vw + 0.1rem, 1.2rem);
+  font-weight:500;
+  line-height: 160%;
+  color:#1e1e219b
+}

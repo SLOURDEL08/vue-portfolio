@@ -4,12 +4,12 @@
     type="button"
     :disabled="disabled"
     :class="[
-      'px-7 py-4',
-      'inline-flex text-xl items-center justify-center',
-      'text-[#f5f3ef] bg-[#1a1a1a]',
+      'px-7 py-3',
+      'inline-flex text-xl tracking-wide items-center justify-center',
+      'text-[#f5f3ef] bg-secondary',
       'rounded-full font-medium',
       'transition-all duration-200 ease-in-out',
-      'hover:bg-[#2a2a2a]',
+      '',
       'focus:outline-none focus:ring-none focus:ring-none focus:ring-none',
       disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer',
       className
