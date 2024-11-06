@@ -1,49 +1,39 @@
 <template>
-  <DefaultLayout>
-    <div class="flex">
-      <span class="w-[60%] smart-bigtitle tracking-tighter !leading-[0.9] font-semibold">
+    <div class="flex max-md:flex-col max-md:gap-6 py-16 max-md:py-14">
+      <span class="w-[60%] max-md:w-full smart-bigtitle tracking-tighter !leading-[0.9] font-semibold">
         {{ title }}
       </span>
-      <div class="w-[40%] pr-10 space-y-6">
-        <span class="text-gray-600/80 text-xl leading-normal font-regular tracking-wide">
+      <div class="w-[40%] max-md:w-full pr-10 space-y-6">
+        <span class="smart-desc">
           {{ description }}
         </span>
-        <div class="flex gap-4 text-white flex-wrap">
+        <div class="flex gap-4 text-white flex-wrap items-center">
           <i 
-            v-for="(tag, index) in tags" 
+            v-for="(tag, index) in limitedTags" 
             :key="index"
-            class="bg-secondary p-2 px-4 rounded-full"
+            class="bg-secondary text-sm p-2 px-4 rounded-full"
           >
             {{ tag }}
           </i>
         </div>
       </div>
     </div>
-  </DefaultLayout>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { computed } from 'vue'
 import DefaultLayout from '../components/layouts/DefaultLayout.vue'
 
-export default defineComponent({
-  name: 'ProjectHeader',
-  components: {
-    DefaultLayout
-  },
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    tags: {
-      type: Array as () => string[],
-      default: () => []
-    }
-  }
+interface ProjectHeaderProps {
+  title: string
+  description: string
+  tags: string[] // Maintenant c'est un tableau de strings qui vient de Project.tags
+}
+
+const props = withDefaults(defineProps<ProjectHeaderProps>(), {
+  tags: () => []
 })
+
+// Limiter à 2 tags maximum
+const limitedTags = computed(() => props.tags.slice(0, 2))
 </script>

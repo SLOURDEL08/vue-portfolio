@@ -1,28 +1,30 @@
 <template>
-  <div ref="scrollContainer" class="flex -mx-16 overflow-hidden pt-16 relative justify-center">
+  <LineSeparator class=""/>
+  <div ref="scrollContainer" class="flex max-md:py-14 py-16 max-md:-mx-10 -mx-16 overflow-hidden relative justify-center">
     <div
       class="scroll-content flex gap-10 transition-transform text-secondary duration-700 ease-out min-w-max"
       :style="{ transform: `translateX(${scrollOffset}px)` }"
     >
-      <span class="text-8xl font-bold">/FRONTEND</span>
-      <span class="text-8xl font-bold">/REMOTE</span>
-      <span class="text-8xl font-bold">/FRANCE</span>
-      <span class="text-8xl font-bold">/FULLSTACK</span>
-      <span class="text-8xl font-bold">/FREELANCE</span>
-      <span class="text-8xl font-bold">/ANIMATION</span>
-      <span class="text-8xl font-bold">/WORK</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/FRONTEND</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/FRANCE</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/WORK</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/FRONT-END</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/FREELANCE</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/ANIMATION</span>
+      <span class="text-8xl max-md:text-6xl font-bold">/REMOTE</span>
     </div>
   </div>
 </template>
 
 <script>
+import LineSeparator from '../components/LineSeparator.vue'
 export default {
   data() {
     return {
       scrollOffset: 0,
-      scrollSpeed: 2, // Adjust speed for smoother scrolling
-      lastScroll: 0, // Store the last scroll position
-      requestId: null, // Store requestAnimationFrame ID
+      scrollSpeed: 2, 
+      lastScroll: 0, 
+      requestId: null, 
     };
   },
   mounted() {

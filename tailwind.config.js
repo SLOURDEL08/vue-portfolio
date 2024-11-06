@@ -17,6 +17,9 @@ export default {
           DEFAULT: '#1E1E21',
 
         }
+       },
+       screens: {
+        'xs': '400px',
       }
     },
   },

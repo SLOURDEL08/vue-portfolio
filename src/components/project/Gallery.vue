@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery overflow-hidden relative">
+  <div class="gallery  overflow-hidden relative">
     <div 
       v-for="(image, index) in gallery" 
       :key="index"

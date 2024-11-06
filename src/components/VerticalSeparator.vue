@@ -1,6 +1,6 @@
 <template>
-  <div 
-    ref="lineContainer" 
+  <div
+    ref="lineContainer"
     class="line-container"
   >
     <div
@@ -30,7 +30,7 @@ onMounted(() => {
     })
   }, {
     threshold: 0, // Déclenche dès qu'une partie de l'élément est visible
-    rootMargin: '0px' // Déclenche 50px avant que l'élément soit visible
+    rootMargin: '50px' // Déclenche 50px avant que l'élément soit visible
   })
 
   if (lineContainer.value) {
@@ -47,17 +47,17 @@ onUnmounted(() => {
 
 <style scoped>
 .line-container {
-  width: 100%;
-  height: 2px;
+  height: 100%;
+  width: 2px;
   overflow: hidden;
 }
 
 .line {
-  width: 0;
-  height: 2px;
+  height: 0;
+  width: 2px;
   background-color: #1E1E21;
   opacity: 0;
-  transform-origin: left;
+  transform-origin: top;
 }
 
 .animate-line {
@@ -66,11 +66,11 @@ onUnmounted(() => {
 
 @keyframes expandLine {
   0% {
-    width: 0;
+    height: 0;
     opacity: 1;
   }
   100% {
-    width: 100%;
+    height: 100%;
     opacity: 1;
   }
 }

@@ -9,7 +9,7 @@
       'text-[#f5f3ef] bg-secondary',
       'rounded-full font-medium',
       'transition-all duration-200 ease-in-out',
-      '',
+      ' max-md:text-lg max-md:p-3.5',
       'focus:outline-none focus:ring-none focus:ring-none focus:ring-none',
       disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer',
       className

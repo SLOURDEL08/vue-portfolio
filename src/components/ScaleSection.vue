@@ -2,17 +2,16 @@
 <template>
   <div 
     ref="container" 
-    class="overflow-hidden relative"
+    class="overflow-hidden max-md:!h-[500px] !h-[700px] relative max-xs:-mx-10  max-md:-mx-14 -mx-16"
     :class="[
       containerClasses,
-      { 'cursor-none': variant === 'enhanced' }
+      { '!cursor-none': variant === 'enhanced' }
     ]"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
     @mousemove="handleMouseMove"
   >
     <div class="relative w-full h-full">
-      <!-- Image principale -->
       <img
         ref="image"
         :src="imagePath"
@@ -22,17 +21,16 @@
         }"
       />
 
-      <!-- Overlay et curseur personnalisé -->
       <router-link 
        :to="linkPath"
         v-if="variant === 'enhanced'"
-        class="absolute inset-0 z-50 transition-opacity duration-300"
+        class="absolute inset-0 z-50 cursor-none transition-opacity duration-300"
         :class="{ 'bg-secondary/20': showOverlay, 'opacity-0 pointer-events-none': !showOverlay }"
       >
         <!-- Curseur personnalisé -->
         <div 
-          class="view-button large fixed pointer-events-none"
-          :class="{ 'opacity-100': showOverlay, 'opacity-0': !showOverlay }"
+          class="view-button large fixed pointer-events-none "
+          :class="{ 'opacity-100 animate-scale-rotate ': showOverlay, 'opacity-0 ': !showOverlay }"
           :style="{
             left: `${cursorPos.x}px`,
             top: `${cursorPos.y}px`,
@@ -202,8 +200,9 @@ linkPath: {
 .view-button.large {
   width: 80px;
   height: 80px;
-  background-color: #1e1e21;
+  background-color: #1e1e2140;
   border-radius: 50%;
+  backdrop-filter:blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,5 +219,20 @@ linkPath: {
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.animate-scale-rotate {
+  animation: scaleRotate 0.35s forwards;
+}
+
+@keyframes scaleRotate {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    opacity: 1;
+  }
 }
 </style>

@@ -1,12 +1,11 @@
-<template>
-    <DefaultLayout class="pt-0">
-    <div class="h-16" />
-    <h1 class="smart-bigtitle mb-4 text-secondary">
+<template >
+  <div class="mb-16 max-md:mb-10">
+     <h1 class="smart-bigtitle mb-6 text-secondary">
       Sébastien L.<br />
-      Développeur web
+      Développeur Web
     </h1>
     <div class="justify-between items-end flex">
-      <h2 class="text-secondary text-3xl font-medium tracking-tighter">
+      <h2 class="smart-text">
         (Arras, France)
       </h2>
      
@@ -22,10 +21,11 @@
             class="w-full h-full object-contain"
           />
         </div>
-        <span v-hover-slide class="text-3xl font-medium text-secondary">Scroll down</span>
+        <span v-hover-slide class="smart-text">Scroll down</span>
       </div>
     </div>
-    </DefaultLayout>
+  </div>
+   
 </template>
 
 <script setup lang="ts">
