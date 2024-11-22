@@ -60,37 +60,37 @@ import type { RouteLocationRaw } from 'vue-router'
 
 export default defineComponent({
   name: 'ScaleSection',
-props: {
-  imagePath: {
-    type: String as PropType<string>,
-    required: true
+  props: {
+    imagePath: {
+      type: String as PropType<string>,
+      required: true
+    },
+    maxScale: {
+      type: Number as PropType<number>,
+      default: 2
+    },
+    minScale: {
+      type: Number as PropType<number>,
+      default: 1.5
+    },
+    maxTranslateY: {
+      type: Number as PropType<number>,
+      default: 100
+    },
+    linkPath: {
+      type: [String, Object] as PropType<RouteLocationRaw>,
+      default: ''
+    },
+    variant: {
+      type: String as PropType<'simple' | 'enhanced'>,
+      default: 'simple',
+      validator: (value: 'simple' | 'enhanced') => ['simple', 'enhanced'].includes(value)
+    },
+    animationRange: {
+      type: Number as PropType<number>,
+      default: 2
+    }
   },
-  maxScale: {
-    type: Number as PropType<number>,
-    default: 2
-  },
-  minScale: {
-    type: Number as PropType<number>,
-    default: 1.5
-  },
-  maxTranslateY: {
-    type: Number as PropType<number>,
-    default: 100
-  },
-  linkPath: {
-    type: [String, Object] as PropType<RouteLocationRaw>,
-    default: ''
-  },
-  variant: {
-    type: String as PropType<'simple' | 'enhanced'>, // Explicitly type `variant`
-    default: 'simple',
-    validator: (value: 'simple' | 'enhanced') => ['simple', 'enhanced'].includes(value)
-  },
-  animationRange: {
-    type: Number as PropType<number>,
-    default: 2
-  }
-},
 
   setup(props) {
     const container = ref<HTMLElement | null>(null)
@@ -111,28 +111,23 @@ props: {
       const viewportHeight = window.innerHeight
       const elementHeight = rect.height
 
-      // Zone d'effet étendue de l'animation
       const startOffset = -viewportHeight * (props.animationRange / 2)
-      const endOffset = viewportHeight * (props.animationRange / 2)
       const totalDistance = elementHeight + viewportHeight * props.animationRange
 
-      // Calcul de la progression inversée pour le scale
-      // Plus on scrolle vers le bas, plus le scale diminue
       const progress = Math.max(0, Math.min(1,
         (rect.top - startOffset) / totalDistance
       ))
 
-      // Application des transformations
-      // Quand progress = 1 (en haut) -> maxScale
-      // Quand progress = 0 (en bas) -> minScale
       currentScale.value = props.minScale + (props.maxScale - props.minScale) * progress
       currentTranslateY.value = props.maxTranslateY * (1 - progress)
     }
- const linkPathVerification = () => {
-     if (props.variant === 'enhanced' && !props.linkPath) {
-    console.error('linkPath is required when variant is "enhanced"')
-  }
+
+    const linkPathVerification = () => {
+      if (props.variant === 'enhanced' && !props.linkPath) {
+        console.error('linkPath is required when variant is "enhanced"')
+      }
     }
+
     const handleMouseEnter = () => {
       if (props.variant === 'enhanced') {
         showOverlay.value = true
@@ -155,6 +150,7 @@ props: {
     }
 
     onMounted(() => {
+      linkPathVerification()
       currentScale.value = props.maxScale
       currentTranslateY.value = 0
       window.addEventListener('scroll', handleScroll)
@@ -164,14 +160,6 @@ props: {
     onUnmounted(() => {
       window.removeEventListener('scroll', handleScroll)
     })
-
-     onMounted(() => {
-    linkPathVerification() // Ajout de la vérification
-    currentScale.value = props.maxScale
-    currentTranslateY.value = 0
-    window.addEventListener('scroll', handleScroll)
-    handleScroll()
-  })
 
     return {
       container,
@@ -183,7 +171,7 @@ props: {
       containerClasses,
       handleMouseEnter,
       handleMouseLeave,
-        handleMouseMove,
+      handleMouseMove,
       linkPathVerification
     }
   }

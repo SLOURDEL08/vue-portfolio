@@ -30,12 +30,12 @@ const router = createRouter({
       name: 'project',
       component: () => import('../views/ProjectDetail.vue'),
       props: true,
-      beforeEnter: (to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
+      beforeEnter: (to: RouteLocationNormalized, _from: RouteLocationNormalized, next: NavigationGuardNext) => {
         const project = getProjectBySlug(to.params.slug as string)
         if (!project) {
-          next({ name: 'not-found' })  // Redirect if project is not found
+          next({ name: 'not-found' })
         } else {
-          next()  // Proceed with navigation
+          next()
         }
       }
     },
@@ -55,7 +55,7 @@ const router = createRouter({
   }
 })
 
-router.beforeEach(async (to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
+router.beforeEach(async (_to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
   if (!from.name) { 
     document.documentElement.style.backgroundColor = 'secondary'
     next()
