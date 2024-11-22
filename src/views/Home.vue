@@ -64,18 +64,19 @@ class=""/>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { Linkedin, FileBadge, Github, Gitlab } from 'lucide-vue-next'
-import ScaleSection from '../components/ScaleSection.vue'
-import Header from '../components/Header.vue'
-import DefaultLayout from '../components/layouts/DefaultLayout.vue'
-import ScaleContent from '../components/ScaleContent.vue'
-import LineSeparator from '../components/LineSeparator.vue'
-import VerticalSeparator from '../components/VerticalSeparator.vue'
-import GridContent from '../components/GridContent.vue'
-import InfiniteHorizontalScroll from '../components/InfiniteHorizontalScroll.vue'
+import { computed, defineAsyncComponent } from 'vue'
+import { Linkedin, Github, Gitlab, FileBadge } from 'lucide-vue-next'
 import { getAllProjects } from '../data/projects'
 
+// async
+const ScaleSection = defineAsyncComponent(() => import('../components/ScaleSection.vue'))
+const Header = defineAsyncComponent(() => import('../components/Header.vue'))
+const DefaultLayout = defineAsyncComponent(() => import('../components/layouts/DefaultLayout.vue'))
+const ScaleContent = defineAsyncComponent(() => import('../components/ScaleContent.vue'))
+const LineSeparator = defineAsyncComponent(() => import('../components/LineSeparator.vue'))
+const VerticalSeparator = defineAsyncComponent(() => import('../components/VerticalSeparator.vue'))
+const GridContent = defineAsyncComponent(() => import('../components/GridContent.vue'))
+const InfiniteHorizontalScroll = defineAsyncComponent(() => import('../components/InfiniteHorizontalScroll.vue'))
 
 const projects = getAllProjects()
 const firstProjects = computed(() => projects.slice(0, 3))

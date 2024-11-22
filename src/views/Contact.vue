@@ -11,17 +11,27 @@
         </div>
       </div>
 
-      <div class="w-1/2 max-md:w-full max-lg:p-12  p-16 space-y-8">
-        <ContactForm />
+      <div class="w-1/2 max-md:w-full max-lg:p-12 p-16 space-y-8">
+        <Suspense>
+          <ContactForm />
+          <template #fallback>
+            <div class="animate-pulse">Loading form...</div>
+          </template>
+        </Suspense>
       </div>
     </div>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
-import DefaultLayout from '../components/layouts/DefaultLayout.vue'
-import ContactForm from '../components/ContactForm.vue'
-
+import { defineAsyncComponent } from 'vue'
+//async
+const DefaultLayout = defineAsyncComponent(() => 
+  import('../components/layouts/DefaultLayout.vue')
+)
+const ContactForm = defineAsyncComponent(() => 
+  import('../components/ContactForm.vue')
+)
 </script>
 
 <style scoped>
