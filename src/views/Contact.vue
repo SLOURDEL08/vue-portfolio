@@ -20,7 +20,6 @@
 
 <script setup lang="ts">
 import DefaultLayout from '../components/layouts/DefaultLayout.vue'
-import LineSeparator from '../components/LineSeparator.vue'
 import ContactForm from '../components/ContactForm.vue'
 
 </script>

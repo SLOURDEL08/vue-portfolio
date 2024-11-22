@@ -65,7 +65,7 @@ class=""/>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Instagram, Linkedin, FileBadge, Github, Gitlab } from 'lucide-vue-next'
+import { Linkedin, FileBadge, Github, Gitlab } from 'lucide-vue-next'
 import ScaleSection from '../components/ScaleSection.vue'
 import Header from '../components/Header.vue'
 import DefaultLayout from '../components/layouts/DefaultLayout.vue'

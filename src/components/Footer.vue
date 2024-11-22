@@ -76,7 +76,5 @@
 </template>
 
 <script setup lang="ts">
-import DefaultLayout from '../components/layouts/DefaultLayout.vue'
-import InfiniteHorizontalScroll from '../components/InfiniteHorizontalScroll.vue'
-import { Instagram, Linkedin, FileBadge, Github, Gitlab } from 'lucide-vue-next'
+
 </script>

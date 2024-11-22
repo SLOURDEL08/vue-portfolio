@@ -1,9 +1,9 @@
 <template>
-  <div class="gallery  overflow-hidden relative">
+  <div class="gallery overflow-hidden relative">
     <div 
       v-for="(image, index) in gallery" 
       :key="index"
-      :ref="el => containers[index] = el"
+      :ref="el => setContainerRef(el as HTMLDivElement, index)"
       class="overflow-hidden relative"
       :class="{ 'cursor-none': variant === 'enhanced' }"
       @mouseenter="handleMouseEnter(index)"
@@ -13,8 +13,8 @@
       <!-- Image principale -->
       <div class="relative w-full h-full">
         <img
-          :ref="el => images[index] = el"
-          :src="image"
+          :ref="el => setImageRef(el as HTMLImageElement, index)"
+              :src="image"
           class="w-full h-[850px] object-center object-cover relative z-10"
           :style="{ 
             transform: `scale(${scales[index]}) translateY(${translates[index]}px)`
@@ -66,14 +66,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted, onUnmounted, PropType } from 'vue'
+import { defineComponent, ref, onMounted, onUnmounted, PropType } from 'vue'
 import Lightbox from './Lightbox.vue'
 
 export default defineComponent({
   name: 'Gallery',
-  components: {
-    Lightbox
-  },
+  components: { Lightbox },
   props: {
     gallery: {
       type: Array as PropType<string[]>,
@@ -94,7 +92,7 @@ export default defineComponent({
     variant: {
       type: String,
       default: 'enhanced',
-      validator: value => ['simple', 'enhanced'].includes(value)
+      validator: (value: string) => ['simple', 'enhanced'].includes(value)
     },
     animationRange: {
       type: Number,
@@ -102,19 +100,33 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const containers = ref<HTMLElement[]>([])
-    const images = ref<HTMLElement[]>([])
+    // Fixed type declarations for refs
+    const containers = ref<HTMLDivElement[]>([])
+    const images = ref<HTMLImageElement[]>([])
+    
+    // Rest of the state remains the same
     const showOverlay = ref(false)
     const activeIndex = ref(-1)
     const cursorPositions = ref<{ [key: number]: { x: number; y: number } }>({})
     const scales = ref<number[]>([])
     const translates = ref<number[]>([])
-
-    // Lightbox state
     const isLightboxOpen = ref(false)
     const currentImageIndex = ref(0)
 
-    // Le reste des fonctions reste identique
+    // Update the ref callback types
+    const setContainerRef = (el: HTMLDivElement | null, index: number) => {
+      if (el) {
+        containers.value[index] = el
+      }
+    }
+
+    const setImageRef = (el: HTMLImageElement | null, index: number) => {
+      if (el) {
+        images.value[index] = el
+      }
+    }
+
+    // Rest of the methods remain the same
     const initializeArrays = () => {
       scales.value = Array(props.gallery.length).fill(props.maxScale)
       translates.value = Array(props.gallery.length).fill(0)
@@ -129,12 +141,9 @@ export default defineComponent({
         const elementHeight = rect.height
 
         const startOffset = -viewportHeight * (props.animationRange / 2)
-        const endOffset = viewportHeight * (props.animationRange / 2)
         const totalDistance = elementHeight + viewportHeight * props.animationRange
 
-        const progress = Math.max(0, Math.min(1,
-          (rect.top - startOffset) / totalDistance
-        ))
+        const progress = Math.max(0, Math.min(1, (rect.top - startOffset) / totalDistance))
 
         scales.value[index] = props.minScale + (props.maxScale - props.minScale) * progress
         translates.value[index] = props.maxTranslateY * (1 - progress)
@@ -187,8 +196,8 @@ export default defineComponent({
     })
 
     return {
-      containers,
-      images,
+      setContainerRef,
+      setImageRef,
       showOverlay,
       activeIndex,
       cursorPositions,

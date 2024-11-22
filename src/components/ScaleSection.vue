@@ -62,36 +62,36 @@ export default defineComponent({
   name: 'ScaleSection',
 props: {
   imagePath: {
-    type: String,
+    type: String as PropType<string>,
     required: true
   },
   maxScale: {
-    type: Number,
+    type: Number as PropType<number>,
     default: 2
   },
   minScale: {
-    type: Number,
+    type: Number as PropType<number>,
     default: 1.5
   },
   maxTranslateY: {
-    type: Number,
+    type: Number as PropType<number>,
     default: 100
   },
-linkPath: {
-  type: [String, Object] as PropType<RouteLocationRaw>,
-  default: '',
-    // La validation se fait via required conditionnel
+  linkPath: {
+    type: [String, Object] as PropType<RouteLocationRaw>,
+    default: ''
   },
   variant: {
-    type: String,
+    type: String as PropType<'simple' | 'enhanced'>, // Explicitly type `variant`
     default: 'simple',
-    validator: value => ['simple', 'enhanced'].includes(value)
+    validator: (value: 'simple' | 'enhanced') => ['simple', 'enhanced'].includes(value)
   },
   animationRange: {
-    type: Number,
+    type: Number as PropType<number>,
     default: 2
   }
 },
+
   setup(props) {
     const container = ref<HTMLElement | null>(null)
     const image = ref<HTMLElement | null>(null)

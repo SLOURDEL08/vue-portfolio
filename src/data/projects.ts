@@ -21,8 +21,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    slug: 'camera',
-    title: 'Camera',
+    slug: 'digitalizerr',
+    title: 'Digitalizerr',
     description: 'A cutting-edge digital platform designed to revolutionize the way people interact with technology.',
     client: 'Canon Inc.',
     year: '2023',
@@ -38,12 +38,12 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/wall.webp',
+    imagePath: '/src/assets/work/digitalizerr-home.png',
     nextProject: 'noise',
     prevProject: 'robot',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
+    '/src/assets/work/digitalizerr-home.png',
     'path/to/image2.jpg',
     'path/to/image3.jpg'
   ],

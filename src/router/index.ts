@@ -1,5 +1,4 @@
-// src/router/index.ts
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteLocationNormalized, NavigationGuardNext } from 'vue-router'
 import { useTransitionStore } from '../stores/transitionStore'
 import { getProjectBySlug } from '../data/projects'
 
@@ -31,27 +30,17 @@ const router = createRouter({
       name: 'project',
       component: () => import('../views/ProjectDetail.vue'),
       props: true,
-      beforeEnter: (to, from, next) => {
+      beforeEnter: (to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
         const project = getProjectBySlug(to.params.slug as string)
         if (!project) {
-          next({ name: 'not-found' })
+          next({ name: 'not-found' })  // Redirect if project is not found
         } else {
-          next()
+          next()  // Proceed with navigation
         }
       }
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      // Restaurer la position précédente lors d'un retour arrière ou refresh
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(savedPosition)
-        }, 100) // Petit délai pour s'assurer que le contenu est chargé
-      })
-    }
-
-    // Si c'est une navigation vers un hash/anchor
+  scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
@@ -59,7 +48,6 @@ const router = createRouter({
       }
     }
 
-    // Pour les nouvelles navigations
     return { 
       top: 0,
       behavior: 'smooth'
@@ -67,9 +55,8 @@ const router = createRouter({
   }
 })
 
-// Attendre que la page soit chargée avant de démarrer la transition
-router.beforeEach(async (to, from, next) => {
-  if (!from.name) { // Si c'est un accès direct
+router.beforeEach(async (to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
+  if (!from.name) { 
     document.documentElement.style.backgroundColor = 'secondary'
     next()
     const transitionStore = useTransitionStore()

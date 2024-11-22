@@ -22,7 +22,6 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import DefaultLayout from '../components/layouts/DefaultLayout.vue'
 
 interface ProjectHeaderProps {
   title: string

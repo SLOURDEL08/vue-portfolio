@@ -5,57 +5,60 @@
       class="scroll-content flex gap-10 transition-transform text-secondary duration-700 ease-out min-w-max"
       :style="{ transform: `translateX(${scrollOffset}px)` }"
     >
-      <span class="text-8xl max-md:text-6xl font-bold">/FRONTEND</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/FRANCE</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/WORK</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/FRONT-END</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/FREELANCE</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/ANIMATION</span>
-      <span class="text-8xl max-md:text-6xl font-bold">/REMOTE</span>
+      <span v-for="(text, index) in scrollTexts" 
+            :key="index" 
+            class="text-8xl max-md:text-6xl font-bold">/{{ text }}</span>
     </div>
   </div>
 </template>
 
-<script>
-import LineSeparator from '../components/LineSeparator.vue'
-export default {
-  data() {
-    return {
-      scrollOffset: 0,
-      scrollSpeed: 2, 
-      lastScroll: 0, 
-      requestId: null, 
-    };
-  },
-  mounted() {
-    this.lastScroll = window.scrollY;
-    window.addEventListener("scroll", this.startSmoothScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.startSmoothScroll);
-    if (this.requestId) cancelAnimationFrame(this.requestId);
-  },
-  methods: {
-    startSmoothScroll() {
-      if (this.requestId) return; // Prevent multiple animations
-      this.requestId = requestAnimationFrame(this.smoothScroll);
-    },
-    smoothScroll() {
-      const currentScroll = window.scrollY;
-      const direction = currentScroll - this.lastScroll > 0 ? 1 : -1;
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import LineSeparator from './LineSeparator.vue'
 
-      // Adjust the scroll offset more smoothly
-      this.scrollOffset += direction * this.scrollSpeed;
-      this.lastScroll = currentScroll;
-      this.requestId = null; // Reset requestId for the next scroll
+const scrollTexts = [
+  'FRONTEND',
+  'FRANCE',
+  'WORK',
+  'FRONT-END',
+  'FREELANCE',
+  'ANIMATION',
+  'REMOTE'
+]
 
-      // Check if the user is still scrolling
-      if (Math.abs(window.scrollY - this.lastScroll) > 0) {
-        this.requestId = requestAnimationFrame(this.smoothScroll);
-      }
-    },
-  },
-};
+const scrollContainer = ref<HTMLElement | null>(null)
+const scrollOffset = ref(0)
+const scrollSpeed = 2
+let lastScroll = 0
+let requestId: number | null = null
+
+const startSmoothScroll = () => {
+  if (requestId) return
+  requestId = requestAnimationFrame(smoothScroll)
+}
+
+const smoothScroll = () => {
+  const currentScroll = window.scrollY
+  const direction = currentScroll - lastScroll > 0 ? 1 : -1
+
+  scrollOffset.value += direction * scrollSpeed
+  lastScroll = currentScroll
+  requestId = null
+
+  if (Math.abs(window.scrollY - lastScroll) > 0) {
+    requestId = requestAnimationFrame(smoothScroll)
+  }
+}
+
+onMounted(() => {
+  lastScroll = window.scrollY
+  window.addEventListener('scroll', startSmoothScroll)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', startSmoothScroll)
+  if (requestId) cancelAnimationFrame(requestId)
+})
 </script>
 
 <style scoped>
