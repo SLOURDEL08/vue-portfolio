@@ -4,7 +4,7 @@
   <Header />
 
   <ScaleSection
-    imagePath="/src/assets/wall.webp"
+    imagePath="/images/wall.webp"
  :minScale="1.2"  
   :maxScale="2.5" 
     
