@@ -39,7 +39,7 @@
         >
           <div class="view-button-icon w-embed">
             <img 
-              src="../assets/arrow-botleft.png" 
+              src="/images/arrow-botleft.png" 
               width="20" 
               height="20" 
               class="invert rotate-180 scale-x-[-1]" 
@@ -180,7 +180,7 @@ export default defineComponent({
 
 <style scoped>
 .grain-pattern {
-  background-image: url('../assets/grain.png');
+  background-image: url('/images/grain.png');
   background-repeat: repeat;
   background-size: 600px;
 }

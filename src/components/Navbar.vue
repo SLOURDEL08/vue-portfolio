@@ -10,7 +10,7 @@
           <span v-hover-slide class="inline-block py-0 -my-2 max-md:hidden">
             Menu
           </span>
-          <img src="../assets/menu-burger.png" width="20" height="20" class="md:hidden"/>
+          <img src="/images/menu-burger.png" width="20" height="20" class="md:hidden"/>
         </div>
       </Button>
     </nav>

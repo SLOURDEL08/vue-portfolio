@@ -7,7 +7,7 @@
     >
       <div class="flex items-center gap-3 cursor-pointer group" v-hover-diagonal>
         <div class="relative overflow-hidden w-6 h-6">
-          <img src="../../assets/arrow-botleft.png" alt="arrow" class="w-full rotate-90 h-full object-contain" />
+          <img src="/images/arrow-botleft.png" alt="arrow" class="w-full rotate-90 h-full object-contain" />
         </div>
         <span v-hover-slide class="text-3xl text-secondary font-medium">Previous Project</span>
       </div>
@@ -21,7 +21,7 @@
       <div class="flex items-center gap-3 cursor-pointer group" v-hover-diagonal>
                 <span v-hover-slide class="text-3xl text-secondary font-medium">Next Project</span>
         <div class="relative overflow-hidden w-6 h-6">
-          <img src="../../assets/arrow-botleft.png" alt="arrow" class="w-full h-full object-contain" />
+          <img src="/images/arrow-botleft.png" alt="arrow" class="w-full h-full object-contain" />
         </div>
       </div>
     </router-link>

@@ -8,7 +8,7 @@
             {{ title }}
           </span>
           <img
-            src="../assets/arrow-botleft.png"
+            src="/images/arrow-botleft.png"
             width="150"
             height="150"
             class="w-6 h-6"
@@ -59,7 +59,7 @@
             {{ title }}
           </span>
           <img
-            src="../assets/arrow-botleft.png"
+            src="/images/arrow-botleft.png"
             width="150"
             height="150"
             class="w-6 h-6"

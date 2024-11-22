@@ -39,7 +39,7 @@
           >
             <div class="flex items-center justify-center">
               <img 
-                src="../assets/arrow-botleft.png"
+                src="/images/arrow-botleft.png"
                 class="w-5 h-5 invert rotate-180 scale-x-[-1]"
                 alt="Arrow"
               />

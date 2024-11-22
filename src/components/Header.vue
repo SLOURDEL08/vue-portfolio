@@ -16,7 +16,7 @@
       >
         <div class="relative overflow-hidden w-6 h-6">
           <img 
-            src="../assets/arrow-botleft.png" 
+            src="/images/arrow-botleft.png" 
             alt="arrow"
             class="w-full h-full object-contain"
           />

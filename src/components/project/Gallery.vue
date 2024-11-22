@@ -40,7 +40,7 @@
           >
             <div class="view-button-icon w-embed">
               <img 
-                src="../../assets/eyes.png" 
+                src="/images/eyes.png" 
                 width="40" 
                 height="40" 
                 class="scale-x-[-1]" 

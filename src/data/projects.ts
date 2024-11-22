@@ -38,14 +38,13 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/work/digitalizerr-home.png',
+    imagePath: '/images/work/digitalizerr/home.png',
     nextProject: 'noise',
     prevProject: 'robot',
     date: "2024-05-12",
       gallery: [
-    '/src/assets/work/digitalizerr-home.png',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -66,14 +65,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/rose.webp',
+    imagePath: '/images/rose.webp',
     nextProject: 'robot',
     prevProject: 'camera',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -95,14 +94,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/gant.webp',
+    imagePath: '/images/gant.webp',
     nextProject: 'camera',
     prevProject: 'noise',
     date: "2024-05-12",
       gallery: [
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
    {
@@ -124,14 +123,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/wall.webp',
+    imagePath: '/images/wall.webp',
     nextProject: 'noise',
     prevProject: 'robot',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -152,14 +151,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/rose.webp',
+    imagePath: '/images/rose.webp',
     nextProject: 'robot',
     prevProject: 'camera',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -171,7 +170,7 @@ export const projects: Project[] = [
     year: '2023',
     website: 'www.robotproject.com',
     tags: ['Motion Design', 'Development'],
-    imagePath: '/src/assets/gant.webp',
+    imagePath: '/images/gant.webp',
     services: [
     {
       title: 'Motion Design',
@@ -186,9 +185,9 @@ export const projects: Project[] = [
     prevProject: 'noise',
     date: "2024-05-12",
       gallery: [
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
    {
@@ -210,14 +209,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/wall.webp',
+    imagePath: '/images/wall.webp',
     nextProject: 'noise',
     prevProject: 'robot',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -238,14 +237,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/rose.webp',
+    imagePath: '/images/rose.webp',
     nextProject: 'robot',
     prevProject: 'camera',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -267,14 +266,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/gant.webp',
+    imagePath: '/images/gant.webp',
     nextProject: 'camera',
     prevProject: 'noise',
     date: "2024-05-12",
       gallery: [
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
    {
@@ -296,14 +295,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/wall.webp',
+    imagePath: '/images/wall.webp',
     nextProject: 'noise',
     prevProject: 'robot',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -324,14 +323,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/rose.webp',
+    imagePath: '/images/rose.webp',
     nextProject: 'robot',
     prevProject: 'camera',
     date: "2024-05-12",
       gallery: [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   {
@@ -353,14 +352,14 @@ export const projects: Project[] = [
       description: 'Implemented cutting-edge robotics control systems and AI integration using modern technologies and frameworks.'
     }
   ],
-    imagePath: '/src/assets/gant.webp',
+    imagePath: '/images/gant.webp',
     nextProject: 'camera',
     prevProject: 'noise',
     date: "2024-05-12",
       gallery: [
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp',
-    '/src/assets/wall.webp'
+    '/images/wall.webp',
+    '/images/wall.webp',
+    '/images/wall.webp',
   ],
   },
   

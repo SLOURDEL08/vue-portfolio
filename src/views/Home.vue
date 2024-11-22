@@ -44,7 +44,7 @@ class=""/>
     <ScaleSection
   :imagePath="project.imagePath"
   variant="enhanced"
-  :linkPath="`/projects/${project.slug}`"
+  :linkPath="`/images/projects/${project.slug}`"
   :minScale="1.2"  
   :maxScale="2.5" 
 />

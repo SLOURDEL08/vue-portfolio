@@ -4,7 +4,7 @@
       <div class="w-1/2 max-md:w-full relative">
         <div class="sticky top-0 max-md:h-[500px] h-screen">
           <img 
-            src="../assets/wall.webp" 
+            src="/images/wall.webp" 
             class="h-screen w-full max-md:h-[500px] object-cover object-center"
             alt="Profile image"
           />
@@ -38,15 +38,15 @@
             Trusted by Leading Brands: A Look at the Companies That Have Benefited from Bent Lindberg's Expertise.
           </p>
           <ul class="grid grid-cols-3 font-[500] py-4 gap-4 text-xl">
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Reactflix</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Acolyte</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Digitalizerr</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />UberEat</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />DietIA</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Tesla</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />KanbanM</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Google</li>
-            <li class="flex gap-4 items-center"><img src="../assets/arrow-botleft.png" width="18" height="18" />Microsoft</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Reactflix</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Acolyte</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Digitalizerr</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />UberEat</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />DietIA</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Tesla</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />KanbanM</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Google</li>
+            <li class="flex gap-4 items-center"><img src="/images/arrow-botleft.png" width="18" height="18" />Microsoft</li>
           </ul>
         </div>
         <LineSeparator />
