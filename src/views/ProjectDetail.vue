@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 import { ref, watchEffect, defineAsyncComponent, nextTick } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { getProjectBySlug } from '../data/projects'
 import type { Project } from '../data/projects'
 import { useTransitionStore } from '../stores/transitionStore'
@@ -56,7 +56,6 @@ const Navigation = defineAsyncComponent(() => import('../components/project/Navi
 const Gallery = defineAsyncComponent(() => import('../components/project/Gallery.vue'))
 
 const route = useRoute()
-const router = useRouter()
 const transitionStore = useTransitionStore()
 const project = ref<Project | undefined>(undefined)
 
