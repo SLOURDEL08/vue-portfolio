@@ -42,7 +42,6 @@
 
 <script setup lang="ts">
 import { ref, watchEffect, defineAsyncComponent, nextTick } from 'vue'
-import { onBeforeRouteUpdate } from 'vue-router'
 import { useRoute, useRouter } from 'vue-router'
 import { getProjectBySlug } from '../data/projects'
 import type { Project } from '../data/projects'
