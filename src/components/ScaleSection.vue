@@ -1,3 +1,4 @@
+
 <template>
   <div 
     ref="container" 
@@ -13,7 +14,7 @@
     <div class="relative w-full h-full">
       <img
         ref="image"
-        :src="computedImagePath"
+        :src="imagePath"
         class="w-full h-full object-center object-cover relative z-10"
         :style="{ 
           transform: `scale(${currentScale}) translateY(${currentTranslateY}px)`
@@ -45,7 +46,7 @@
             />
           </div>
         </div>
-      </router-link>
+ </router-link>
 
       <!-- Effet de grain -->
       <div class="absolute inset-0 z-20 mix-blend-overlay opacity-35 pointer-events-none grain-pattern"></div>
@@ -61,17 +62,9 @@ export default defineComponent({
   name: 'ScaleSection',
   props: {
     imagePath: {
-    type: String as PropType<string>,
-    required: true
-  },
-  altImagePath: {
-    type: String as PropType<string>,
-    required: true
-  },
-  useAltImage: {
-    type: Boolean as PropType<boolean>,
-    default: false
-  },
+      type: String as PropType<string>,
+      required: true
+    },
     maxScale: {
       type: Number as PropType<number>,
       default: 2
@@ -110,10 +103,6 @@ export default defineComponent({
     const containerClasses = computed(() => {
       return props.variant === 'enhanced' ? 'h-[850px]' : 'h-[850px]'
     })
-
-const computedImagePath = computed(() => {
-  return props.useAltImage ? props.altImagePath : props.imagePath
-})
 
     const handleScroll = () => {
       if (!container.value) return
@@ -180,7 +169,6 @@ const computedImagePath = computed(() => {
       currentScale,
       currentTranslateY,
       containerClasses,
-      computedImagePath,
       handleMouseEnter,
       handleMouseLeave,
       handleMouseMove,
