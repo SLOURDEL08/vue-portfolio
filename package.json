@@ -1,0 +1,31 @@
+{
+  "name": "vue-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.2.0",
+    "@types/react-icons": "^3.0.0",
+    "gsap": "^3.12.5",
+    "lucide-vue-next": "^0.454.0",
+    "pinia": "^2.2.5",
+    "react-icons": "^5.4.0",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^3.4.14",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
+  }
+}

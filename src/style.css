@@ -1,0 +1,115 @@
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+
+@layer icons {
+  @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+  @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    background-color: #1E1E21;
+  }
+}
+
+.fi{
+  color:white
+}
+
+
+/* First title on page (bigger) */
+
+
+.smart-bigtitle {
+  font-size: clamp(2rem, 7vw + 2rem, 9rem);
+  font-weight:600;
+  letter-spacing:-5px;
+  line-height: 1;
+    color:#1E1E21;
+
+}
+
+/* title for content  */
+.smart-title {
+  font-size: clamp(1rem, 3.2vw + 2rem, 8rem);
+   font-weight:600;
+  line-height: 0.9;
+  color:#1E1E21;
+}
+/* subtitle for content */
+.smart-subtitle {
+  font-size: clamp(1.5rem, 2vw + 2rem, 4rem);
+   font-weight:600;
+  line-height: 1;
+    color:#1E1E21;
+
+}
+
+/* Title GridContent : (Title) */
+
+.smart-text {
+  font-size: clamp(1.6rem, 2vw + 0.1rem, 2rem);
+  font-weight:600;
+  line-height: 140%;
+   color:#1E1E21;
+}
+/* Title Services (GridContent) */
+.smart-titlegrid {
+  font-size: clamp(2rem, 2vw + 1rem, 2.6rem);
+  font-weight:600;
+  line-height: 120%;
+  letter-spacing: -1px;
+   color:#1E1E21;
+}
+
+/* Description, p  */
+.smart-desc {
+  font-size: clamp(1.2rem, 2vw + 0.1rem, 1.2rem);
+  font-weight:400;
+  line-height: 160%;
+  color:#383838
+}
+
+
+  .underline-effect-wrapper {
+      display: inline;
+      background-image: linear-gradient(#fff, #fff);
+      background-position: 0 100%;
+      background-size: 0% 1.8px;
+      background-repeat: no-repeat;
+      transition: background-size 0.25s ease-in-out;
+      padding-bottom: 6px; /* Espace entre le texte et le soulignement */
+    }
+
+    /* Appliquer le style aux spans imbriqués */
+    .underline-effect {
+
+      cursor: pointer;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    /* Animation au survol */
+    .underline-effect:hover .underline-effect-wrapper {
+      background-size: 100% 1.8px;
+    }
+
+
+    @media screen and (max-width: 800px){
+
+/* First title on page (bigger) */
+
+
+.smart-bigtitle {
+
+  letter-spacing:-2px;
+
+
+}
+    }
