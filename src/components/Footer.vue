@@ -79,45 +79,61 @@
  </footer>
 </template>
 
-<script setup>
-const pages = [
- { name: 'Home', path: '/' },
- { name: 'About', path: '/about' },
- { name: 'Work', path: '/work' },
- { name: 'Contact', path: '/contact' }
+<script setup lang="ts">
+interface Page {
+  name: string
+  path: string
+}
+
+interface Link {
+  name: string
+  url: string
+  type: 'email' | 'external'
+}
+
+interface Repository {
+  name: string
+  url: string
+}
+
+const pages: Page[] = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Work', path: '/work' },
+  { name: 'Contact', path: '/contact' }
 ]
 
-const links = [
- { 
-   name: 'Linkedin', 
-   url: 'https://www.linkedin.com/in/s%C3%A9bastien-lourdel-297715151/',
-   type: 'external'
- },
- { 
-   name: 'contact@slourdel.fr', 
-   url: 'contact@slourdel.fr',
-   type: 'email'
- },
- { 
-   name: 'portfolio.slourdel.fr', 
-   url: 'https://portfolio.slourdel.fr',
-   type: 'external'
- }
+const links: Link[] = [
+  { 
+    name: 'Linkedin', 
+    url: 'https://www.linkedin.com/in/s%C3%A9bastien-lourdel-297715151/',
+    type: 'external'
+  },
+  { 
+    name: 'contact@slourdel.fr', 
+    url: 'contact@slourdel.fr',
+    type: 'email'
+  },
+  { 
+    name: 'portfolio.slourdel.fr', 
+    url: 'https://portfolio.slourdel.fr',
+    type: 'external'
+  }
 ]
 
-const repositories = [
- { 
-   name: 'Github', 
-   url: 'https://github.com/SLOURDEL08' 
- },
- { 
-   name: 'Gitlab', 
-   url: 'https://gitlab.com/slourdel08'
- },
- { 
-   name: 'Behance', 
-   url: 'https://www.behance.net/lourdel00'
- }
+const repositories: Repository[] = [
+  { 
+    name: 'Github', 
+    url: 'https://github.com/SLOURDEL08' 
+  },
+  { 
+    name: 'Gitlab', 
+    url: 'https://gitlab.com/slourdel08'
+  },
+  { 
+    name: 'Behance', 
+    url: 'https://www.behance.net/lourdel00'
+  }
 ]
 </script>
 

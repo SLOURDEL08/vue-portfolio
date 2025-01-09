@@ -26,8 +26,10 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
     "@types/nodemailer": "^6.4.17",
     "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "rollup-plugin-terser": "^7.0.2",
