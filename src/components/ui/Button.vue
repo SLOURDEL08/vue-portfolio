@@ -4,7 +4,7 @@
     type="button"
     :disabled="disabled"
     :class="[
-      'px-7 py-3',
+      'px-7 py-2.5',
       'inline-flex text-xl tracking-wide items-center justify-center',
       'text-[#f5f3ef] bg-secondary',
       'rounded-full font-medium',

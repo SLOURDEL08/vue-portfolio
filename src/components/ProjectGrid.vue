@@ -15,7 +15,8 @@
           :alt="project.title"
           class="w-full h-full group-hover:scale-105 transition-all duration-200 object-cover"
         />
-        
+                           <div class="absolute inset-0 z-20 mix-blend-overlay opacity-30 pointer-events-none grain-pattern"></div>
+
         <router-link 
           :to="`/projects/${project.slug}`"
           class="absolute inset-0 z-50 transition-all duration-300"
@@ -37,12 +38,13 @@
               transform: 'translate(-50%, -50%)'
             }"
           >
-            <div class="flex items-center justify-center">
+            <div class="flex items-center  justify-center">
               <img 
                 src="/images/arrow-botleft.png"
                 class="w-5 h-5 invert rotate-180 scale-x-[-1]"
                 alt="Arrow"
               />
+
             </div>
           </div>
         </router-link>
@@ -55,7 +57,7 @@
         <span class="text-4xl leading-10 font-semibold group-hover:text-white">
           {{ project.title }}
         </span>
-        <div class="mt-2 group-hover:text-white">
+        <div class="mt-2 group-hover:text-white leading-7 text-truncate-3">
           {{ project.description }}
         </div>
       </div>

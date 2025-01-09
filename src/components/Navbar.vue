@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Navbar avec bouton Menu -->
-    <nav class="fixed top-0 left-0 w-full px-8 py-8 max-md:p-4 flex justify-end items-start z-[50]">
+    <nav class="fixed !z-50 top-0 left-0 w-full px-8 py-8 max-md:p-4 flex justify-end items-start">
       <Button 
         @click="menuStore.toggleMenu"
         class="menu-button !z-[99999999] overflow-hidden" 

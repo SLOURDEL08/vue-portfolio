@@ -15,12 +15,12 @@
           <LineSeparator/>
           <div class="flex items-center justify-between w-full border-secondary py-4">
             <h3 class="text-xl text-secondary font-medium">(Year)</h3>
-            <p class="font-semibold text-secondary text-xl">{{ year }}</p>
+            <span class="font-semibold text-secondary text-xl">{{ year }}</span>
           </div>
           <LineSeparator/>
            <div v-if="website" class="flex items-center justify-between w-full border-secondary py-4">
     <h3 class="text-xl text-secondary font-medium">(Website)</h3>
-    <a :href="website" target="_blank" class="font- text-secondary text-base underline">
+    <a :href="website" target="_blank" class="font-semibold text-secondary text-xl underline">
       {{ formattedWebsite }}
     </a>
   </div>

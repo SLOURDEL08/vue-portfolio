@@ -9,6 +9,7 @@
             class="h-screen w-full max-md:h-[500px] object-cover object-center"
             alt="Profile image"
           />
+     <div class="absolute inset-0 z-20 mix-blend-overlay opacity-40 pointer-events-none grain-pattern"></div>
         </div>
       </div>
 
@@ -29,27 +30,27 @@
         </p>
 
         <div class="text-base space-y-6">
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             I am a Digital Designer and Front-End Developer based in Arras (France), dedicated to creating beautiful, engaging, and functional digital experiences. With a strong foundation in both design and development, I strive to deliver high-quality work that balances aesthetics and performance.
           </p>
 
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             My journey began in January 2019 with a 6-month training program at PopSchool Valenciennes. During this time, I gained hands-on experience by working on various WordPress websites for DK Group, where I managed client services, updates, and internal development. This experience gave me a solid foundation in web design and development, and I quickly expanded my skill set by diving into areas like SEO optimization, plugin creation, debugging, and deployment.
           </p>
 
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             In 2020, I took the leap into freelancing while working part-time to continue learning and honing my skills. I started by building simple websites, brand identities, and logos, but soon began tackling more complex projects such as e-commerce sites and booking platforms. I also got deeply involved in optimizing websites for speed, performance, and SEO, while working directly with clients to understand their needs and deliver high-quality results.
           </p>
 
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             By 2022, I joined a one-year apprenticeship to refine my skills and deepen my understanding of modern web applications. This training allowed me to strengthen my knowledge of frontend technologies such as React and Vue.js, and delve into backend technologies like Node.js and Firebase. I've also gained experience with advanced JavaScript animations using GSAP, as well as responsive design practices with Tailwind CSS.
           </p>
 
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             My goal is to secure a position as a Front-End Developer where I can contribute to complex, animated, and responsive projects that challenge me and push my creative boundaries. I am equally passionate about full-stack development and enjoy working on projects involving Node.js, Express, REST APIs, and Firebase.
           </p>
 
-          <p class="smart-desc">
+          <p class="smart-desc !text-secondary">
             With a keen eye for detail, a drive to keep learning, and a willingness to take on new challenges, I am ready to demonstrate my skills and contribute to your team's success. I am open to international opportunities and eager to collaborate with like-minded professionals on exciting projects.
           </p>
         </div>

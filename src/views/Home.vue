@@ -11,7 +11,7 @@
     
   />
 
-        <div id="myheader" class="grid my-16 max-md:my-14 max-md:flex max-md:gap-8  max-md: flex-col-reverse grid-cols-[1fr_2px_.5fr] gap-x-16 gap-y-16 auto-rows-auto">
+        <div id="content" class="grid my-16 max-md:my-14 max-md:flex max-md:gap-8  max-md: flex-col-reverse grid-cols-[1fr_2px_.5fr] gap-x-16 gap-y-16 auto-rows-auto">
             <div class="w-full">
                 <span class="smart-title">As a Front-End Developer, I bring designs to life with precise integration and complex animations.</span>
             </div>

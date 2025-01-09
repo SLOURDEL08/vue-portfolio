@@ -18,6 +18,7 @@
         :maxScale="2"
         class="-mx-16 max-md:-mx-10 max-md:my-10 my-16"
         :altImagePath="project.imagePath"
+variant="enhanced"  
       />
 
       <GridContent

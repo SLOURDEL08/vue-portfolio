@@ -8,6 +8,8 @@
             class="h-screen w-full max-md:h-[500px] object-cover object-center"
             alt="Profile image"
           />
+               <div class="absolute inset-0 z-20 mix-blend-overlay opacity-40 pointer-events-none grain-pattern"></div>
+
         </div>
       </div>
 

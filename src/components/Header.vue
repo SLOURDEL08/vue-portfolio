@@ -9,7 +9,7 @@
         (Arras, France)
       </h2>
      
-      <!-- Container principal avec hover -->
+      <router-link to="#content">
       <div 
         class="flex items-center gap-3 cursor-pointer group"
         v-hover-diagonal
@@ -23,6 +23,7 @@
         </div>
         <span v-hover-slide class="smart-text">Scroll down</span>
       </div>
+      </router-link>
     </div>
   </div>
    

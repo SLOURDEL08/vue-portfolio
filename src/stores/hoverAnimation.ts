@@ -25,7 +25,7 @@ export const vHoverSlide = {
     container.addEventListener('mouseenter', () => {
       gsap.to(el, {
         y: '-100%',
-        duration: 0.15,
+        duration: 0.1,
         ease: 'power2.in',
         onComplete: () => {
           gsap.set(el, { y: '100%' })
