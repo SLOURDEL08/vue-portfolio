@@ -9,7 +9,7 @@
        </div>
        <router-link to="/contact">
          <Button class="w-max mx-auto bg-white text-secondary">
-           <span v-hover-slide class="inline-block py-0 -my-3">Get in Touch</span>
+           <span class="inline-block py-0 -my-3">Get in Touch</span>
          </Button>
        </router-link>
      </div>
