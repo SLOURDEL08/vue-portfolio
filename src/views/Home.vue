@@ -17,20 +17,36 @@
             </div>
                         <VerticalSeparator class="max-md:hidden"  trigger-section-id="myheader"/>
             <div class="w-full flex flex-col justify-between">
-                <span class="smart-text max-md:mb-4">(About Me)</span>
+                <span class="smart-text sticky -top-1 mb-14 !leading-0 max-md:mb-4">(About Me)</span>
                 <div class="flex max-md:gap-3 gap-4">
+                  <a href="https://linkedin.com">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
+                      
                         <Linkedin class="text-white" :size="22" /> 
+                      
                     </div>
+                    </a>
+                    <a href="https://linkedin.com">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
+                      
                         <Github class="text-white" :size="22" />
+                       
                     </div>
+                     </a>
+                     <a href="https://linkedin.com">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
+                      
                         <Gitlab class="text-white" :size="22" />
+                        
                     </div>
+                    </a>
+                    <a href="https://linkedin.com">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
+                       
                         <FileBadge class="text-white" :size="22" />
+                        
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -105,3 +121,11 @@ const services = [
 ]
 
 </script>
+
+<style>
+
+.sticky {
+  transition: all 0.3s ease;
+  margin-top: -1rem;
+  padding: 1rem 0;
+}</style>

@@ -1,10 +1,10 @@
 <template>
   <div v-if="variant !== 'block'" class="relative">
     <LineSeparator class="pb-16 max-md:pb-10" :trigger-section-id="id" />
-    <div class="grid max-md:flex max-md:flex-col grid-cols-[0.5fr_2px_1fr] gap-x-12 gap-y-12 auto-rows-auto">
+    <div class="grid max-md:flex max-md:flex-col grid-cols-[0.5fr_2px_1fr] gap-x-16 gap-y-16 auto-rows-auto">
       <div class="w-full">
         <div class="sticky top-0 flex justify-between items-center">
-          <span class="smart-text">
+          <span class="smart-text !leading-none !pt-0 !mt-0">
             {{ title }}
           </span>
           <img
@@ -20,7 +20,7 @@
 
       <div class="w-full">
         <div class="grid grid-cols-1 gap-16 max-md:gap-6">
-          <div class="grid max-md:flex max-md:flex-col max-md:gap-6 grid-cols-[1fr_2px_1fr] gap-x-12 gap-y-12">
+          <div class="grid max-md:flex max-md:flex-col max-md:gap-6 grid-cols-[1fr_2px_1fr] gap-x-16 gap-y-16">
             <div class="space-y-3">
               <span class="smart-titlegrid">{{ groupedServices[0][0].title }}</span>
               <p class="smart-desc">{{ groupedServices[0][0].description }}</p>
@@ -35,7 +35,7 @@
 
           <LineSeparator :trigger-section-id="id"/>
 
-          <div class="grid max-md:flex max-md:flex-col max-md:gap-6 grid-cols-[1fr_2px_1fr] gap-x-12 gap-y-12">
+          <div class="grid max-md:flex max-md:flex-col max-md:gap-6 grid-cols-[1fr_2px_1fr] gap-x-16 gap-y-16">
             <div class="space-y-3">
               <span class="smart-titlegrid">{{ groupedServices[1][0].title }}</span>
               <p class="smart-desc">{{ groupedServices[1][0].description }}</p>
@@ -52,7 +52,7 @@
     </div>
   </div>
 
-  <div v-else class="grid grid-cols-[0.5fr_2px_1fr] max-md:flex max-md:flex-col max-md:gap-6  gap-x-12 gap-y-12 pb-16 max-md:pb-14 max-xs:pb-10 auto-rows-auto">
+  <div v-else class="grid grid-cols-[0.5fr_2px_1fr] max-md:flex max-md:flex-col max-md:gap-6  gap-x-16 gap-y-16 pb-16 max-md:pb-14 max-xs:pb-10 auto-rows-auto">
     <div class="w-full relative">
       <div class="sticky top-0 flex justify-between items-center">
           <span class="smart-text">
@@ -70,7 +70,7 @@
     <VerticalSeparator/>
     
     <div class="w-full h-max grid grid-cols-1  gap-16">
-      <div class="space-y-12 max-md:space-y-6">
+      <div class="space-y-16 max-md:space-y-6">
         <template v-for="(service, index) in services" :key="index">
           <div class="space-y-3">
             <span class="smart-titlegrid">{{ service.title }}</span>
@@ -132,13 +132,11 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+
+
 .sticky {
   transition: all 0.3s ease;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   margin-top: -1rem;
   padding: 1rem 0;
 }
-
-
 </style>

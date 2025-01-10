@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-3 max-md:grid-cols-2 max-xs:grid-cols-1 max-xs:-mx-10 max-md:-mx-14 -mx-16 grid-flow-dense">
+  <div class="grid grid-cols-3 max-md:grid-cols-2 !z-40 max-xs:grid-cols-1 max-xs:-mx-10 max-md:-mx-14 -mx-16 grid-flow-dense">
     <div 
       v-for="project in remainingProjects" 
       :key="project.id" 
@@ -19,7 +19,7 @@
 
         <router-link 
           :to="`/projects/${project.slug}`"
-          class="absolute inset-0 z-50 transition-all duration-300"
+          class="absolute inset-0 !z-40 transition-all duration-300"
           :class="{ 
             'bg-secondary/20': showOverlay && activeProjectId === project.id,
             'opacity-0 pointer-events-none': !showOverlay || activeProjectId !== project.id 
@@ -113,4 +113,5 @@ const handleMouseMove = (event: MouseEvent) => {
 .cursor-none * {
   cursor: none !important;
 }
+
 </style>
