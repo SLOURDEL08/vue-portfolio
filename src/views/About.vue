@@ -1,6 +1,6 @@
 <template>
   <DefaultLayout class="-mb-16">
-    <div class="flex max-md:block max-xs:-mt-10 max-md:-mt-14 -mt-16 max-xs:-mx-10 max-md:-mx-14 -mx-16">
+    <div class="flex max-md:block max-xs:-mt-14 max-md:-mt-14 -mt-16 max-xs:-mx-10 max-md:-mx-14 -mx-16">
       <div class="w-1/2 max-md:w-full relative">
         <div class="sticky top-0 max-md:h-[500px] h-screen">
           <img 
@@ -19,13 +19,13 @@
             <div class="space-y-8">
               <div>
                 <span class="smart-text">(About Me)</span>
-                <h1 class="smart-bigtitle pt-2">Sébastien LOURDEL</h1>
+                <h1 class="smart-bigtitle max-lg:text-6xl max-lg:tracking-wide pt-2">Sébastien LOURDEL</h1>
               </div>
               </div>
                </template>
             </Suspense>
         <i class="fi fi-sr-menu-burger"></i>
-        <p class="text-[45px] max-md:text-3xl leading-[110%] font-[500]">
+        <p class="text-[45px] max-lg:text-3xl  max-md:text-3xl leading-[110%] font-[500]">
           A Front-End Developer passionate about crafting captivating visual experiences.
         </p>
 
