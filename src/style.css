@@ -147,3 +147,17 @@
   will-change: opacity;
   backface-visibility: hidden;
 }
+
+
+    body::-webkit-scrollbar {
+                                width: 10px; /* Largeur de la barre de défilement */
+                              }
+                              
+                              body::-webkit-scrollbar-track {
+                                background: #d4d4d4; /* Couleur de fond de la barre de défilement */
+                              }
+                              
+                              body::-webkit-scrollbar-thumb {
+                                background-color: #000000dd; /* Couleur du curseur de la barre de défilement */
+                                border-radius: 0px; /* Rayon de bordure du curseur de la barre de défilement */
+                              }
