@@ -1,30 +1,24 @@
 <template>
   <DefaultLayout class="-mb-16">
-    <div class="flex max-md:block max-xs:-mt-14 max-md:-mt-14 -mt-16 max-xs:-mx-10 max-md:-mx-14 -mx-16">
-      <div class="w-1/2 max-md:w-full relative">
-        <div class="sticky top-0 max-md:h-[500px] h-screen">
+    <div class="flex max-md:block max-md:-mt-14 max-xs:-mt-10 -mt-16 max-md:-mx-14 -mx-16">
+       <div class="w-1/2 max-md:w-full relative">
+        <div class="sticky  top-0 max-md:h-[500px] h-screen">
           <img 
             src="/images/profilpic-contact.png" 
-            loading="lazy"
             class="h-screen w-full max-md:h-[500px] object-cover object-center"
             alt="Profile image"
           />
-     <div class="absolute inset-0 z-20 mix-blend-overlay opacity-40 pointer-events-none grain-pattern"></div>
+               <div class="absolute inset-0 z-20 mix-blend-overlay opacity-40 pointer-events-none grain-pattern"></div>
+
         </div>
       </div>
 
       <div class="w-1/2 max-md:w-full max-md:p-14 max-xs:p-10 p-16 space-y-8">
-        <Suspense>
-          <template #default>
             <div class="space-y-8">
-              <div>
                 <span class="smart-text">(About Me)</span>
                 <h1 class="smart-bigtitle max-lg:text-6xl max-lg:tracking-wide pt-2">Sébastien LOURDEL</h1>
               </div>
-              </div>
-               </template>
-            </Suspense>
-        <i class="fi fi-sr-menu-burger"></i>
+            
         <p class="text-[45px] max-lg:text-3xl  max-md:text-3xl leading-[110%] font-[500]">
           A Front-End Developer passionate about crafting captivating visual experiences.
         </p>
@@ -99,8 +93,12 @@
 </template>
 
 <script setup lang="ts">
-import DefaultLayout from '../components/layouts/DefaultLayout.vue'
-import LineSeparator from '../components/LineSeparator.vue'
+import { defineAsyncComponent } from 'vue'
+//async
+const DefaultLayout = defineAsyncComponent(() => 
+  import('../components/layouts/DefaultLayout.vue')
+)
+
 </script>
 
 <style scoped>
