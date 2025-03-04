@@ -7,7 +7,7 @@
          <p class="text-3xl mb-4 max-md:text-xl font-[500]">(Connect)</p>
          <span class="smart-bigtitle leading-none !text-white font-semibold">Let's Talk</span>
        </div>
-        <router-link to="/work">
+        <router-link to="/contact">
            <Button class="mt-4 bg-white text-secondary">
              <span v-hover-slide class="inline-block py-0 -my-3">Get in Touch</span>
            </Button>

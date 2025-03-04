@@ -479,6 +479,84 @@ export const projects: Project[] = [
      '/images/work/portfolio/gallery4.png',
      '/images/work/portfolio/gallery5.png',
    ],
+  },
+     {
+   id: '12',
+   slug: 'finance-app',
+   title: 'Finance App',
+   description: 'A comprehensive portfolio website built with Next.js, featuring advanced filtering capabilities, dynamic project showcases, and interactive experiences. This platform demonstrates modern web development practices and user experience design.',
+   client: 'Personal Project',
+   year: '2024',
+   website: 'https://portfolio.slourdel.fr',
+   tags: ['Frontend Development', 'UX Design', 'Interactive Development'],
+   techs: [
+     { name: 'Next.js', icon: 'logos:nextjs-icon' },
+     { name: 'TypeScript', icon: 'logos:typescript-icon' },
+     { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+   ],
+   services: [
+     {
+       title: 'Advanced Filtering System',
+       description: 'Implementation of a sophisticated filtering system for projects and experiences, enabling efficient content discovery and navigation.'
+     },
+     {
+       title: 'Interactive Experience',
+       description: 'Development of engaging user interactions and smooth animations throughout the site, enhancing the overall user experience.'
+     },
+     {
+       title: 'Form Development',
+       description: 'Creation of robust contact forms with validation and smooth user feedback, ensuring effective communication channels.'
+     }
+   ],
+   imagePath: '/images/work/finance-app/home.png',
+   altImagePath: '/images/work/finance-app/home.png',
+   date: "2024-03-25",
+       gallery: [
+          '/images/work/finance-app/gallery.png',
+     '/images/work/finance-app/gallery1.png',
+     '/images/work/finance-app/gallery2.png',
+     '/images/work/finance-app/gallery3.png',
+     '/images/work/finance-app/gallery4.png',
+   ],
+  },
+      {
+   id: '13',
+   slug: 'diet-app',
+   title: 'Diet App',
+   description: 'A comprehensive portfolio website built with Next.js, featuring advanced filtering capabilities, dynamic project showcases, and interactive experiences. This platform demonstrates modern web development practices and user experience design.',
+   client: 'Personal Project',
+   year: '2024',
+   website: 'https://portfolio.slourdel.fr',
+   tags: ['Frontend Development', 'UX Design', 'Interactive Development'],
+   techs: [
+     { name: 'Next.js', icon: 'logos:nextjs-icon' },
+     { name: 'TypeScript', icon: 'logos:typescript-icon' },
+     { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+   ],
+   services: [
+     {
+       title: 'Advanced Filtering System',
+       description: 'Implementation of a sophisticated filtering system for projects and experiences, enabling efficient content discovery and navigation.'
+     },
+     {
+       title: 'Interactive Experience',
+       description: 'Development of engaging user interactions and smooth animations throughout the site, enhancing the overall user experience.'
+     },
+     {
+       title: 'Form Development',
+       description: 'Creation of robust contact forms with validation and smooth user feedback, ensuring effective communication channels.'
+     }
+   ],
+   imagePath: '/images/work/diet-app/home.png',
+   altImagePath: '/images/work/diet-app/home.png',
+   date: "2024-03-25",
+        gallery: [
+          '/images/work/diet-app/gallery.png',
+     '/images/work/diet-app/gallery1.png',
+     '/images/work/diet-app/gallery2.png',
+     '/images/work/diet-app/gallery3.png',
+     '/images/work/diet-app/gallery4.png',
+   ],
 },
   
   

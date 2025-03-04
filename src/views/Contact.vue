@@ -4,7 +4,7 @@
       <div class="w-1/2 max-md:w-full relative">
         <div class="sticky top-0 max-md:h-[500px] h-screen">
           <img 
-            src="/images/wall.webp" 
+            src="/images/profilpic-contact.png" 
             class="h-screen w-full max-md:h-[500px] object-cover object-center"
             alt="Profile image"
           />

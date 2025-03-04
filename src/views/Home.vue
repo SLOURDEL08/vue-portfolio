@@ -4,8 +4,7 @@
   <Header />
 
   <ScaleSection
-    imagePath="/images/wall.webp"
-        altImagePath="/images/wall.webp"
+    imagePath="/images/home-profil.png"
  :minScale="1.2"  
   :maxScale="2.5" 
     
@@ -19,32 +18,29 @@
             <div class="w-full flex flex-col justify-between">
                 <span class="smart-text sticky -top-1 mb-14 !leading-0 max-md:mb-4">(About Me)</span>
                 <div class="flex max-md:gap-3 gap-4">
-                  <a href="https://linkedin.com">
+                  <a href="https://www.linkedin.com/in/s%C3%A9bastien-lourdel-297715151/">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
-                      
                         <Linkedin class="text-white" :size="22" /> 
-                      
                     </div>
                     </a>
-                    <a href="https://linkedin.com">
+                    <a href="https://github.com/SLOURDEL08">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
-                      
                         <Github class="text-white" :size="22" />
-                       
                     </div>
                      </a>
-                     <a href="https://linkedin.com">
+                     <a href="https://gitlab.com/slourdel08">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
-                      
                         <Gitlab class="text-white" :size="22" />
-                        
                     </div>
                     </a>
-                    <a href="https://linkedin.com">
+                     <a href="https://www.behance.net/lourdel00">
                     <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
-                       
+                        <BehanceIcon class="text-white" :size="22" color="white" />
+                    </div>
+                    </a>
+                    <a href="/images/cv/cv2025.pdf" download="cv-sebastien-lourdel-2025.pdf" type="application/pdf">
+                    <div class="bg-secondary max-md:scale-105 p-3 rounded-full">
                         <FileBadge class="text-white" :size="22" />
-                        
                     </div>
                     </a>
                 </div>
@@ -85,6 +81,7 @@ class=""/>
 <script setup lang="ts">
 import { computed, defineAsyncComponent } from 'vue'
 import { Linkedin, Github, Gitlab, FileBadge } from 'lucide-vue-next'
+import BehanceIcon from '../components/BehanceIcon.vue';
 import { getAllProjects } from '../data/projects'
 
 // async
