@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue'
 import type { UserConfig } from 'vite'
 import imagemin from 'vite-plugin-imagemin'
 import { VitePWA } from 'vite-plugin-pwa'
-import webpGenerator from "vite-plugin-webp-generator"
 
 export default defineConfig({
   plugins: [
@@ -36,10 +35,7 @@ export default defineConfig({
         ],
       },
     }),
-    // Assurez-vous que webpGenerator est correctement appelé
-    webpGenerator({
-      quality: 80,
-    }),
+    // Suppression temporaire du plugin webpGenerator pour le déploiement
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
