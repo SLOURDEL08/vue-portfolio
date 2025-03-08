@@ -35,7 +35,6 @@ export default defineConfig({
         ],
       },
     }),
-    // Suppression temporaire du plugin webpGenerator pour le déploiement
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
