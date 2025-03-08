@@ -80,7 +80,7 @@ import { defineAsyncComponent, reactive } from 'vue'
 // Composants asynchrones
 const DefaultLayout = defineAsyncComponent(() => import('../components/layouts/DefaultLayout.vue'))
 const OptimizedImage = defineAsyncComponent(() => import('../components/OptimizedImage.vue'))
-const LineSeparator = defineAsyncComponent(() => import('../components/LineSeparator.vue'))
+const LineSeparator = defineAsyncComponent(() => import('../components/ui/LineSeparator.vue'))
 const ArrowIcon = defineAsyncComponent(() => import('../components/ui/ArrowIcon.vue'))
 
 // Données réutilisables
