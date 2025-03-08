@@ -3,12 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import type { UserConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [
-    vue(),
-   
-    
-  
-  ],
+  plugins: [vue()],
   build: {
     minify: 'terser',
     terserOptions: {
@@ -23,13 +18,11 @@ export default defineConfig({
         manualChunks: {
           'vendor': ['vue', 'vue-router', 'pinia'],
           'gsap': ['gsap'],
-          'lucide': ['lucide-vue-next'],
-          'ui': ['@iconify/vue']
+          'lucide': ['lucide-vue-next']
         }
       }
     },
     chunkSizeWarningLimit: 1600,
-    sourcemap: true,
-    cssCodeSplit: true
+    sourcemap: true
   }
 }) as UserConfig
