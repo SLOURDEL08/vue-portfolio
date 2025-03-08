@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import type { UserConfig } from 'vite'
 import imagemin from 'vite-plugin-imagemin'
-import webpGenerator from 'vite-plugin-webp-generator'
 import { VitePWA } from 'vite-plugin-pwa'
+// Import correct de webpGenerator
+import  webpGenerator  from 'vite-plugin-webp-generator'  // Assurez-vous que l'import est correct
 
 export default defineConfig({
   plugins: [
@@ -36,6 +37,7 @@ export default defineConfig({
         ],
       },
     }),
+    // Assurez-vous que webpGenerator est correctement appelé
     webpGenerator({
       quality: 80,
     }),
