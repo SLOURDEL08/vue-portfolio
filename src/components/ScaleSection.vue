@@ -11,10 +11,14 @@
    @mousemove="handleMouseMove"
  >
    <div class="relative w-full h-full">
-     <img
+     <!-- Image remplacée par OptimizedImage -->
+     <OptimizedImage
        ref="image"
        :src="imagePath"
-       class="w-full h-full object-center object-cover relative z-10"
+       :webpSrc="getWebpPath(imagePath)"
+       :alt="altText || 'Image de projet'"
+       className="w-full h-full object-center object-cover relative z-10"
+       sizes="100vw"
        :style="{ 
          transform: `scale(${currentScale}) translateY(${currentTranslateY}px)`
        }"
@@ -40,11 +44,14 @@
          }"
        >
          <div class="view-button-icon w-embed">
-           <img 
-             src="/images/arrow-botleft.png" 
+           <!-- Image du curseur aussi remplacée par OptimizedImage -->
+           <OptimizedImage 
+             src="/images/arrow-botleft.png"
+             webpSrc="/images/arrow-botleft.webp" 
+             alt="Flèche de navigation"
              width="20" 
-             height="20" 
-             class="invert rotate-180 scale-x-[-1]" 
+             height="20"
+             className="invert rotate-180 scale-x-[-1]"
            />
          </div>
        </div>
@@ -59,9 +66,13 @@
 <script lang="ts">
 import { defineComponent, ref, computed, onMounted, onUnmounted, PropType } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
+import OptimizedImage from '../components/OptimizedImage.vue'
 
 export default defineComponent({
  name: 'ScaleSection',
+ components: {
+   OptimizedImage
+ },
  props: {
    imagePath: {
      type: String as PropType<string>,
@@ -91,6 +102,10 @@ export default defineComponent({
    animationRange: {
      type: Number as PropType<number>,
      default: 2
+   },
+   altText: {
+     type: String as PropType<string>,
+     default: ''
    }
  },
 
@@ -101,6 +116,15 @@ export default defineComponent({
    const cursorPos = ref({ x: 0, y: 0 })
    const currentScale = ref(props.maxScale)
    const currentTranslateY = ref(0)
+
+   // Fonction pour convertir le chemin d'image en chemin WebP
+   const getWebpPath = (imagePath: string) => {
+     if (!imagePath) return '';
+     const lastDotIndex = imagePath.lastIndexOf('.');
+     if (lastDotIndex === -1) return '';
+     const basePath = imagePath.substring(0, lastDotIndex);
+     return `${basePath}.webp`;
+   };
 
    const containerClasses = computed(() => {
      return props.variant === 'enhanced' ? 'h-[850px]' : 'h-[850px]'
@@ -174,14 +198,20 @@ export default defineComponent({
      handleMouseEnter,
      handleMouseLeave,
      handleMouseMove,
-     linkPathVerification
+     linkPathVerification,
+     getWebpPath
    }
  }
 })
 </script>
 
 <style scoped>
-
+/* Style pour l'effet de grain */
+.grain-pattern {
+  background-image: url('/images/grain.png');
+  background-repeat: repeat;
+  background-size: 600px;
+}
 
 .view-button.large {
  width: 80px;

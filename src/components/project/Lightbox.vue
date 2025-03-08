@@ -49,9 +49,12 @@
             :key="currentIndex"
             class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center"
           >
-            <img 
+            <OptimizedImage 
               :src="images[currentIndex]" 
-              class="max-w-full max-h-[80vh] object-contain"
+              :webpSrc="getWebpPath(images[currentIndex])"
+              :alt="`Image ${currentIndex + 1} en plein écran`"
+              className="max-w-full max-h-[80vh] object-contain"
+              sizes="90vw"
               @click.stop
             />
           </div>
@@ -59,7 +62,7 @@
 
         <!-- Thumbnails -->
         <div class="absolute bottom-4 left-0 right-0">
-          <div class="flex justify-center items-center gap-2 px-4 overflow-x-auto py-2">
+          <div class="flex justify-center items-center gap-2 px-4 overflow-x-auto py-2 thumbnails">
             <button
               v-for="(image, index) in images"
               :key="index"
@@ -67,9 +70,12 @@
               class="relative flex-shrink-0 w-20 h-20 transition-all duration-200 transform hover:scale-105"
               :class="{ 'ring-2 ring-white ring-offset-2 ring-offset-black': currentIndex === index }"
             >
-              <img 
+              <OptimizedImage 
                 :src="image"
-                class="w-full h-full object-cover"
+                :webpSrc="getWebpPath(image)"
+                :alt="`Miniature ${index + 1}`"
+                className="w-full h-full object-cover"
+                sizes="80px"
                 :class="{ 'opacity-50': currentIndex !== index }"
               />
             </button>
@@ -82,9 +88,13 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, PropType } from 'vue'
+import OptimizedImage from '../../components/OptimizedImage.vue'
 
 export default defineComponent({
   name: 'Lightbox',
+  components: {
+    OptimizedImage
+  },
   props: {
     images: {
       type: Array as PropType<string[]>,
@@ -98,6 +108,15 @@ export default defineComponent({
   emits: ['close', 'update:current-index'],
   
   setup(props, { emit }) {
+    // Fonction pour générer le chemin WebP
+    const getWebpPath = (imagePath: string) => {
+      if (!imagePath) return '';
+      const lastDotIndex = imagePath.lastIndexOf('.');
+      if (lastDotIndex === -1) return '';
+      const basePath = imagePath.substring(0, lastDotIndex);
+      return `${basePath}.webp`;
+    };
+
     const handleClose = () => {
       emit('close')
     }
@@ -148,7 +167,8 @@ export default defineComponent({
       handleClose,
       previousImage,
       nextImage,
-      updateIndex
+      updateIndex,
+      getWebpPath
     }
   }
 })

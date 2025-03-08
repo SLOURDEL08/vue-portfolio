@@ -1,6 +1,6 @@
 <template>
   <DefaultLayout>
-    <div v-if="project" class="project-detail">
+    <article v-if="project" class="project-detail">
       <Header 
         :title="project.title"
         :description="project.description"
@@ -12,22 +12,27 @@
       />
       <Navigation :currentSlug="project.slug" />
 
-      <ScaleSection
-        :imagePath="project.imagePath"
-        :minScale="1"
-        :maxScale="2"
-        class="-mx-16 max-md:-mx-10 max-md:my-10 my-16"
-        :altImagePath="project.imagePath"
-variant="enhanced"  
-      />
+      <section aria-label="Image principale du projet">
+        <ScaleSection
+          :imagePath="project.imagePath"
+          :minScale="1"
+          :maxScale="2"
+          class="-mx-16 max-md:-mx-10 max-md:my-10 my-16"
+          :altText="`${project.title} - Image principale`"
+          variant="enhanced"  
+        />
+      </section>
 
-      <GridContent
-        title="(Process)"
-        :services="project.services"
-        variant="block"
-      />
+      <section aria-labelledby="process-section">
+        <GridContent
+          id="process-section"
+          title="(Process)"
+          :services="project.services"
+          variant="block"
+        />
+      </section>
       
-      <div class="!-mx-16 -mb-16 max-md:!-mx-14 max-xs:!-mx-10">
+      <section aria-label="Galerie du projet" class="!-mx-16 -mb-16 max-md:!-mx-14 max-xs:!-mx-10">
         <Gallery
           :max-scale="5"
           :min-scale="1.5"
@@ -36,7 +41,11 @@ variant="enhanced"
           :gallery="project.gallery" 
           class=""
         />
-      </div>
+      </section>
+    </article>
+    
+    <div v-else role="alert" class="text-center py-16">
+      <p class="text-xl">Chargement du projet...</p>
     </div>
   </DefaultLayout>
 </template>
@@ -52,16 +61,13 @@ import { useTransitionStore } from '../stores/transitionStore'
 const DefaultLayout = defineAsyncComponent(() => import('../components/layouts/DefaultLayout.vue'))
 const Header = defineAsyncComponent(() => import('../components/project/Header.vue'))
 const ScaleSection = defineAsyncComponent(() => import('../components/ScaleSection.vue'))
-const GridContent = defineAsyncComponent(() => import('../components/GridContent.vue'))
+const GridContent = defineAsyncComponent(() => import('../components/gridcontent/GridContent.vue'))
 const Navigation = defineAsyncComponent(() => import('../components/project/Navigation.vue'))
 const Gallery = defineAsyncComponent(() => import('../components/project/Gallery.vue'))
 
 const route = useRoute()
 const transitionStore = useTransitionStore()
 const project = ref<Project | undefined>(undefined)
-
-// Gérer la transition lors du changement de route
-
 
 // Charger le projet initial et lors des changements de route
 watchEffect(async () => {

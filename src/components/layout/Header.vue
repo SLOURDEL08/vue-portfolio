@@ -1,0 +1,47 @@
+<template>
+  <header class="mb-16 max-md:mb-10">
+    <h1 class="smart-bigtitle mb-6 text-secondary">
+      Sébastien L.<br />
+      Développeur Web
+    </h1>
+    <div class="justify-between items-end flex">
+      <h2 class="smart-text">
+        (Arras, France)
+      </h2>
+     
+      <a 
+        href="#content" 
+        class="flex items-center gap-3 cursor-pointer group"
+        v-hover-diagonal
+        aria-label="Descendre vers le contenu principal"
+        @click.prevent="scrollToContent"
+      >
+        <div class="relative overflow-hidden w-6 h-6">
+          <OptimizedImage 
+            src="/images/arrow-botleft.png" 
+            webpSrc="/images/arrow-botleft.webp" 
+            alt=""
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <span v-hover-slide class="smart-text">Scroll down</span>
+      </a>
+    </div>
+  </header>
+</template>
+
+<script setup lang="ts">
+import { defineAsyncComponent } from 'vue';
+const OptimizedImage = defineAsyncComponent(() => import('../OptimizedImage.vue'));
+
+// Fonction pour un défilement fluide
+const scrollToContent = () => {
+  const contentElement = document.getElementById('content');
+  if (contentElement) {
+    contentElement.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'start'
+    });
+  }
+};
+</script>

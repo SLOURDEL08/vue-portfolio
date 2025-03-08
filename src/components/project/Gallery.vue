@@ -1,5 +1,5 @@
 <template>
- <div class="gallery w-full grid grid-cols-1 overflow-hidden relative">
+ <div class="gallery w-full grid grid-cols-2 overflow-hidden relative">
    <div 
      v-for="(image, index) in gallery" 
      :key="index"
@@ -11,11 +11,13 @@
      @mousemove="handleMouseMove($event, index)"
    >
      <div class="relative w-full h-full">
-       <!-- Image principale -->
-       <img
+       <!-- Image principale avec OptimizedImage -->
+       <OptimizedImage
          :ref="el => setImageRef(el as HTMLImageElement, index)"
          :src="image"
-         class="w-full h-[600px] max-md:h-80 object-contain object-bottom relative z-10"
+         :webpSrc="getWebpPath(image)"
+         :alt="`Image ${index + 1} de la galerie`"
+         className="w-full h-[600px] max-md:h-80 object-cover object-left relative z-10"
          :style="{ 
            transform: `scale(${scales[index]}) translateY(${translates[index]}px)`
          }"
@@ -45,11 +47,13 @@
            }"
          >
            <div class="view-button-icon w-embed">
-             <img 
-               src="/images/eyes.png" 
+             <OptimizedImage
+               src="/images/eyes.png"
+               webpSrc="/images/eyes.webp" 
+               alt="Icon view"
                width="40" 
-               height="40" 
-               class="scale-x-[-1]" 
+               height="40"
+               className="scale-x-[-1]"
              />
            </div>
          </div>
@@ -71,10 +75,11 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted, PropType } from 'vue'
 import Lightbox from './Lightbox.vue'
+import OptimizedImage from '../OptimizedImage.vue'
 
 export default defineComponent({
  name: 'Gallery',
- components: { Lightbox },
+ components: { Lightbox, OptimizedImage },
  props: {
    gallery: {
      type: Array as PropType<string[]>,
@@ -112,6 +117,15 @@ export default defineComponent({
    const translates = ref<number[]>([])
    const isLightboxOpen = ref(false)
    const currentImageIndex = ref(0)
+
+   // Nouvelle fonction pour obtenir le chemin WebP
+   const getWebpPath = (imagePath: string) => {
+     if (!imagePath) return '';
+     const lastDotIndex = imagePath.lastIndexOf('.');
+     if (lastDotIndex === -1) return '';
+     const basePath = imagePath.substring(0, lastDotIndex);
+     return `${basePath}.webp`;
+   };
 
    const setContainerRef = (el: HTMLDivElement | null, index: number) => {
      if (el) {
@@ -207,7 +221,8 @@ export default defineComponent({
      handleMouseLeave,
      handleMouseMove,
      openLightbox,
-     closeLightbox
+     closeLightbox,
+     getWebpPath
    }
  }
 })

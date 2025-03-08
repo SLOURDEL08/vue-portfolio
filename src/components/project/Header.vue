@@ -1,71 +1,92 @@
 <template>
-  <div class="space-y-12">
-    <div class="">
+  <header class="space-y-12">
+    <div>
       <div class="space-y-4 max-lg:block gap-16 flex items-end justify-between">
-        <div class="w-[70%] max-lg:w-full ">
+        <!-- Section principale du titre -->
+        <div class="w-[70%] max-lg:w-full">
           <h1 class="smart-bigtitle text-secondary mb-4">{{ title }}</h1>
           <p class="smart-subtitle text-secondary !font-[600]">{{ description }}</p>
         </div>
         
-        <div class="w-[30%] max-lg:w-full text-right">
+        <!-- Détails du projet -->
+        <section class="w-[30%] max-lg:w-full text-right" aria-label="Détails du projet">
+          <!-- Client -->
           <div class="flex items-center justify-between w-full py-4">
-            <h3 class="text-xl text-secondary font-medium">(Client)</h3>
+            <h2 class="text-xl text-secondary font-medium">(Client)</h2>
             <p class="font-semibold text-secondary text-xl">{{ client }}</p>
           </div>
           <LineSeparator/>
+          
+          <!-- Année -->
           <div class="flex items-center justify-between w-full border-secondary py-4">
-            <h3 class="text-xl text-secondary font-medium">(Year)</h3>
-            <span class="font-semibold text-secondary text-xl">{{ year }}</span>
+            <h2 class="text-xl text-secondary font-medium">(Year)</h2>
+            <time datetime="{{ year }}" class="font-semibold text-secondary text-xl">{{ year }}</time>
           </div>
           <LineSeparator/>
-           <div v-if="website" class="flex items-center justify-between w-full border-secondary py-4">
-    <h3 class="text-xl text-secondary font-medium">(Website)</h3>
-    <a :href="website" target="_blank" class="font-semibold text-secondary text-xl underline">
-      {{ formattedWebsite }}
-    </a>
+          
+          <!-- Site web -->
+          <div v-if="website" class="flex items-center justify-between w-full border-secondary py-4">
+            <h2 class="text-xl text-secondary font-medium">(Website)</h2>
+            <a 
+              :href="website" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="font-semibold text-secondary text-xl underline"
+              :aria-label="`Visiter le site ${formattedWebsite} (s'ouvre dans un nouvel onglet)`"
+            >
+              {{ formattedWebsite }}
+            </a>
+          </div>
+          <LineSeparator v-if="website"/>
+          
+          <!-- Tags -->
+         <div class="flex items-center justify-between w-full border-secondary py-4">
+  <h2 class="text-xl text-secondary font-medium">(Tags)</h2>
+  <div class="flex justify-end gap-2 flex-wrap relative h-10">
+    <transition name="fade" mode="out-in">
+      <span 
+        :key="currentTagIndex"
+        class="bg-secondary w-max text-white px-4 py-2 rounded-full font-semibold text-base absolute right-0"
+      >
+        {{ tags[currentTagIndex] }}
+      </span>
+    </transition>
   </div>
-          <LineSeparator/>
-          <div class="flex items-center justify-between w-full border-secondary py-4">
-            <h3 class="text-xl text-secondary font-medium">(Tags)</h3>
-            <div class="flex justify-end gap-2 flex-wrap">
-              <span 
-                v-if="tags.length > 0"
-                class="bg-secondary text-white px-4 py-2 rounded-full font-semibold text-base"
-              >
-                {{ tags[0] }}
-              </span>
-            </div>
+</div>
+        </section>
+      </div>
+      
+      <!-- Technologies utilisées -->
+      <section class="mt-8" aria-label="Technologies utilisées">
+        <div class="flex flex-wrap gap-4">
+          <div 
+            v-for="tech in techs" 
+            :key="tech.name"
+            class="flex items-center gap-0 transition-all duration-300 rounded-lg p-1"
+            :title="tech.name"
+          >
+            <Icon 
+              :icon="tech.icon"
+              class="w-10 !text-secondary h-10"
+              :aria-label="tech.name"
+              :class="{
+                'text-yellow-400': tech.name === 'JavaScript',
+                'text-blue-500': tech.name === 'TypeScript',
+                'text-blue-400': tech.name === 'React',
+                'text-cyan-500': tech.name === 'Tailwind CSS'
+              }"
+            />
           </div>
         </div>
-      </div>
-     <div class="mt-8">
-    <div class="flex flex-wrap gap-4">
-      <div 
-        v-for="tech in techs" 
-        :key="tech.name"
-        class="flex items-center gap-0 transition-all duration-300 rounded-lg  p-1"
-      >
-        <Icon 
-          :icon="tech.icon"
-          class="w-10 !text-secondary h-10"
-          :class="{
-            'text-yellow-400': tech.name === 'JavaScript',
-            'text-blue-500': tech.name === 'TypeScript',
-            'text-blue-400': tech.name === 'React',
-            'text-cyan-500': tech.name === 'Tailwind CSS'
-          }"
-        />
-      </div>
+      </section>
     </div>
-  </div>
-    </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
-import LineSeparator from '../../components/LineSeparator.vue'
+import LineSeparator from '../ui/LineSeparator.vue'
 import { Icon } from '@iconify/vue'
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 interface Tech {
   name: string
@@ -82,10 +103,48 @@ interface HeaderProps {
   techs?: Tech[]
 }
 
-const props = defineProps<HeaderProps>()
+const props = withDefaults(defineProps<HeaderProps>(), {
+  techs: () => []
+})
 
 const formattedWebsite = computed(() => {
   if (!props.website) return ''
   return props.website.replace(/^https?:\/\//i, '')
+
+
+  
+})
+
+
+// Dans votre section script
+const currentTagIndex = ref(0)
+
+// Mettre en place l'intervalle pour faire défiler les tags
+let tagInterval: number | null = null
+
+onMounted(() => {
+  if (props.tags.length > 1) {
+    tagInterval = window.setInterval(() => {
+      currentTagIndex.value = (currentTagIndex.value + 1) % props.tags.length
+    }, 3000)
+  }
+})
+
+onUnmounted(() => {
+  if (tagInterval !== null) {
+    clearInterval(tagInterval)
+  }
 })
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
