@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import type { UserConfig } from 'vite'
 import imagemin from 'vite-plugin-imagemin'
-import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   plugins: [
@@ -35,12 +34,8 @@ export default defineConfig({
         ],
       },
     }),
-    VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,avif}'],
-      },
-    }),
+    
+  
   ],
   build: {
     minify: 'terser',
