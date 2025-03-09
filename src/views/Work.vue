@@ -65,7 +65,6 @@ const DefaultLayout = defineAsyncComponent(() => import('../components/layouts/D
 const ScaleSection = defineAsyncComponent(() => import('../components/ScaleSection.vue'))
 const ProjectGrid = defineAsyncComponent(() => import('../components/ProjectGrid.vue'))
 const ScaleContent = defineAsyncComponent(() => import('../components/ScaleContent.vue'))
-const OptimizedImage = defineAsyncComponent(() => import('../components/OptimizedImage.vue'))
 
 const projects = getAllProjects()
 const firstFourProjects = computed(() => projects.slice(0, 4))

@@ -35,9 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue';
-const OptimizedImage = defineAsyncComponent(() => import('../OptimizedImage.vue'));
-
 // Fonction pour un défilement fluide
 const scrollToContent = () => {
   const contentElement = document.getElementById('content');
