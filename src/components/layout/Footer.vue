@@ -1,5 +1,9 @@
 <template>
-  <footer class="text-white text-center bg-secondary p-16 py-20" role="contentinfo" aria-label="Informations de contact et liens">
+  <footer 
+    class="text-white text-center bg-secondary p-16 py-20 fixed-size-footer" 
+    role="contentinfo" 
+    aria-label="Informations de contact et liens"
+  >
     <div class="grid grid-rows-[auto_1fr] gap-36 max-md:gap-20">
       <!-- Section Connect -->
       <section aria-labelledby="connect-heading">
@@ -62,9 +66,18 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import { defineAsyncComponent } from 'vue';
+
+// Import des composants en mode asynchrone pour améliorer les performances
 const Button = defineAsyncComponent(() => import('../ui/Button.vue'));
 const LinkSection = defineAsyncComponent(() => import('../LinkSection.vue'));
+
+// Préchargement des ressources critiques
+onMounted(() => {
+  // Précharger les styles du footer
+  document.body.classList.add('footer-loaded');
+});
 
 interface Page {
   name: string
@@ -126,7 +139,15 @@ const repositories: Repository[] = [
 <style scoped>
 footer {
   min-height: 100vh;
-  contain: layout style;
+  contain: layout size style;
+  box-sizing: border-box;
+}
+
+/* Classe spécifique pour la taille fixe du footer */
+.fixed-size-footer {
+  min-height: 100vh;
+  contain: layout size;
+  box-sizing: border-box;
 }
 
 .smart-bigtitle {
@@ -137,5 +158,15 @@ footer {
 a:hover .underline-effect-wrapper {
   opacity: 0.8;
   transition: opacity 0.2s ease;
+}
+
+/* Style pour le chargement progressif */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.footer-loaded footer {
+  animation: fadeIn 0.3s ease-in;
 }
 </style>

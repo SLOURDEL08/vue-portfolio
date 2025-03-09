@@ -1,0 +1,51 @@
+/* critical.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #1E1E21;
+  font-family: 'Inter', sans-serif;
+}
+
+.layout-main {
+  min-height: 100vh;
+}
+
+.bg-primary {
+  background-color: #1E1E21;
+}
+
+.bg-secondary {
+  background-color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.smart-bigtitle {
+  font-size: clamp(2rem, 7vw + 2rem, 9rem);
+  font-weight: 600;
+  line-height: 1;
+  min-height: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .max-md\:p-14 {
+    padding: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .max-xs\:p-10 {
+    padding: 2.5rem;
+  }
+}
