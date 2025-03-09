@@ -16,15 +16,19 @@
         aria-label="Descendre vers le contenu principal"
         @click.prevent="scrollToContent"
       >
+        <div 
+        class="flex items-center gap-3 cursor-pointer group"
+        v-hover-diagonal
+      >
         <div class="relative overflow-hidden w-6 h-6">
-          <OptimizedImage 
-            src="/images/arrow-botleft.png" 
-            webpSrc="/images/arrow-botleft.webp" 
-            alt=""
-            className="w-full h-full object-contain"
+          <img 
+            src="/images/arrow-botleft-md.webp" 
+            alt="arrow"
+            class="w-full h-full object-contain"
           />
         </div>
         <span v-hover-slide class="smart-text">Scroll down</span>
+      </div>
       </a>
     </div>
   </header>

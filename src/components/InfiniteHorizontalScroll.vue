@@ -14,7 +14,7 @@
         :key="index" 
         class="text-[100px] !leading-none uppercase italic max-md:text-6xl font-bold"
       >
-        <b class="font-light">*</b>{{ text }}
+        {{ text }}
       </span>
     </div>
   </div>

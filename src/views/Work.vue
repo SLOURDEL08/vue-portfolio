@@ -10,11 +10,11 @@
           <div class="w-[20%] max-md:w-full text-right">
             <div class="flex items-center max-md:justify-end gap-3 cursor-pointer group" v-hover-diagonal>
               <div class="relative overflow-hidden w-6 h-6">
-                <OptimizedImage 
-                  src="/images/arrow-botleft.png" 
-                  webpSrc="/images/arrow-botleft.webp"
-                  alt="Flèche d'exploration" 
-                  className="w-full h-full object-contain" 
+                <img 
+                  src="/images/arrow-botleft-md.webp" 
+                  alt="arrow" 
+                  loading="lazy"
+                  class="w-full h-full object-contain" 
                 />
               </div>
               <a v-hover-slide class="smart-text">Explore</a>
