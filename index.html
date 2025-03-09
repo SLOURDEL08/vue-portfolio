@@ -5,42 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <link 
-      rel="preconnect" 
-      href="https://fonts.googleapis.com" 
-    />
-    <link 
-      rel="preconnect" 
-      href="https://fonts.gstatic.com" 
-      crossorigin 
-    />
-    <link 
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-  
+    <!-- Préchargement optimisé des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <!-- Chargement de la police avec font-display: swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS critique en ligne -->
     <style>
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: local('Inter');
-      }
-      
+      /* Styles de base pour éviter les CLS */
       html {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
         background-color: #1E1E21;
       }
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Placeholder pour le contenu pendant le chargement */
+      .skeleton {
+        background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+      
+      @keyframes loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
     </style>
-
-    <title>Vite + Vue + TS</title>
+    
+    <title>Portfolio - Sébastien Lourdel</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Placeholder visuel pendant le chargement de l'application -->
+      <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="skeleton" style="width: 80%; max-width: 800px; height: 400px; border-radius: 8px;"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
