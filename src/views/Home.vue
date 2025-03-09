@@ -3,7 +3,7 @@
     <Header />
 
     <ScaleSection
-      imagePath="/images/home-profil.png"
+      imagePath="/images/home-profil.webp"
       :minScale="1.2"  
       :maxScale="2.5" 
       altText="Photo de profil"
