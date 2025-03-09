@@ -52,9 +52,5 @@ const OptimizedImage = defineAsyncComponent(() =>
   transition: transform 0.3s ease-out;
 }
 
-.grain-pattern {
-  background-image: url('/images/grain.png');
-  background-repeat: repeat;
-  background-size: 600px;
-}
+
 </style>

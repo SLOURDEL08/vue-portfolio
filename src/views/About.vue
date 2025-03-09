@@ -119,7 +119,7 @@ const educationItems = reactive([
 }
 
 .grain-pattern {
-  background-image: url('/images/grain.png');
+  background-image: url('/images/grain.webp');
   background-repeat: repeat;
   background-size: 600px;
 }

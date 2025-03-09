@@ -206,12 +206,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* Style pour l'effet de grain */
-.grain-pattern {
-  background-image: url('/images/grain.png');
-  background-repeat: repeat;
-  background-size: 600px;
-}
+
 
 .view-button.large {
  width: 80px;
