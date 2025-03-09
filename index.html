@@ -5,15 +5,49 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- Préchargement optimisé des polices -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Chargement de la police avec font-display: swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    
-    <!-- CSS critique en ligne -->
+    <!-- CSS critique et définitions de polices en ligne -->
     <style>
+      /* Définitions des polices auto-hébergées */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
+      }
+      
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url('/fonts/inter-v18-latin-500.woff2') format('woff2');
+      }
+      
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('/fonts/inter-v18-latin-600.woff2') format('woff2');
+      }
+      
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/inter-v18-latin-700.woff2') format('woff2');
+      }
+      
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url('/fonts/inter-v18-latin-900.woff2') format('woff2');
+      }
+      
       /* Styles de base pour éviter les CLS */
       html {
         font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -25,7 +59,24 @@
         padding: 0;
       }
       
-      /* Placeholder pour le contenu pendant le chargement */
+      /* CSS critique pour les classes fréquemment utilisées */
+      .smart-bigtitle {
+        font-size: clamp(2rem, 7vw + 2rem, 9rem);
+        font-weight: 600;
+        letter-spacing: -5px;
+        line-height: 1;
+        color: #1E1E21;
+        min-height: 1.2em;
+      }
+      
+      .smart-text {
+        font-size: clamp(1.6rem, 2vw + 0.1rem, 2rem);
+        font-weight: 600;
+        line-height: 140%;
+        color: #1E1E21;
+      }
+      
+      /* Placeholder pour le chargement */
       .skeleton {
         background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.1));
         background-size: 200% 100%;
@@ -37,6 +88,10 @@
         100% { background-position: -200% 0; }
       }
     </style>
+    
+    <!-- Préchargement des polices -->
+    <link rel="preload" href="/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin>
     
     <title>Portfolio - Sébastien Lourdel</title>
   </head>
