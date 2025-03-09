@@ -235,12 +235,12 @@ export default defineComponent({
 
 /* Animation d'entrée */
 .animate-scale-rotate-in {
- animation: scaleRotateIn 0.35s forwards;
+ animation: scaleRotateIn 0.2s forwards;
 }
 
 /* Animation de sortie */
 .animate-scale-rotate-out {
- animation: scaleRotateOut 0.35s forwards;
+ animation: scaleRotateOut 0.2s forwards;
 }
 
 @keyframes scaleRotateIn {

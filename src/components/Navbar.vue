@@ -30,7 +30,7 @@
       <div 
         v-for="i in 5" 
         :key="i" 
-        class="stripe absolute top-0 w-[20%] h-full bg-secondary -translate-y-full"
+        class="stripe absolute top-0 w-[20%] h-full bg-[#1E1E21] -translate-y-full"
         :style="{ left: `${(i-1) * 20}%` }"
       ></div>
     </div>

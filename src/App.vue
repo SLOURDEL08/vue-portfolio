@@ -7,7 +7,6 @@
       </transition>
     </router-view>
   </main>
-  <div class="footer-placeholder" style="min-height: 100vh;"></div>
   <Footer class="fixed-size-footer" />
 </template>
 
@@ -34,15 +33,9 @@ onMounted(() => {
   min-height: 100vh; /* Réserve l'espace pour le contenu principal */
 }
 
-.footer-placeholder {
-  min-height: 100vh; /* Réserve l'espace pour le footer */
-  visibility: hidden;
-}
 
-.fixed-size-footer {
-  min-height: 100vh;
-  contain: layout style;
-}
+
+
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.3s ease;

@@ -138,17 +138,10 @@ const repositories: Repository[] = [
 
 <style scoped>
 footer {
-  min-height: 100vh;
-  contain: layout size style;
   box-sizing: border-box;
 }
 
 /* Classe spécifique pour la taille fixe du footer */
-.fixed-size-footer {
-  min-height: 100vh;
-  contain: layout size;
-  box-sizing: border-box;
-}
 
 .smart-bigtitle {
   height: min-content;

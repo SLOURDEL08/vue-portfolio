@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f5f3ef] max-xs:p-10 max-md:p-14 p-16 min-h-screen">
+  <div class="bg-primary max-xs:p-10 max-md:p-14 p-16 min-h-screen">
     <main class="layout-main">
       <div class="content-container">
         <slot></slot>

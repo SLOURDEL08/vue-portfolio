@@ -6,7 +6,7 @@
     :aria-labelledby="`${id}-title`"
   >
     <LineSeparator class="pb-16 max-md:pb-10" :trigger-section-id="id" />
-    <div class="grid max-md:flex max-md:flex-col grid-cols-[0.5fr_2px_1fr] gap-x-16 gap-y-16 auto-rows-auto">
+    <div class="grid max-lg:flex max-lg:flex-col grid-cols-[0.5fr_2px_1fr] gap-x-16 gap-y-16 auto-rows-auto">
       <!-- En-tête de section -->
       <div class="w-full">
         <div class="sticky top-0 flex justify-between items-center">

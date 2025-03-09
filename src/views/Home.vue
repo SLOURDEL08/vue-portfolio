@@ -11,7 +11,7 @@
 
     <section id="content" class="grid my-16 max-md:my-14 max-md:flex max-md:gap-8 max-md:flex-col-reverse grid-cols-[1fr_2px_.5fr] gap-x-16 gap-y-16 auto-rows-auto">
       <div class="w-full">
-        <h2 class="smart-title">As a Front-End Developer, I bring designs to life with precise integration and complex animations.</h2>
+        <h2 class="smart-title max-lg:text-5xl max-xl:text-6xl">As a Front-End Developer, I bring designs to life with precise integration and complex animations.</h2>
       </div>
       <VerticalSeparator class="max-md:hidden" trigger-section-id="myheader"/>
       <div class="w-full flex flex-col justify-between">

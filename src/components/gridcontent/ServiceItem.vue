@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-3">
-    <h3 v-if="title" class="smart-titlegrid">{{ title }}</h3>
-    <p v-if="description" class="smart-desc">{{ description }}</p>
+    <h3 v-if="title" class="smart-titlegrid max-xl:text-3xl">{{ title }}</h3>
+    <p v-if="description" class="smart-desc max-xl:text-base">{{ description }}</p>
   </div>
 </template>
 
