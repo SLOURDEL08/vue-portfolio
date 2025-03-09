@@ -5,7 +5,7 @@
       <Button 
         @click="menuStore.toggleMenu"
         class="menu-button !z-[99999999] overflow-hidden" 
-        aria-expanded="menuStore.isMenuOpen"
+        :aria-expanded="menuStore.isMenuOpen"
         aria-controls="main-menu"
         aria-label="Ouvrir le menu principal"
       >
@@ -37,14 +37,14 @@
 
     <!-- Menu Container -->
     <div 
-  id="main-menu"
-  class="fixed top-0 left-0 w-full h-screen flex justify-center items-center z-[95]"
-  :class="{ 'pointer-events-auto': menuStore.isMenuOpen, 'pointer-events-none': !menuStore.isMenuOpen }"
-  :aria-hidden="!menuStore.isMenuOpen" 
-  role="dialog"
-  :aria-modal="menuStore.isMenuOpen"    
-  aria-label="Menu principal"
->
+      id="main-menu"
+      class="fixed top-0 left-0 w-full h-screen flex justify-center items-center z-[95]"
+      :class="{ 'pointer-events-auto': menuStore.isMenuOpen, 'pointer-events-none': !menuStore.isMenuOpen }"
+      :aria-hidden="!menuStore.isMenuOpen" 
+      role="dialog"
+      :aria-modal="menuStore.isMenuOpen"    
+      aria-label="Menu principal"
+    >
       <!-- Bouton Close -->
       <button 
         ref="closeButtonRef"
