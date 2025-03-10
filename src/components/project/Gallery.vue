@@ -48,7 +48,7 @@
          >
            <div class="view-button-icon w-embed">
              <OptimizedImage
-               src="/images/eyes.png"
+               src="/images/eyes.webp"
                webpSrc="/images/eyes.webp" 
                alt="Icon view"
                width="40" 
@@ -229,11 +229,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.grain-pattern {
- background-image: url('/images/grain.webp');
- background-repeat: repeat;
- background-size: 600px;
-}
+
 
 .view-button.large {
  width: 80px;

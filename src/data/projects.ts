@@ -58,17 +58,17 @@ export const projects: Project[] = [
     description: 'Fully responsive design implementation across all devices, ensuring a seamless user experience from desktop to mobile with a mobile-first approach.'
   }
   ],
-  imagePath: '/images/work/digitalizerr/home.png',
-  altImagePath: '/images/work/digitalizerr/alt.png',
+  imagePath: '/images/work/digitalizerr/home.webp',
+  altImagePath: '/images/work/digitalizerr/alt.webp',
   date: "2024-01-15",
   gallery: [
-    '/images/work/digitalizerr/gallery.png',
-    '/images/work/digitalizerr/gallery1.png',
-    '/images/work/digitalizerr/gallery2.png',
-    '/images/work/digitalizerr/gallery3.png',
-    '/images/work/digitalizerr/gallery4.png',
-    '/images/work/digitalizerr/gallery5.png',
-    '/images/work/digitalizerr/gallery6.png',
+    '/images/work/digitalizerr/gallery.webp',
+    '/images/work/digitalizerr/gallery1.webp',
+    '/images/work/digitalizerr/gallery2.webp',
+    '/images/work/digitalizerr/gallery3.webp',
+    '/images/work/digitalizerr/gallery4.webp',
+    '/images/work/digitalizerr/gallery5.webp',
+    '/images/work/digitalizerr/gallery6.webp',
   ],
 },
   {
