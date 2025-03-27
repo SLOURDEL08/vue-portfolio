@@ -1,37 +1,37 @@
 export const services = [
   {
-    title: "Web Design & Development",
-    description: "I design and develop engaging, responsive websites that not only look great but work seamlessly. From the initial concept to the final product, I ensure your website meets both user needs and business goals."
+    title: "Conception / Développement Web",
+    description: "Je conçois et développe des sites web engageants et réactifs qui ne sont pas seulement esthétiques, mais également parfaitement fonctionnels. De la conception initiale au produit final, je m'assure que votre site réponde aux besoins des utilisateurs tout en atteignant les objectifs commerciaux."
   },
   {
-    title: "Frontend Development",
-    description: "I specialize in building interactive, dynamic user interfaces using modern technologies like React and Vue.js. I focus on creating smooth, fast experiences that are easy to use and highly functional."
+    title: "Développement Front-End",
+    description: "Je me spécialise dans la création d'interfaces utilisateurs interactives et dynamiques, en utilisant des technologies modernes telles que React et Vue.js. Mon objectif est de concevoir des expériences rapides, fluides, faciles à utiliser et hautement fonctionnelles."
   },
   {
-    title: "Motion Graphics & Animations",
-    description: "I bring your brand to life with creative animations and motion graphics. Whether it's a micro-interaction, a complex animation, or an animated explainer video, I focus on making your content both engaging and memorable."
+    title: "Graphisme et Animation",
+    description: "Je donne vie à votre marque à travers des animations créatives et des graphismes en mouvement. Que ce soit pour des micro-interactions, des animations complexes ou des vidéos explicatives animées, je me concentre sur la création de contenus à la fois captivants et mémorables."
   },
   {
-    title: "UI/UX Design",
-    description: "I design user-centered interfaces with a focus on usability and aesthetics. By understanding the needs of your users, I create intuitive and visually appealing experiences that enhance engagement and satisfaction."
+    title: "Conception UI/UX",
+    description: "Je conçois des interfaces centrées sur l'utilisateur, en mettant l'accent sur l'ergonomie et l'esthétique. En comprenant les besoins de vos utilisateurs, je crée des expériences intuitives et visuellement attrayantes, favorisant ainsi l'engagement et la satisfaction."
   }
 ];
 
 export const formations = [
   {
-    title: "Graphic Design",
-    description: "I began my passion for design during my adolescence by working on personal projects using Photoshop, Illustrator, Cinema4D, and video editing. This experience allowed me to develop a deep understanding of visual creation tools."
+    title: "Conception Graphique",
+    description: "J'ai développé ma passion pour le design dès mon adolescence en travaillant sur des projets personnels à l'aide de Photoshop, Illustrator et de logiciels de montage vidéo."
   },
   {
-    title: "POPSchool Intensive Training",
-    description: "In February 2019, I started a 6-month intensive training at POPSchool, where I learned the fundamentals of web development (HTML, CSS, JavaScript, PHP), as well as professional practices like agile methodology, Git, and team project management."
+    title: "Formation POPSchool",
+    description: "En février 2019, j'ai débuté une formation intensive chez PopSchool où j'ai découvert les langages fondamentaux (HTML, CSS, PHP) et la gestion de projet en utilisant des méthodes agiles (Scrum, Kanban)."
   },
   {
-    title: "Self-Employed Business Creation",
-    description: "Since 2019, I have run my own business as a freelancer, offering services such as creating showcase websites, e-commerce sites, booking systems, logos, graphic design, tracking, and optimization. I gained solid experience in project management and client relations."
+    title: "Autodidacte",
+    description: "Je poursuis ma formation de manière autonome en me perfectionnant sur des technologies comme React, Next.js, Vue.js et Node.js, à travers la réalisation de projets personnels et l'exploration des outils modernes de développement."
   },
   {
-    title: "OpenClassrooms Work-Study",
-    description: "In 2022-2023, I completed a work-study program at OpenClassrooms as a Web Developer and Integrator. I worked on both frontend and backend with REST APIs, and created and integrated custom components from mockups. I also ensured the design of custom responsive websites."
+    title: "Alternance OpenClassrooms",
+    description: "En novembre 2022, j'ai repris mes études en alternance chez OpenClassrooms où j'ai approfondi mes compétences en intégration front-end, optimisation de sites web, et acquis des notions de back-end."
   }
 ];

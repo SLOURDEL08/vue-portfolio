@@ -11,9 +11,9 @@ export const useMenuStore = defineStore('menu', {
   state: () => ({
     isMenuOpen: false,
     menuItems: [
-      { name: 'Home', path: '/' },
-      { name: 'Work', path: '/work' },
-      { name: 'About', path: '/about' },
+      { name: 'Accueil', path: '/' },
+      { name: 'Projets', path: '/projets' },
+      { name: 'À Propos', path: '/a-propos' },
       { name: 'Contact', path: '/contact' }
     ] as MenuItem[]
   }),

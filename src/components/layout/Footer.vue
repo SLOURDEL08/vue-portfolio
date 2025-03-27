@@ -1,6 +1,6 @@
 <template>
   <footer 
-    class="text-white text-center bg-secondary p-16 py-20 fixed-size-footer" 
+    class="text-white text-center bg-secondary max-md:!p-10 p-16 py-20 fixed-size-footer" 
     role="contentinfo" 
     aria-label="Informations de contact et liens"
   >
@@ -9,12 +9,12 @@
       <section aria-labelledby="connect-heading">
         <div class="flex flex-col gap-14 max-md:gap-10">
           <div class="h-[200px] flex flex-col justify-center">
-            <p class="text-3xl mb-4 max-md:text-xl font-[500]">(Connect)</p>
-            <h2 id="connect-heading" class="smart-bigtitle leading-none !text-white font-semibold">Let's Talk</h2>
+            <p class="text-3xl mb-4 max-md:text-xl font-[500]">(Contact)</p>
+            <h2 id="connect-heading" class="smart-bigtitle leading-none !text-white font-semibold">Discutons</h2>
           </div>
           <router-link to="/contact">
-            <Button class="mt-4 bg-white text-secondary">
-              <span v-hover-slide class="inline-block py-0 -my-3">Get in Touch</span>
+            <Button class="mt-4 !bg-white text-secondary">
+              <span v-hover-slide class="inline-block py-0 max-md:!px-4 !-my-3">Contact</span>
             </Button>
           </router-link>
         </div>
@@ -30,8 +30,8 @@
         >
           <template #action>
             <router-link to="/work">
-              <Button class="mt-4 bg-white text-secondary">
-                <span v-hover-slide class="inline-block py-0 -my-3">My Project</span>
+              <Button class="mt-4 !bg-white text-secondary">
+                <span v-hover-slide class="inline-block py-0 max-md:!px-4 -my-3">My Project</span>
               </Button>
             </router-link>
           </template>
@@ -50,7 +50,7 @@
         />
       </div>
     </div>
-    <div class="w-full mt-8">
+    <div class="w-full mt-20">
       © Powered by Vercel [Reproduction of 
       <a 
         class="underline italic" 

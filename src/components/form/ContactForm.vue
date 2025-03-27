@@ -1,17 +1,17 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="flex flex-col gap-20 h-full justify-between" aria-labelledby="contact-heading">
+  <form @submit.prevent="handleSubmit" class="flex flex-col gap-20 h-full justify-between w-full" aria-labelledby="contact-heading">
     <div class="space-y-4">
       <span class="smart-text">(Contact)</span>
-      <h2 id="contact-heading" class="smart-bigtitle !leading-[85%] w-[90%]">Let's get in touch</h2>
+      <h2 id="contact-heading" class="smart-bigtitle !leading-[85%] max-xl:!leading-[80%] max-lg:!leading-[80%] max-lg:!text-7xl max-xl:!text-8xl max-md:!text-6xl max-sm:!text-5xl w-full max-sm:w-full max-md:w-full max-lg:w-[90%] w-[90%]">Discutons ensemble.</h2>
     </div>
 
-    <div class="space-y-4">
+    <div class="space-y-4 w-full">
       <FormField
         id="name"
         v-model="formData.name"
         type="text"
-        label="Your Name"
-        placeholder="Your Name"
+        label="Votre nom"
+        placeholder="Votre nom"
         :error="errors.name"
         :disabled="isSubmitting"
       />
@@ -20,8 +20,8 @@
         id="email"
         v-model="formData.email"
         type="email"
-        label="Your Email"
-        placeholder="Your Email"
+        label="Votre adresse E-mail"
+        placeholder="Votre adresse E-mail"
         :error="errors.email"
         :disabled="isSubmitting"
       />
@@ -30,8 +30,8 @@
         id="message"
         v-model="formData.message"
         type="textarea"
-        label="Your Message"
-        placeholder="Your Message"
+        label="Votre message"
+        placeholder="Votre message"
         :rows="6"
         :error="errors.message"
         :disabled="isSubmitting"
@@ -41,10 +41,10 @@
         type="submit"
         :disabled="isSubmitting"
         class="group relative px-6 py-3 w-full"
-        aria-label="Send contact form message"
+        aria-label="Envoyez votre message"
       >
         <span :class="{ 'opacity-0': isSubmitting }">
-          Send Message
+          Envoyez votre message
         </span>
         
         <LoadingSpinner v-if="isSubmitting" />
@@ -54,14 +54,14 @@
     <NotificationMessage 
       v-if="showSuccess" 
       type="success"
-      message="Message sent successfully!"
+      message="Votre message envoyé avec succès !"
       @close="showSuccess = false"
     />
 
     <NotificationMessage 
       v-if="showError" 
       type="error"
-      message="Failed to send message. Please try again."
+      message="Une erreur s'est produite lors de l'envoie de votre message."
       @close="showError = false"
     />
   </form>
@@ -112,20 +112,20 @@ const validateForm = () => {
   errors.message = undefined
   
   if (!formData.name) {
-    errors.name = 'Name is required'
+    errors.name = 'Votre nom est requis'
     isValid = false
   }
   
   if (!formData.email) {
-    errors.email = 'Email is required'
+    errors.email = "Votre adresse E-mail est requise"
     isValid = false
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-    errors.email = 'Please enter a valid email'
+    errors.email = 'Entrez une adresse E-mail valide'
     isValid = false
   }
   
   if (!formData.message) {
-    errors.message = 'Message is required'
+    errors.message = 'Votre message est requis'
     isValid = false
   }
 

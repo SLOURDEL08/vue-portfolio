@@ -11,11 +11,11 @@
 
     <section id="content" class="grid my-16 max-md:my-14 max-md:flex max-md:gap-8 max-md:flex-col-reverse grid-cols-[1fr_2px_.5fr] gap-x-16 gap-y-16 auto-rows-auto">
       <div class="w-full">
-        <h2 class="smart-title max-lg:text-5xl max-xl:text-6xl">As a Front-End Developer, I bring designs to life with precise integration and complex animations.</h2>
+        <h2 class="smart-title max-lg:text-5xl max-xl:text-6xl">Développeur web depuis 5 ans je suis spécialisé dans l'intégration front-end avec des notions de back-end</h2>
       </div>
       <VerticalSeparator class="max-md:hidden" trigger-section-id="myheader"/>
       <div class="w-full flex flex-col justify-between">
-        <h3 class="smart-text sticky mb-14 !leading-0 max-md:mb-4">(About Me)</h3>
+        <h3 class="smart-text sticky mb-14 !leading-0 max-md:mb-4">(À Propos)</h3>
         <div class="flex max-md:gap-3 gap-4">
           <SocialLink 
   v-for="link in socialLinks" 
@@ -33,7 +33,7 @@
     <section aria-labelledby="expertise-title">
       <GridContent
         id="expertise-title"
-        title="(My Expertise)"
+        title="(Mon expertise)"
         :services="services"
         class=""
       />
@@ -66,7 +66,7 @@
     <section aria-labelledby="projects-title">
       <GridContent
         id="projects-title"
-        title="(My Projects)"
+        title="(Formations)"
         :services="formations"
         class=""
       />
@@ -105,11 +105,6 @@ const socialLinks = [
     url: "https://github.com/SLOURDEL08",
     icon: Github,
     ariaLabel: "Mon profil GitHub"
-  },
-  {
-    url: "https://gitlab.com/slourdel08",
-    icon: Gitlab,
-    ariaLabel: "Mon profil GitLab"
   },
   {
     url: "https://www.behance.net/lourdel00",

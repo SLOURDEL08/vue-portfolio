@@ -26,7 +26,7 @@ import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 const scrollTexts = [
   'Front-End',
   'France',
-  'Available',
+  'Disponible',
   'Freelance',
   'Remote',
   'Animation',

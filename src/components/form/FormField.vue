@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-2">
+  <div class="space-y-2 w-full">
     <label :for="id" class="sr-only">{{ label }}</label>
     <template v-if="type === 'textarea'">
       <textarea
@@ -37,9 +37,9 @@
         :aria-describedby="error ? `${id}-error` : undefined"
       />
     </template>
-    <span 
-      v-if="error" 
-      :id="`${id}-error`" 
+    <span
+      v-if="error"
+      :id="`${id}-error`"
       class="text-sm text-red-500"
       role="alert"
     >
@@ -99,6 +99,8 @@ const handleInput = (event: Event) => {
 /* Smooth transition for input borders */
 input, textarea {
   @apply transition-all duration-200;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Custom scrollbar for textarea */
