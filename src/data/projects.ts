@@ -29,57 +29,57 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-  id: '1',
-  slug: 'digitalizerr',
-  title: 'Digitalizerr',
-  description: 'A fictional web marketing agency designed to showcase my skills in design and front-end development. This project highlights modern integration and reusable components.',
-  client: 'Personal Project',
-  year: '2023',
-  website: 'https://chipper-rabanadas-970272.netlify.app/',
-  tags: ['UI/UX Design', 'Front-end Development', 'Responsive'],
-  techs: [
-    { name: 'React', icon: 'logos:react' },
-    { name: 'TypeScript', icon: 'logos:typescript-icon' },
-    { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-    { name: 'Figma', icon: 'logos:figma' },
-    { name: 'Framer Motion', icon: 'logos:framer' },
-  ],
-  services: [
-    {
-      title: 'UI/UX Design',
-      description: 'Complete user interface design in Figma, focusing on an intuitive and modern user experience for a web marketing agency.'
-    },
-    {
-      title: 'Frontend Development',
-      description: 'React development with TypeScript and Tailwind CSS. Implementation of reusable components including carousels, forms, and booking systems.'
-    },
-    {
-      title: 'Responsive',
-    description: 'Fully responsive design implementation across all devices, ensuring a seamless user experience from desktop to mobile with a mobile-first approach.'
-  }
-  ],
-  imagePath: '/images/work/digitalizerr/home.webp',
-  altImagePath: '/images/work/digitalizerr/alt.webp',
-  date: "2024-01-15",
-  gallery: [
-    '/images/work/digitalizerr/gallery.webp',
-    '/images/work/digitalizerr/gallery1.webp',
-    '/images/work/digitalizerr/gallery2.webp',
-    '/images/work/digitalizerr/gallery3.webp',
-    '/images/work/digitalizerr/gallery4.webp',
-    '/images/work/digitalizerr/gallery5.webp',
-    '/images/work/digitalizerr/gallery6.webp',
-  ],
-},
+    id: '1',
+    slug: 'digitalizerr',
+    title: 'Digitalizerr',
+    description: 'Une agence fictive de marketing web créée pour mettre en valeur mes compétences en design et en développement front-end. Ce projet met en avant l\'intégration moderne et les composants réutilisables.',
+    client: 'Projet personnel',
+    year: '2023',
+    website: 'https://chipper-rabanadas-970272.netlify.app/',
+    tags: ['Design UI/UX', 'Développement Front-end', 'Responsive'],
+    techs: [
+      { name: 'React', icon: 'logos:react' },
+      { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'Framer Motion', icon: 'logos:framer' },
+    ],
+    services: [
+      {
+        title: 'Design UI/UX',
+        description: 'Conception complète de l\'interface utilisateur dans Figma, en mettant l\'accent sur une expérience utilisateur moderne et intuitive pour une agence de marketing web.'
+      },
+      {
+        title: 'Développement Frontend',
+        description: 'Développement avec React, TypeScript et Tailwind CSS. Mise en œuvre de composants réutilisables, y compris des carrousels, des formulaires et des systèmes de réservation.'
+      },
+      {
+        title: 'Responsive',
+        description: 'Mise en œuvre d\'un design entièrement responsive sur tous les appareils, garantissant une expérience utilisateur fluide de l\'ordinateur de bureau au mobile avec une approche mobile-first.'
+      }
+    ],
+    imagePath: '/images/work/digitalizerr/home.webp',
+    altImagePath: '/images/work/digitalizerr/alt.webp',
+    date: "2024-01-15",
+    gallery: [
+      '/images/work/digitalizerr/gallery.webp',
+      '/images/work/digitalizerr/gallery1.webp',
+      '/images/work/digitalizerr/gallery2.webp',
+      '/images/work/digitalizerr/gallery3.webp',
+      '/images/work/digitalizerr/gallery4.webp',
+      '/images/work/digitalizerr/gallery5.webp',
+      '/images/work/digitalizerr/gallery6.webp',
+    ],
+  },
   {
     id: '2',
     slug: 'breeder',
     title: 'Breeder',
-    description: 'A complex animated website reproduction showcasing advanced GSAP animations and seamless page transitions.',
-    client: 'Personal Project',
+    description: 'Une reproduction complexe d\'un site web avec des animations avancées GSAP et des transitions fluides entre les pages.',
+    client: 'Projet personnel',
     year: '2024',
     website: 'https://brand-breeder-app.netlify.app/',
-    tags: ['Complex Animations', 'Frontend Development', 'UI/UX Design'],
+    tags: ['Animations complexes', 'Développement Frontend', 'Design UI/UX'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -89,16 +89,16 @@ export const projects: Project[] = [
     ],
     services: [
       {
-        title: 'Advanced Animations',
-        description: 'Implementation of complex GSAP animations with continuous page transitions and sophisticated user interactions throughout the website.'
+        title: 'Animations avancées',
+        description: 'Mise en œuvre d\'animations complexes avec GSAP, comprenant des transitions continues entre les pages et des interactions sophistiquées sur tout le site.'
       },
       {
-        title: 'Frontend Development',
-        description: 'Built with Vue.js and TypeScript, featuring router management for seamless animations and state handling across pages.'
+        title: 'Développement Frontend',
+        description: 'Créé avec Vue.js et TypeScript, avec gestion du routeur pour des animations fluides et gestion de l\'état entre les pages.'
       },
       {
         title: 'Responsive',
-        description: 'Pixel-perfect responsive implementation with grid alignments and maintained animation integrity across all device sizes.'
+        description: 'Mise en œuvre d\'un design responsive pixel-perfect avec alignement de la grille et maintien de l\'intégrité des animations sur toutes les tailles d\'appareils.'
       }
     ],
     imagePath: '/images/work/breeder/home.png',
@@ -112,16 +112,16 @@ export const projects: Project[] = [
       '/images/work/breeder/gallery5.png',
       '/images/work/breeder/gallery6.png',
     ],
-},
+  },
   {
     id: '3',
     slug: 'acolyte',
     title: 'Acolyte',
-    description: 'A meticulous reproduction of Acolyte\'s homepage, featuring sophisticated GSAP animations and precise layout management. This project demonstrates advanced frontend implementation with subtle, sequential animations.',
-    client: 'Personal Project',
+    description: 'Une reproduction minutieuse de la page d\'accueil d\'Acolyte, avec des animations GSAP sophistiquées et une gestion précise des mises en page. Ce projet démontre une implémentation avancée du frontend avec des animations subtiles et séquentielles.',
+    client: 'Projet personnel',
     year: '2024',
     website: 'https://acolyte-mu.vercel.app/',
-    tags: ['Frontend Development', 'Animation', 'Layout Design'],
+    tags: ['Développement Frontend', 'Animation', 'Design de mise en page'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -131,16 +131,16 @@ export const projects: Project[] = [
     ],
     services: [
       {
-        title: 'Animation Development',
-        description: 'Implementation of subtle and sophisticated GSAP animations with sequential timing and smooth transitions between elements.'
+        title: 'Développement d\'animations',
+        description: 'Mise en œuvre d\'animations subtiles et sophistiquées avec GSAP, avec un timing séquentiel et des transitions fluides entre les éléments.'
       },
       {
-        title: 'Layout Engineering',
-        description: 'Precise management of spacing and alignment, ensuring pixel-perfect reproduction of complex layouts and responsive behavior.'
+        title: 'Ingénierie de mise en page',
+        description: 'Gestion précise des espacements et des alignements, garantissant une reproduction parfaite des mises en page complexes et un comportement responsive.'
       },
       {
-        title: 'Frontend Integration',
-        description: 'Built with Vue.js and TypeScript, focusing on clean code architecture and optimal animation performance.'
+        title: 'Intégration Frontend',
+        description: 'Créé avec Vue.js et TypeScript, en mettant l\'accent sur une architecture de code propre et des performances d\'animations optimisées.'
       }
     ],
     imagePath: '/images/work/acolyte/home.png',
@@ -152,16 +152,16 @@ export const projects: Project[] = [
       '/images/work/acolyte/gallery4.png',
       '/images/work/acolyte/gallery3.png',
     ],
-},
+  },
   {
     id: '4',
     slug: 'digitoile',
     title: 'Digitoile',
-    description: 'A custom Next.js website featuring a multi-step form system and sophisticated animations. This project showcases modern web development practices with a focus on user experience and performance.',
-    client: 'Personal Project',
+    description: 'Un site personnalisé Next.js avec un système de formulaire multi-étapes et des animations sophistiquées. Ce projet met en valeur les pratiques modernes de développement web avec un accent sur l\'expérience utilisateur et la performance.',
+    client: 'Projet personnel',
     year: '2024',
     website: 'https://digitoile.fr',
-    tags: ['Frontend Development', 'UI/UX Design', 'Form Development'],
+    tags: ['Développement Frontend', 'Design UI/UX', 'Développement de formulaires'],
     techs: [
       { name: 'Next.js', icon: 'logos:nextjs-icon' },
       { name: 'Figma', icon: 'logos:figma' },
@@ -173,16 +173,16 @@ export const projects: Project[] = [
     ],
     services: [
       {
-        title: 'Design Integration',
-        description: 'Pixel-perfect integration of Figma designs, ensuring consistent visual quality across all pages and components.'
+        title: 'Intégration de design',
+        description: 'Intégration pixel-perfect des designs Figma, garantissant une qualité visuelle cohérente sur toutes les pages et composants.'
       },
       {
-        title: 'Form Development',
-        description: 'Implementation of a comprehensive multi-step form system with React Hook Form, featuring validation and smooth transitions.'
+        title: 'Développement de formulaires',
+        description: 'Mise en œuvre d\'un système de formulaire multi-étapes avec React Hook Form, incluant la validation et des transitions fluides.'
       },
       {
         title: 'Motion Design',
-        description: 'Integration of smooth animations using Framer Motion to enhance user experience and interface interactivity.'
+        description: 'Intégration d\'animations fluides avec Framer Motion pour améliorer l\'expérience utilisateur et l\'interactivité de l\'interface.'
       }
     ],
     imagePath: '/images/work/digitoile/home.png',
@@ -197,54 +197,51 @@ export const projects: Project[] = [
       '/images/work/digitoile/gallery6.png',
       '/images/work/digitoile/gallery7.png',
     ],
-},
-   {
-   id: '5',
-   slug: 'ferrari-beverly',
-   title: 'Ferrari Beverly Hills',
-   description: 'A faithful reproduction of the Ferrari Beverly Hills homepage, featuring custom carousels and interactive navigation elements. This project demonstrates precise attention to design details and smooth user interactions.',
-   client: 'Personal Project',
-   year: '2024',
-   website: 'https://endearing-bubblegum-84fec1.netlify.app/',
-   tags: ['Frontend Development', 'UI Integration', 'Interactive Design'],
-   techs: [
-     { name: 'React', icon: 'logos:react' },
-     { name: 'JavaScript', icon: 'logos:javascript' },
-     { name: 'CSS', icon: 'vscode-icons:file-type-css' },
-   ],
-   services: [
-     {
-       title: 'UI Integration',
-       description: 'Precise reproduction of the official Ferrari Beverly Hills homepage, maintaining brand aesthetics and design fidelity.'
-     },
-     {
-       title: 'Interactive Components',
-       description: 'Development of custom carousel functionality and interactive navigation including mobile toggle menu and dropdown navbar.'
-     },
-     {
-       title: 'Responsive Design',
-       description: 'Implementation of responsive layouts with special attention to mobile navigation and interactive elements.'
-     }
-   ],
-   imagePath: '/images/work/ferrari/home.png',
-   altImagePath: '/images/work/ferrari/alt.png',
-   date: "2024-02-20",
-   gallery: [
-       '/images/work/ferrari/gallery.png',
-       '/images/work/ferrari/gallery1.png',
-       '/images/work/ferrari/gallery2.png',
-       '/images/work/ferrari/gallery3.png',
-       '/images/work/ferrari/gallery4.png',
-       '/images/work/ferrari/gallery5.png',
-       '/images/work/ferrari/gallery6.png',
-       '/images/work/ferrari/gallery7.png',
-   ],
-},
+  },
+  {
+    id: '5',
+    slug: 'ferrari-beverly',
+    title: 'Ferrari Beverly Hills',
+    description: 'Une reproduction fidèle de la page d\'accueil de Ferrari Beverly Hills, avec des carrousels personnalisés et des éléments de navigation interactifs. Ce projet démontre une attention minutieuse aux détails du design et des interactions utilisateur fluides.',
+    client: 'Projet personnel',
+    year: '2024',
+    website: 'https://endearing-bubblegum-84fec1.netlify.app/',
+    tags: ['Développement Frontend', 'Intégration UI', 'Design interactif'],
+    techs: [
+      { name: 'React', icon: 'logos:react' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+    ],
+    services: [
+      {
+        title: 'Intégration UI',
+        description: 'Reproduction précise de la page d\'accueil officielle de Ferrari Beverly Hills, en maintenant l\'esthétique et la fidélité du design de la marque.'
+      },
+      {
+        title: 'Composants interactifs',
+        description: 'Développement d\'une fonctionnalité de carrousel personnalisé et de navigation interactive, y compris un menu mobile et une barre de navigation déroulante.'
+      },
+      {
+        title: 'Design responsive',
+        description: 'Mise en œuvre de mises en page responsive avec une attention particulière à la navigation mobile et aux éléments interactifs.'
+      }
+    ],
+    imagePath: '/images/work/ferrari/home.png',
+    altImagePath: '/images/work/ferrari/alt.png',
+    date: "2024-02-20",
+    gallery: [
+      '/images/work/ferrari/gallery1.png',
+      '/images/work/ferrari/gallery2.png',
+      '/images/work/ferrari/gallery3.png',
+      '/images/work/ferrari/gallery4.png',
+      '/images/work/ferrari/gallery5.png',
+    ],
+  },
    {
    id: '6',
    slug: 'reactflix',
    title: 'Reactflix',
-   description: 'A Netflix-inspired multi-page application featuring dynamic content, reusable components, and a vertical navigation system. A showcase of React component architecture and responsive design.',
+   description: "Une application multi-pages inspirée de Netflix, avec du contenu dynamique, des composants réutilisables et un système de navigation verticale. Une vitrine de l'architecture des composants React et du design responsive.",
    client: 'Personal Project',
    year: '2024',
    website: 'https://peppy-unicorn-081057.netlify.app',
@@ -258,15 +255,15 @@ export const projects: Project[] = [
    services: [
      {
        title: 'UI/UX Design',
-       description: 'Creation of a Netflix-inspired interface in Figma, focusing on user experience and content organization with vertical navigation.'
+       description: "Création d'une interface inspirée de Netflix dans Figma, en mettant l'accent sur l'expérience utilisateur et l'organisation du contenu avec une navigation verticale."
      },
      {
        title: 'Component Architecture',
-       description: 'Development of a scalable component system with reusable elements for efficient page construction and maintenance.'
+       description: "Développement d'un système de composants évolutif avec des éléments réutilisables pour une construction et une maintenance de page efficaces."
      },
      {
        title: 'Responsive Integration',
-       description: 'Implementation of a fully responsive design system ensuring consistent experience across all devices and screen sizes.'
+       description: "Mise en place d'un système de design entièrement responsive pour garantir une expérience cohérente sur tous les appareils et tailles d'écran."
      }
    ],
    imagePath: '/images/work/reactflix/home.png',
@@ -284,7 +281,7 @@ export const projects: Project[] = [
    id: '7',
    slug: 'tesla',
    title: 'Tesla',
-   description: 'A clone of Tesla\'s homepage featuring sequential section animations and dynamic backgrounds. This project demonstrates advanced scrolling animations and responsive navigation systems.',
+   description: "Un clone de la page d'accueil de Tesla avec des animations séquentielles de sections et des arrière-plans dynamiques. Ce projet démontre des animations avancées de défilement et des systèmes de navigation responsive.",
    client: 'Personal Project',
    year: '2024',
    website: 'https://shiny-yeot-0fdc3e.netlify.app',
@@ -297,15 +294,15 @@ export const projects: Project[] = [
    services: [
      {
        title: 'Sequential Animations',
-       description: 'Implementation of section-by-section animations with synchronized background images and videos, creating an immersive scrolling experience.'
+       description: "Mise en place d'animations de sections par section avec des images et vidéos d'arrière-plan synchronisées, créant une expérience immersive de défilement."
      },
      {
        title: 'Interactive Navigation',
-       description: 'Development of responsive navigation systems including dropdown menus and mobile-optimized toggle interface.'
+       description: "Développement de systèmes de navigation responsive incluant des menus déroulants et une interface mobile optimisée avec un toggle."
      },
      {
        title: 'Background Management',
-       description: 'Creation of a dynamic background system handling both image and video content with smooth transitions between sections.'
+       description: "Création d'un système d'arrière-plan dynamique gérant aussi bien les images que les vidéos avec des transitions fluides entre les sections."
      }
    ],
    imagePath: '/images/work/tesla/home.png',
@@ -323,7 +320,7 @@ export const projects: Project[] = [
    id: '8',
    slug: 'uber-eat',
    title: 'Uber Eats',
-   description: 'A dynamic web application inspired by Uber Eats, featuring functional search capabilities and interactive restaurant listings. Built with React and modern JavaScript.',
+   description: "Une application web dynamique inspirée par Uber Eats, avec des capacités de recherche fonctionnelles et des listes de restaurants interactives. Construit avec React et JavaScript moderne.",
    client: 'Personal Project',
    year: '2024',
    website: 'https://fastidious-muffin-3654c6.netlify.app',
@@ -336,15 +333,15 @@ export const projects: Project[] = [
    services: [
      {
        title: 'Search Implementation',
-       description: 'Development of a functional search system with real-time filtering and results display for restaurant discovery.'
+       description: "Développement d'un système de recherche fonctionnel avec filtrage en temps réel et affichage des résultats pour découvrir des restaurants."
      },
      {
        title: 'Dynamic Pages',
-       description: 'Creation of dynamic restaurant pages and listings with interactive content management and state handling.'
+       description: "Création de pages et listes de restaurants dynamiques avec gestion interactive du contenu et gestion de l'état."
      },
      {
        title: 'UI Development',
-       description: 'Implementation of a responsive and intuitive user interface following Uber Eats design patterns.'
+       description: "Mise en place d'une interface utilisateur responsive et intuitive suivant les patterns de design d'Uber Eats."
      }
    ],
    imagePath: '/images/work/ubereat/home.png',
@@ -358,15 +355,15 @@ export const projects: Project[] = [
 
    ],
 },
-   {
+{
    id: '9',
    slug: 'diet-ia',
    title: 'Diet IA',
-   description: 'A full-stack fitness transformation application offering personalized meal plans and recipes based on user profiles and goals. Built with Vue.js, Node.js, and Firebase for a complete user experience.',
-   client: 'Personal Project',
+   description: 'Une application complète de transformation physique offrant des plans de repas et des recettes personnalisés basés sur les profils et objectifs des utilisateurs. Construite avec Vue.js, Node.js et Firebase pour une expérience utilisateur complète.',
+   client: 'Projet Personnel',
    year: '2024',
    website: 'diet-ia.vercel.app',
-   tags: ['Full Stack Development', 'User Authentication', 'Personalization'],
+   tags: ['Développement Full Stack', 'Authentification Utilisateur', 'Personnalisation'],
    techs: [
      { name: 'Vue.js', icon: 'logos:vue' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -376,16 +373,16 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Backend Development',
-       description: 'Implementation of Node.js backend with TypeScript, including middleware, authentication systems, and CRUD operations.'
+       title: 'Développement Backend',
+       description: 'Implémentation du backend Node.js avec TypeScript, incluant middleware, systèmes d\'authentification et opérations CRUD.'
      },
      {
-       title: 'User Management',
-       description: 'Development of comprehensive user authentication and profile management using Firebase, including secure data storage.'
+       title: 'Gestion des Utilisateurs',
+       description: 'Développement d\'un système complet d\'authentification et de gestion de profil utilisateur avec Firebase, incluant le stockage sécurisé des données.'
      },
      {
-       title: 'Personalization System',
-       description: 'Creation of an intelligent recommendation system for meals and recipes based on user profiles, goals, and preferences.'
+       title: 'Système de Personnalisation',
+       description: 'Création d\'un système intelligent de recommandation pour les repas et recettes basé sur les profils, objectifs et préférences des utilisateurs.'
      }
    ],
    imagePath: '/images/work/dietia/home.png',
@@ -397,18 +394,18 @@ export const projects: Project[] = [
      '/images/work/dietia/gallery3.png',
      '/images/work/dietia/gallery4.png',
      '/images/work/dietia/gallery5.png',
-        '/images/work/dietia/gallery6.png',
+     '/images/work/dietia/gallery6.png',
    ],
 },
-   {
+{
    id: '10',
    slug: 'toast-collectif',
    title: 'Toast Collectif',
-   description: 'A custom WordPress website for a marketing agency featuring custom tracking implementation, SEO optimization, and bespoke slider components. Built with focus on performance and analytics.',
+   description: 'Un site WordPress personnalisé pour une agence de marketing avec implémentation de suivi sur mesure, optimisation SEO et composants de diaporama personnalisés. Construit avec un focus sur la performance et l\'analyse.',
    client: 'Toast Collectif',
    year: '2024',
    website: 'https://toast-collectif.fr',
-   tags: ['WordPress Development', 'Analytics', 'Custom Components'],
+   tags: ['Développement WordPress', 'Analytiques', 'Composants Personnalisés'],
    techs: [
      { name: 'WordPress', icon: 'logos:wordpress-icon' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -418,16 +415,16 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Custom WordPress Development',
-       description: 'Development of a bespoke WordPress theme with custom components including sliders and interactive elements.'
+       title: 'Développement WordPress Personnalisé',
+       description: 'Développement d\'un thème WordPress sur mesure avec des composants personnalisés incluant des diaporamas et des éléments interactifs.'
      },
      {
-       title: 'Analytics Integration',
-       description: 'Implementation of comprehensive tracking using Google Tag Manager for enhanced user behavior analysis.'
+       title: 'Intégration d\'Analytiques',
+       description: 'Implémentation d\'un suivi complet utilisant Google Tag Manager pour une analyse approfondie du comportement des utilisateurs.'
      },
      {
-       title: 'Performance Optimization',
-       description: 'SEO optimization and performance tuning for optimal search engine visibility and user experience.'
+       title: 'Optimisation de la Performance',
+       description: 'Optimisation SEO et amélioration des performances pour une visibilité optimale dans les moteurs de recherche et une expérience utilisateur fluide.'
      }
    ],
    imagePath: '/images/work/toast/home.png',
@@ -440,16 +437,16 @@ export const projects: Project[] = [
      '/images/work/toast/gallery4.png',
      '/images/work/toast/gallery5.png',
    ],
-  },
-   {
+},
+{
    id: '11',
    slug: 'portfolio',
    title: 'Portfolio V1',
-   description: 'A comprehensive portfolio website built with Next.js, featuring advanced filtering capabilities, dynamic project showcases, and interactive experiences. This platform demonstrates modern web development practices and user experience design.',
-   client: 'Personal Project',
+   description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
+   client: 'Projet Personnel',
    year: '2024',
    website: 'https://portfolio.slourdel.fr',
-   tags: ['Frontend Development', 'UX Design', 'Interactive Development'],
+   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -457,16 +454,16 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Advanced Filtering System',
-       description: 'Implementation of a sophisticated filtering system for projects and experiences, enabling efficient content discovery and navigation.'
+       title: 'Système de Filtrage Avancé',
+       description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
      },
      {
-       title: 'Interactive Experience',
-       description: 'Development of engaging user interactions and smooth animations throughout the site, enhancing the overall user experience.'
+       title: 'Expérience Interactive',
+       description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
      },
      {
-       title: 'Form Development',
-       description: 'Creation of robust contact forms with validation and smooth user feedback, ensuring effective communication channels.'
+       title: 'Développement de Formulaires',
+       description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
      }
    ],
    imagePath: '/images/work/portfolio/home.png',
@@ -479,16 +476,16 @@ export const projects: Project[] = [
      '/images/work/portfolio/gallery4.png',
      '/images/work/portfolio/gallery5.png',
    ],
-  },
-     {
+},
+{
    id: '12',
    slug: 'finance-app',
-   title: 'Finance App',
-   description: 'A comprehensive portfolio website built with Next.js, featuring advanced filtering capabilities, dynamic project showcases, and interactive experiences. This platform demonstrates modern web development practices and user experience design.',
-   client: 'Personal Project',
+   title: 'Application Financière',
+   description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
+   client: 'Projet Personnel',
    year: '2024',
    website: 'https://portfolio.slourdel.fr',
-   tags: ['Frontend Development', 'UX Design', 'Interactive Development'],
+   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -496,38 +493,38 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Advanced Filtering System',
-       description: 'Implementation of a sophisticated filtering system for projects and experiences, enabling efficient content discovery and navigation.'
+       title: 'Système de Filtrage Avancé',
+       description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
      },
      {
-       title: 'Interactive Experience',
-       description: 'Development of engaging user interactions and smooth animations throughout the site, enhancing the overall user experience.'
+       title: 'Expérience Interactive',
+       description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
      },
      {
-       title: 'Form Development',
-       description: 'Creation of robust contact forms with validation and smooth user feedback, ensuring effective communication channels.'
+       title: 'Développement de Formulaires',
+       description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
      }
    ],
    imagePath: '/images/work/finance-app/home.png',
    altImagePath: '/images/work/finance-app/home.png',
    date: "2024-03-25",
-       gallery: [
-          '/images/work/finance-app/gallery.png',
+   gallery: [
+     '/images/work/finance-app/gallery.png',
      '/images/work/finance-app/gallery1.png',
      '/images/work/finance-app/gallery2.png',
      '/images/work/finance-app/gallery3.png',
      '/images/work/finance-app/gallery4.png',
    ],
-  },
-      {
+},
+{
    id: '13',
    slug: 'diet-app',
-   title: 'Diet App',
-   description: 'A comprehensive portfolio website built with Next.js, featuring advanced filtering capabilities, dynamic project showcases, and interactive experiences. This platform demonstrates modern web development practices and user experience design.',
-   client: 'Personal Project',
+   title: 'Application de Régime',
+   description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
+   client: 'Projet Personnel',
    year: '2024',
    website: 'https://portfolio.slourdel.fr',
-   tags: ['Frontend Development', 'UX Design', 'Interactive Development'],
+   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -535,23 +532,23 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Advanced Filtering System',
-       description: 'Implementation of a sophisticated filtering system for projects and experiences, enabling efficient content discovery and navigation.'
+       title: 'Système de Filtrage Avancé',
+       description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
      },
      {
-       title: 'Interactive Experience',
-       description: 'Development of engaging user interactions and smooth animations throughout the site, enhancing the overall user experience.'
+       title: 'Expérience Interactive',
+       description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
      },
      {
-       title: 'Form Development',
-       description: 'Creation of robust contact forms with validation and smooth user feedback, ensuring effective communication channels.'
+       title: 'Développement de Formulaires',
+       description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
      }
    ],
    imagePath: '/images/work/diet-app/home.png',
    altImagePath: '/images/work/diet-app/home.png',
    date: "2024-03-25",
-        gallery: [
-          '/images/work/diet-app/gallery.png',
+   gallery: [
+     '/images/work/diet-app/gallery.png',
      '/images/work/diet-app/gallery1.png',
      '/images/work/diet-app/gallery2.png',
      '/images/work/diet-app/gallery3.png',

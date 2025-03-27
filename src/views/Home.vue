@@ -76,7 +76,7 @@
 
 <script setup lang="ts">
 import { computed, defineAsyncComponent } from 'vue'
-import { Linkedin, Github, Gitlab, FileBadge } from 'lucide-vue-next'
+import { Linkedin, Github, FileBadge } from 'lucide-vue-next'
 import BehanceIcon from '../components/BehanceIcon.vue';
 import { getAllProjects } from '../data/projects'
 import { services, formations } from '../data/content'
