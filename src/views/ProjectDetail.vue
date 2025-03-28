@@ -26,7 +26,7 @@
       <section aria-labelledby="process-section">
         <GridContent
           id="process-section"
-          title="(Process)"
+          title="(Processus)"
           :services="project.services"
           variant="block"
         />

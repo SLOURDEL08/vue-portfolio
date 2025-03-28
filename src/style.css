@@ -35,9 +35,9 @@
 
 /* title for content  */
 .smart-title {
-  font-size: clamp(1rem, 4vw + 2rem, 8rem);
+  font-size: clamp(1rem, 4vw + 2rem, 5rem);
    font-weight:600;
-  line-height: 1;
+  line-height: 0.95;
   color:#1E1E21;
 }
 /* subtitle for content */

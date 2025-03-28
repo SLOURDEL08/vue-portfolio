@@ -29,9 +29,9 @@
           itemType="internal"
         >
           <template #action>
-            <router-link to="/work">
+            <router-link to="/projets">
               <Button class="mt-4 !bg-white text-secondary">
-                <span v-hover-slide class="inline-block py-0 max-md:!px-4 -my-3">My Project</span>
+                <span v-hover-slide class="inline-block py-0 max-md:!px-4 -my-3">Mes Projets</span>
               </Button>
             </router-link>
           </template>
@@ -96,9 +96,9 @@ interface Repository {
 }
 
 const pages: Page[] = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Work', path: '/work' },
+  { name: 'Accueil', path: '/' },
+    { name: 'Projets', path: '/projets' },
+  { name: 'À propos', path: '/a-propos' },
   { name: 'Contact', path: '/contact' }
 ]
 

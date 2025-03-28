@@ -162,6 +162,5 @@ onUnmounted(() => {
 .sticky {
   transition: all 0.3s ease;
   margin-top: -1rem;
-  padding: 1rem 0;
 }
 </style>

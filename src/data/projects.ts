@@ -242,10 +242,10 @@ export const projects: Project[] = [
    slug: 'reactflix',
    title: 'Reactflix',
    description: "Une application multi-pages inspirée de Netflix, avec du contenu dynamique, des composants réutilisables et un système de navigation verticale. Une vitrine de l'architecture des composants React et du design responsive.",
-   client: 'Personal Project',
+   client: 'Projet personnel',
    year: '2024',
    website: 'https://peppy-unicorn-081057.netlify.app',
-   tags: ['Frontend Development', 'Component Architecture', 'UI/UX Design'],
+   tags: ['Développement Frontend', 'Architecture de composants', 'Design UI/UX'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -254,15 +254,15 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'UI/UX Design',
+       title: 'Design UI/UX',
        description: "Création d'une interface inspirée de Netflix dans Figma, en mettant l'accent sur l'expérience utilisateur et l'organisation du contenu avec une navigation verticale."
      },
      {
-       title: 'Component Architecture',
+       title: 'Architecture de composants',
        description: "Développement d'un système de composants évolutif avec des éléments réutilisables pour une construction et une maintenance de page efficaces."
      },
      {
-       title: 'Responsive Integration',
+       title: 'Intégration responsive',
        description: "Mise en place d'un système de design entièrement responsive pour garantir une expérience cohérente sur tous les appareils et tailles d'écran."
      }
    ],
@@ -282,10 +282,10 @@ export const projects: Project[] = [
    slug: 'tesla',
    title: 'Tesla',
    description: "Un clone de la page d'accueil de Tesla avec des animations séquentielles de sections et des arrière-plans dynamiques. Ce projet démontre des animations avancées de défilement et des systèmes de navigation responsive.",
-   client: 'Personal Project',
+   client: 'Projet personnel',
    year: '2024',
    website: 'https://shiny-yeot-0fdc3e.netlify.app',
-   tags: ['Frontend Development', 'Animation', 'Interactive Design'],
+   tags: ['Développement Frontend', 'Animation', 'Design interactif'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -293,15 +293,15 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Sequential Animations',
+       title: 'Animations séquentielles',
        description: "Mise en place d'animations de sections par section avec des images et vidéos d'arrière-plan synchronisées, créant une expérience immersive de défilement."
      },
      {
-       title: 'Interactive Navigation',
+       title: 'Navigation interactive',
        description: "Développement de systèmes de navigation responsive incluant des menus déroulants et une interface mobile optimisée avec un toggle."
      },
      {
-       title: 'Background Management',
+       title: 'Gestion des arrière-plans',
        description: "Création d'un système d'arrière-plan dynamique gérant aussi bien les images que les vidéos avec des transitions fluides entre les sections."
      }
    ],
@@ -320,11 +320,11 @@ export const projects: Project[] = [
    id: '8',
    slug: 'uber-eat',
    title: 'Uber Eats',
-   description: "Une application web dynamique inspirée par Uber Eats, avec des capacités de recherche fonctionnelles et des listes de restaurants interactives. Construit avec React et JavaScript moderne.",
-   client: 'Personal Project',
+   description: "Une application web dynamique inspirée par Uber Eats, avec des capacités de recherche fonctionnelles et des listes de restaurants interactives. Construite avec React et JavaScript moderne.",
+   client: 'Projet personnel',
    year: '2024',
    website: 'https://fastidious-muffin-3654c6.netlify.app',
-   tags: ['Web Application', 'Search Functionality', 'Dynamic Content'],
+   tags: ['Application web', 'Fonctionnalité de recherche', 'Contenu dynamique'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -332,15 +332,15 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Search Implementation',
+       title: 'Implémentation de recherche',
        description: "Développement d'un système de recherche fonctionnel avec filtrage en temps réel et affichage des résultats pour découvrir des restaurants."
      },
      {
-       title: 'Dynamic Pages',
+       title: 'Pages dynamiques',
        description: "Création de pages et listes de restaurants dynamiques avec gestion interactive du contenu et gestion de l'état."
      },
      {
-       title: 'UI Development',
+       title: 'Développement UI',
        description: "Mise en place d'une interface utilisateur responsive et intuitive suivant les patterns de design d'Uber Eats."
      }
    ],
@@ -360,10 +360,10 @@ export const projects: Project[] = [
    slug: 'diet-ia',
    title: 'Diet IA',
    description: 'Une application complète de transformation physique offrant des plans de repas et des recettes personnalisés basés sur les profils et objectifs des utilisateurs. Construite avec Vue.js, Node.js et Firebase pour une expérience utilisateur complète.',
-   client: 'Projet Personnel',
+   client: 'Projet personnel',
    year: '2024',
    website: 'diet-ia.vercel.app',
-   tags: ['Développement Full Stack', 'Authentification Utilisateur', 'Personnalisation'],
+   tags: ['Développement Full Stack', 'Authentification utilisateur', 'Personnalisation'],
    techs: [
      { name: 'Vue.js', icon: 'logos:vue' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -377,11 +377,11 @@ export const projects: Project[] = [
        description: 'Implémentation du backend Node.js avec TypeScript, incluant middleware, systèmes d\'authentification et opérations CRUD.'
      },
      {
-       title: 'Gestion des Utilisateurs',
+       title: 'Gestion des utilisateurs',
        description: 'Développement d\'un système complet d\'authentification et de gestion de profil utilisateur avec Firebase, incluant le stockage sécurisé des données.'
      },
      {
-       title: 'Système de Personnalisation',
+       title: 'Système de personnalisation',
        description: 'Création d\'un système intelligent de recommandation pour les repas et recettes basé sur les profils, objectifs et préférences des utilisateurs.'
      }
    ],
@@ -405,7 +405,7 @@ export const projects: Project[] = [
    client: 'Toast Collectif',
    year: '2024',
    website: 'https://toast-collectif.fr',
-   tags: ['Développement WordPress', 'Analytiques', 'Composants Personnalisés'],
+   tags: ['Développement WordPress', 'Analytiques', 'Composants personnalisés'],
    techs: [
      { name: 'WordPress', icon: 'logos:wordpress-icon' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -415,15 +415,15 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Développement WordPress Personnalisé',
+       title: 'Développement WordPress personnalisé',
        description: 'Développement d\'un thème WordPress sur mesure avec des composants personnalisés incluant des diaporamas et des éléments interactifs.'
      },
      {
-       title: 'Intégration d\'Analytiques',
+       title: 'Intégration d\'analytiques',
        description: 'Implémentation d\'un suivi complet utilisant Google Tag Manager pour une analyse approfondie du comportement des utilisateurs.'
      },
      {
-       title: 'Optimisation de la Performance',
+       title: 'Optimisation de la performance',
        description: 'Optimisation SEO et amélioration des performances pour une visibilité optimale dans les moteurs de recherche et une expérience utilisateur fluide.'
      }
    ],
@@ -443,10 +443,10 @@ export const projects: Project[] = [
    slug: 'portfolio',
    title: 'Portfolio V1',
    description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
-   client: 'Projet Personnel',
+   client: 'Projet personnel',
    year: '2024',
    website: 'https://portfolio.slourdel.fr',
-   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
+   tags: ['Développement Frontend', 'Conception UX', 'Développement interactif'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -454,15 +454,15 @@ export const projects: Project[] = [
    ],
    services: [
      {
-       title: 'Système de Filtrage Avancé',
+       title: 'Système de filtrage avancé',
        description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
      },
      {
-       title: 'Expérience Interactive',
+       title: 'Expérience interactive',
        description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
      },
      {
-       title: 'Développement de Formulaires',
+       title: 'Développement de formulaires',
        description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
      }
    ],
@@ -481,28 +481,29 @@ export const projects: Project[] = [
    id: '12',
    slug: 'finance-app',
    title: 'Application Financière',
-   description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
-   client: 'Projet Personnel',
+   description: 'Une application de gestion financière personnelle avec tableau de bord interactif, suivi des dépenses et visualisation des données. Développée avec des technologies modernes pour offrir une expérience utilisateur intuitive et des analyses financières pertinentes.',
+   client: 'Projet personnel',
    year: '2024',
-   website: 'https://portfolio.slourdel.fr',
-   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
+   website: 'https://finance-app.slourdel.fr',
+   tags: ['Application web', 'Dashboard interactif', 'Visualisation de données'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+     { name: 'Chart.js', icon: 'logos:chartjs' },
    ],
    services: [
      {
-       title: 'Système de Filtrage Avancé',
-       description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
+       title: 'Tableau de bord interactif',
+       description: 'Création d\'un tableau de bord financier complet avec widgets personnalisables pour le suivi des dépenses, revenus et objectifs financiers.'
      },
      {
-       title: 'Expérience Interactive',
-       description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
+       title: 'Visualisation de données',
+       description: 'Développement de graphiques et diagrammes interactifs pour visualiser les tendances financières et faciliter la prise de décision.'
      },
      {
-       title: 'Développement de Formulaires',
-       description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
+       title: 'Gestion des transactions',
+       description: 'Implémentation d\'un système de gestion des transactions avec catégorisation automatique et filtrage avancé des données financières.'
      }
    ],
    imagePath: '/images/work/finance-app/home.png',
@@ -520,28 +521,29 @@ export const projects: Project[] = [
    id: '13',
    slug: 'diet-app',
    title: 'Application de Régime',
-   description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
-   client: 'Projet Personnel',
+   description: 'Une application de suivi nutritionnel et de planification de repas, offrant des programmes personnalisés basés sur les objectifs de santé des utilisateurs. Conçue pour simplifier la préparation des repas et le suivi des progrès avec une interface intuitive.',
+   client: 'Projet personnel',
    year: '2024',
-   website: 'https://portfolio.slourdel.fr',
-   tags: ['Développement Frontend', 'Conception UX', 'Développement Interactif'],
+   website: 'https://diet-app.slourdel.fr',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
    techs: [
-     { name: 'Next.js', icon: 'logos:nextjs-icon' },
+     { name: 'React Native', icon: 'logos:react' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
-     { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+     { name: 'Firebase', icon: 'logos:firebase' },
+     { name: 'Node.js', icon: 'logos:nodejs-icon' },
    ],
    services: [
      {
-       title: 'Système de Filtrage Avancé',
-       description: 'Implémentation d\'un système de filtrage sophistiqué pour les projets et expériences, permettant une découverte et une navigation efficaces du contenu.'
+       title: 'Développement d\'application mobile',
+       description: 'Création d\'une application React Native cross-platform avec une expérience utilisateur fluide et des performances optimisées.'
      },
      {
-       title: 'Expérience Interactive',
-       description: 'Développement d\'interactions utilisateur engageantes et d\'animations fluides à travers le site, améliorant l\'expérience utilisateur globale.'
+       title: 'Système de suivi nutritionnel',
+       description: 'Implémentation d\'un système de suivi des apports nutritionnels avec calcul automatique des calories et des macronutriments.'
      },
      {
-       title: 'Développement de Formulaires',
-       description: 'Création de formulaires de contact robustes avec validation et retour utilisateur fluide, assurant des canaux de communication efficaces.'
+       title: 'Planificateur de repas',
+       description: 'Développement d\'un planificateur de repas hebdomadaire avec suggestions personnalisées et liste de courses automatique.'
      }
    ],
    imagePath: '/images/work/diet-app/home.png',
@@ -555,8 +557,6 @@ export const projects: Project[] = [
      '/images/work/diet-app/gallery4.png',
    ],
 },
-  
-  
 ]
 
 export const getProjectBySlug = (slug: string): Project | undefined => {

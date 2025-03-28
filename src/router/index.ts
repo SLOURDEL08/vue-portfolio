@@ -26,8 +26,8 @@ const router = createRouter({
       component: () => import('../views/Contact.vue')
     },
     {
-      path: '/projects/:slug',
-      name: 'project',
+      path: '/projets/:slug',
+      name: 'projets',
       component: () => import('../views/ProjectDetail.vue'),
       props: true,
       beforeEnter: (to: RouteLocationNormalized, _from: RouteLocationNormalized, next: NavigationGuardNext) => {

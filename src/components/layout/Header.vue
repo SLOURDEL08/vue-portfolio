@@ -26,7 +26,7 @@
             class="w-full h-full object-contain"
           />
         </div>
-        <span v-hover-slide class="smart-text ">Scroll down</span>
+        <span v-hover-slide class="smart-text ">Scroll</span>
       </div>
       </a>
     </div>

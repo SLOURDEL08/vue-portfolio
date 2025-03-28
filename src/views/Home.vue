@@ -11,7 +11,7 @@
 
     <section id="content" class="grid my-16 max-md:my-14 max-md:flex max-md:gap-8 max-md:flex-col-reverse grid-cols-[1fr_2px_.5fr] gap-x-16 gap-y-16 auto-rows-auto">
       <div class="w-full">
-        <h2 class="smart-title max-lg:text-5xl max-xl:text-6xl">Développeur web depuis 5 ans je suis spécialisé dans l'intégration front-end avec des notions de back-end</h2>
+        <h2 class="smart-title tracking-tighter max-lg:text-5xl max-xl:text-6xl">Développeur web depuis 5 ans je suis spécialisé dans l'intégration front-end avec des notions de back-end et API Rest</h2>
       </div>
       <VerticalSeparator class="max-md:hidden" trigger-section-id="myheader"/>
       <div class="w-full flex flex-col justify-between">
@@ -50,7 +50,7 @@
           :altImagePath="project.altImagePath"
           :altText="`${project.title} - Image du projet`"
           variant="enhanced"
-          :linkPath="`/projects/${project.slug}`"
+          :linkPath="`/projets/${project.slug}`"
           :minScale="1.2"  
           :maxScale="2.5" 
           useAltImage

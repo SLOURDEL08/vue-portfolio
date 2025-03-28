@@ -1,7 +1,7 @@
 <template>
   <nav class="flex justify-between items-center pt-24" aria-label="Navigation entre les projets">
     <router-link
-      :to="`/projects/${prevSlug}`"
+      :to="`/projets/${prevSlug}`"
       class="flex items-center gap-4 hover:opacity-70 transition-opacity"
       :aria-label="`Projet précédent: ${prevTitle}`"
     >
@@ -19,7 +19,7 @@
     </router-link>
 
     <router-link
-      :to="`/projects/${nextSlug}`"
+      :to="`/projets/${nextSlug}`"
       class="flex items-center gap-4 hover:opacity-70 transition-opacity"
       :aria-label="`Projet suivant: ${nextTitle}`"
     >

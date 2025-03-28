@@ -18,7 +18,7 @@
                            <div class="absolute inset-0 z-20 mix-blend-overlay opacity-30 pointer-events-none grain-pattern"></div>
 
         <router-link 
-          :to="`/projects/${project.slug}`"
+          :to="`/projets/${project.slug}`"
           class="absolute inset-0 !z-40 transition-all duration-300"
           :class="{ 
             'bg-secondary/20': showOverlay && activeProjectId === project.id,
