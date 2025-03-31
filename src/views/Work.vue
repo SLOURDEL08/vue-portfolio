@@ -5,7 +5,7 @@
         <div class="space-y-4 max-md:space-y-4 max-md:block max-xs:mb-10 max-md:mb-14 mb-16 max-md:gap-14 max-xs:gap-10 gap-16 flex items-end justify-between">
           <div class="w-[80%] max-md:w-full">
             <h1 class="smart-bigtitle mb-4">Projets</h1>
-            <p class="smart-subtitle tracking-tighter">Retrouvez mes différents projets front-end, full-stack et autres..</p>
+            <p class="smart-subtitle max-md:text-3xl tracking-tighter">Retrouvez mes différents projets front-end, full-stack et autres..</p>
           </div>
           <div class="w-[20%] max-md:w-full text-right">
             <div class="flex items-center max-md:justify-end gap-3 cursor-pointer group" v-hover-diagonal>

@@ -1,12 +1,12 @@
 <template>
-  <nav class="flex justify-between items-center pt-24" aria-label="Navigation entre les projets">
+  <nav class="flex justify-between  items-center max-md:pt-14 pt-24" aria-label="Navigation entre les projets">
     <router-link
       :to="`/projets/${prevSlug}`"
       class="flex items-center gap-4 hover:opacity-70 transition-opacity"
       :aria-label="`Projet précédent: ${prevTitle}`"
     >
       <div class="flex items-center gap-3 cursor-pointer group" v-hover-diagonal>
-        <div class="relative overflow-hidden w-6 h-6">
+        <div class="relative overflow-hidden w-6 h-6  max-md:w-5 max-md:h-5">
           <OptimizedImage 
             src="/images/arrow-botleft.png" 
             webpSrc="/images/arrow-botleft.webp" 
@@ -14,7 +14,7 @@
             className="w-full rotate-90 h-full object-contain" 
           />
         </div>
-        <span v-hover-slide class="text-3xl text-secondary font-medium">Projet précédent</span>
+        <span v-hover-slide class="text-3xl max-md:text-2xl text-secondary font-medium">Précédent</span>
       </div>
     </router-link>
 
@@ -24,8 +24,8 @@
       :aria-label="`Projet suivant: ${nextTitle}`"
     >
       <div class="flex items-center gap-3 cursor-pointer group" v-hover-diagonal>
-        <span v-hover-slide class="text-3xl text-secondary font-medium">Projet suivant</span>
-        <div class="relative overflow-hidden w-6 h-6">
+        <span v-hover-slide class="text-3xl max-md:text-2xl text-secondary font-medium">Suivant</span>
+        <div class="relative overflow-hidden w-6 h-6 max-md:w-5 max-md:h-5">
           <OptimizedImage 
             src="/images/arrow-botleft.png" 
             webpSrc="/images/arrow-botleft.webp" 

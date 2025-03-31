@@ -20,10 +20,10 @@
         <!-- En-tête -->
         <header class="space-y-8">
           <span class="smart-text">(À Propos)</span>
-          <h1 class="smart-bigtitle max-lg:text-6xl max-lg:tracking-wide pt-2">Sébastien LOURDEL</h1>
+          <h1 class="smart-bigtitle max-md:!text-5xl max-lg:text-6xl max-lg:tracking-wide pt-2">Sébastien LOURDEL</h1>
         </header>
             
-        <p class="text-[45px] max-lg:text-3xl max-md:text-3xl leading-[100%] font-[600]">
+        <p class="text-[45px] max-lg:text-3xl max-md:text-2xl leading-[100%] font-[600]">
           Développeur web Front-End depuis 5 ans, spécialisé en intégration et expérience utilisateur avec de solides compétences en back-end
         </p>
 
@@ -42,12 +42,12 @@
         
         <!-- Compétences -->
         <section class="space-y-8" aria-labelledby="skills-section">
-          <h2 id="skills-section" class="smart-subtitle">Compétences</h2>
-          <ul class="grid grid-cols-3 font-[500] py-4 gap-4 text-xl">
+          <h2 id="skills-section" class="smart-subtitle max-md:text-3xl">Compétences</h2>
+          <ul class="grid grid-cols-3 max-md:flex max-md:gap-5 max-md:flex-wrap font-[500] py-4 gap-4 text-xl">
             <li 
               v-for="skill in skills" 
               :key="skill" 
-              class="flex gap-4 items-center"
+              class="flex gap-4 max-md:gap-2.5 items-center"
             >
               <ArrowIcon />
               {{ skill }}
@@ -59,7 +59,7 @@
         
         <!-- Formation -->
         <section class="mt-16 max-md:mt-14 max-xs:mt-10 space-y-8" aria-labelledby="education-section">
-          <h2 id="education-section" class="smart-subtitle">Diplômes & Formation</h2>
+          <h2 id="education-section" class="smart-subtitle  max-md:text-3xl">Diplômes & Formation</h2>
           <ul class="space-y-4 pb-4 font-[500] text-xl">
             <template v-for="(item, index) in educationItems" :key="index">
               <li class="flex justify-between gap-2">

@@ -4,8 +4,8 @@
       <div class="space-y-4 max-lg:block gap-16 flex items-end justify-between">
         <!-- Section principale du titre -->
         <div class="w-[70%] max-lg:w-full">
-          <h1 class="smart-bigtitle text-secondary mb-4">{{ title }}</h1>
-          <p class="smart-subtitle text-secondary !font-[600]">{{ description }}</p>
+          <h1 class="smart-bigtitle max-md:!text-5xl text-secondary mb-4 max-md:w-[70%]">{{ title }}</h1>
+          <p class="smart-subtitle text-secondary max-md:text-2xl !font-[600]">{{ description }}</p>
            <!-- Technologies utilisées -->
       <section class="mt-8" aria-label="Technologies utilisées">
         <div class="flex flex-wrap gap-4">

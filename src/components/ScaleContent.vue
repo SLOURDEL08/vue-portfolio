@@ -1,6 +1,6 @@
 <template>
     <div class="flex max-md:flex-col max-md:gap-6 py-14 max-md:py-12">
-      <span class="w-[60%] max-md:w-full smart-bigtitle tracking-tighter !leading-[0.9] font-semibold">
+      <span class="w-[60%] max-md:w-full smart-bigtitle max-md:!text-4xl tracking-tighter !leading-[0.9] font-semibold">
         {{ title }}
       </span>
       <div class="w-[40%] max-md:w-full pr-10 space-y-6">

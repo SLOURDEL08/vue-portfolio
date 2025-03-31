@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-container w-full relative overflow-hidden">
     <!-- Header with title and navigation arrows -->
-    <div class="carousel-header flex justify-between items-center mb-6 px-16 py-4">
+    <div class="carousel-header flex justify-between items-center mb-6 px-16 py-4 max-md:px-10">
       <h3 class="carousel-title smart-text font-semibold">{{ title || "(Gallery)" }}</h3>
       
       <!-- Navigation arrows -->

@@ -7,13 +7,13 @@
     <div class="grid grid-rows-[auto_1fr] gap-36 max-md:gap-20">
       <!-- Section Connect -->
       <section aria-labelledby="connect-heading">
-        <div class="flex flex-col gap-14 max-md:gap-10">
-          <div class="h-[200px] flex flex-col justify-center">
+        <div class="flex flex-col gap-14 max-md:gap-0">
+          <div class="h-[200px] max-md:h-28 flex flex-col justify-center">
             <p class="text-3xl mb-4 max-md:text-xl font-[500]">(Contact)</p>
-            <h2 id="connect-heading" class="smart-bigtitle leading-none !text-white font-semibold">Discutons</h2>
+            <h2 id="connect-heading" class="smart-bigtitle leading-none !text-white max-md:!text-5xl font-semibold">Discutons</h2>
           </div>
           <router-link to="/contact">
-            <Button class="mt-4 !bg-white text-secondary">
+            <Button class="mt-4 !py-3 !bg-white text-secondary">
               <span v-hover-slide class="inline-block py-0 max-md:!px-4 !-my-3">Contact</span>
             </Button>
           </router-link>
@@ -30,7 +30,7 @@
         >
           <template #action>
             <router-link to="/projets">
-              <Button class="mt-4 !bg-white text-secondary">
+              <Button class="mt-4 !py-3 !bg-white text-secondary">
                 <span v-hover-slide class="inline-block py-0 max-md:!px-4 -my-3">Mes Projets</span>
               </Button>
             </router-link>
