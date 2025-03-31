@@ -29,136 +29,8 @@ export interface Project {
 
 
 export const projects: Project[] = [
-  {
+   {
     id: '1',
-    slug: 'digitalizerr',
-    title: 'Digitalizerr',
-    description: 'Une agence fictive de marketing web créée pour mettre en valeur mes compétences en design et en développement front-end. Ce projet met en avant l\'intégration moderne et les composants réutilisables.',
-    client: 'Projet personnel',
-    year: '2023',
-    repository: 'https://github.com/SLOURDEL08/Digitalizerr-app',
-    website: 'https://chipper-rabanadas-970272.netlify.app/',
-    tags: ['Design UI/UX', 'Développement Front-end', 'Responsive'],
-    techs: [
-      { name: 'React', icon: 'logos:react' },
-      { name: 'TypeScript', icon: 'logos:typescript-icon' },
-      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-      { name: 'Figma', icon: 'logos:figma' },
-      { name: 'Framer Motion', icon: 'logos:framer' },
-    ],
-    services: [
-      {
-        title: 'Design UI/UX',
-        description: 'Conception complète de l\'interface utilisateur dans Figma, en mettant l\'accent sur une expérience utilisateur moderne et intuitive pour une agence de marketing web.'
-      },
-      {
-        title: 'Développement Frontend',
-        description: 'Développement avec React, TypeScript et Tailwind CSS. Mise en œuvre de composants réutilisables, y compris des carrousels, des formulaires et des systèmes de réservation.'
-      },
-      {
-        title: 'Responsive',
-        description: 'Mise en œuvre d\'un design entièrement responsive sur tous les appareils, garantissant une expérience utilisateur fluide de l\'ordinateur de bureau au mobile avec une approche mobile-first.'
-      }
-    ],
-    imagePath: '/images/work/digitalizerr/home.webp',
-    altImagePath: '/images/work/digitalizerr/alt.webp',
-    date: "2024-01-15",
-    gallery: [
-      '/images/work/digitalizerr/gallery.webp',
-      '/images/work/digitalizerr/gallery1.webp',
-      '/images/work/digitalizerr/gallery2.webp',
-      '/images/work/digitalizerr/gallery3.webp',
-      '/images/work/digitalizerr/gallery4.webp',
-      '/images/work/digitalizerr/gallery5.webp',
-      '/images/work/digitalizerr/gallery6.webp',
-    ],
-  },
-  {
-    id: '2',
-    slug: 'breeder',
-    title: 'Breeder',
-    description: 'Une reproduction complexe d\'un site web avec des animations avancées GSAP et des transitions fluides entre les pages.',
-    client: 'Projet personnel',
-    year: '2024',
-    repository:'https://github.com/SLOURDEL08/breeder-app',
-    website: 'https://brand-breeder-app.netlify.app/',
-    tags: ['Animations complexes', 'Développement Frontend', 'Design UI/UX'],
-    techs: [
-      { name: 'Vue.js', icon: 'logos:vue' },
-      { name: 'TypeScript', icon: 'logos:typescript-icon' },
-      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-      { name: 'JavaScript', icon: 'logos:javascript' },
-      { name: 'GSAP', icon: 'logos:greensock-icon' },
-    ],
-    services: [
-      {
-        title: 'Animations avancées',
-        description: 'Mise en œuvre d\'animations complexes avec GSAP, comprenant des transitions continues entre les pages et des interactions sophistiquées sur tout le site.'
-      },
-      {
-        title: 'Développement Frontend',
-        description: 'Créé avec Vue.js et TypeScript, avec gestion du routeur pour des animations fluides et gestion de l\'état entre les pages.'
-      },
-      {
-        title: 'Responsive',
-        description: 'Mise en œuvre d\'un design responsive pixel-perfect avec alignement de la grille et maintien de l\'intégrité des animations sur toutes les tailles d\'appareils.'
-      }
-    ],
-    imagePath: '/images/work/breeder/home.png',
-    altImagePath: '/images/work/breeder/alt.png',
-    date: "2024-01-20",
-    gallery: [
-      '/images/work/breeder/gallery1.png',
-      '/images/work/breeder/gallery2.png',
-      '/images/work/breeder/gallery3.png',
-      '/images/work/breeder/gallery4.png',
-      '/images/work/breeder/gallery5.png',
-      '/images/work/breeder/gallery6.png',
-    ],
-  },
-  {
-    id: '3',
-    slug: 'acolyte',
-    title: 'Acolyte',
-    description: 'Une reproduction minutieuse de la page d\'accueil d\'Acolyte, avec des animations GSAP sophistiquées et une gestion précise des mises en page. Ce projet démontre une implémentation avancée du frontend avec des animations subtiles et séquentielles.',
-    client: 'Projet personnel',
-    year: '2024',
-    repository:'https://github.com/SLOURDEL08/Acolyte',
-    website: 'https://acolyte-mu.vercel.app/',
-    tags: ['Développement Frontend', 'Animation', 'Design de mise en page'],
-    techs: [
-      { name: 'Vue.js', icon: 'logos:vue' },
-      { name: 'TypeScript', icon: 'logos:typescript-icon' },
-      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-      { name: 'JavaScript', icon: 'logos:javascript' },
-      { name: 'GSAP', icon: 'logos:greensock-icon' },
-    ],
-    services: [
-      {
-        title: 'Développement d\'animations',
-        description: 'Mise en œuvre d\'animations subtiles et sophistiquées avec GSAP, avec un timing séquentiel et des transitions fluides entre les éléments.'
-      },
-      {
-        title: 'Ingénierie de mise en page',
-        description: 'Gestion précise des espacements et des alignements, garantissant une reproduction parfaite des mises en page complexes et un comportement responsive.'
-      },
-      {
-        title: 'Intégration Frontend',
-        description: 'Créé avec Vue.js et TypeScript, en mettant l\'accent sur une architecture de code propre et des performances d\'animations optimisées.'
-      }
-    ],
-    imagePath: '/images/work/acolyte/home.png',
-    altImagePath: '/images/work/acolyte/alt.png',
-    date: "2024-02-01",
-    gallery: [
-      '/images/work/acolyte/gallery1.png',
-      '/images/work/acolyte/gallery2.png',
-      '/images/work/acolyte/gallery4.png',
-      '/images/work/acolyte/gallery3.png',
-    ],
-  },
-  {
-    id: '4',
     slug: 'digitoile',
     title: 'Digitoile',
     description: 'Un site personnalisé Next.js avec un système de formulaire multi-étapes et des animations sophistiquées. Ce projet met en valeur les pratiques modernes de développement web avec un accent sur l\'expérience utilisateur et la performance.',
@@ -203,6 +75,135 @@ export const projects: Project[] = [
       '/images/work/digitoile/gallery7.png',
     ],
   },
+  {
+    id: '2',
+    slug: 'digitalizerr',
+    title: 'Digitalizerr',
+    description: 'Une agence fictive de marketing web créée pour mettre en valeur mes compétences en design et en développement front-end. Ce projet met en avant l\'intégration moderne et les composants réutilisables.',
+    client: 'Projet personnel',
+    year: '2023',
+    repository: 'https://github.com/SLOURDEL08/Digitalizerr-app',
+    website: 'https://chipper-rabanadas-970272.netlify.app/',
+    tags: ['Design UI/UX', 'Développement Front-end', 'Responsive'],
+    techs: [
+      { name: 'React', icon: 'logos:react' },
+      { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'Framer Motion', icon: 'logos:framer' },
+    ],
+    services: [
+      {
+        title: 'Design UI/UX',
+        description: 'Conception complète de l\'interface utilisateur dans Figma, en mettant l\'accent sur une expérience utilisateur moderne et intuitive pour une agence de marketing web.'
+      },
+      {
+        title: 'Développement Frontend',
+        description: 'Développement avec React, TypeScript et Tailwind CSS. Mise en œuvre de composants réutilisables, y compris des carrousels, des formulaires et des systèmes de réservation.'
+      },
+      {
+        title: 'Responsive',
+        description: 'Mise en œuvre d\'un design entièrement responsive sur tous les appareils, garantissant une expérience utilisateur fluide de l\'ordinateur de bureau au mobile avec une approche mobile-first.'
+      }
+    ],
+    imagePath: '/images/work/digitalizerr/home.webp',
+    altImagePath: '/images/work/digitalizerr/alt.webp',
+    date: "2024-01-15",
+    gallery: [
+      '/images/work/digitalizerr/gallery.webp',
+      '/images/work/digitalizerr/gallery1.webp',
+      '/images/work/digitalizerr/gallery2.webp',
+      '/images/work/digitalizerr/gallery3.webp',
+      '/images/work/digitalizerr/gallery4.webp',
+      '/images/work/digitalizerr/gallery5.webp',
+      '/images/work/digitalizerr/gallery6.webp',
+    ],
+  },
+  {
+    id: '3',
+    slug: 'breeder',
+    title: 'Breeder',
+    description: 'Une reproduction complexe d\'un site web avec des animations avancées GSAP et des transitions fluides entre les pages.',
+    client: 'Projet personnel',
+    year: '2024',
+    repository:'https://github.com/SLOURDEL08/breeder-app',
+    website: 'https://brand-breeder-app.netlify.app/',
+    tags: ['Animations complexes', 'Développement Frontend', 'Design UI/UX'],
+    techs: [
+      { name: 'Vue.js', icon: 'logos:vue' },
+      { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'GSAP', icon: 'logos:greensock-icon' },
+    ],
+    services: [
+      {
+        title: 'Animations avancées',
+        description: 'Mise en œuvre d\'animations complexes avec GSAP, comprenant des transitions continues entre les pages et des interactions sophistiquées sur tout le site.'
+      },
+      {
+        title: 'Développement Frontend',
+        description: 'Créé avec Vue.js et TypeScript, avec gestion du routeur pour des animations fluides et gestion de l\'état entre les pages.'
+      },
+      {
+        title: 'Responsive',
+        description: 'Mise en œuvre d\'un design responsive pixel-perfect avec alignement de la grille et maintien de l\'intégrité des animations sur toutes les tailles d\'appareils.'
+      }
+    ],
+    imagePath: '/images/work/breeder/home.png',
+    altImagePath: '/images/work/breeder/alt.png',
+    date: "2024-01-20",
+    gallery: [
+      '/images/work/breeder/gallery1.png',
+      '/images/work/breeder/gallery2.png',
+      '/images/work/breeder/gallery3.png',
+      '/images/work/breeder/gallery4.png',
+      '/images/work/breeder/gallery5.png',
+      '/images/work/breeder/gallery6.png',
+    ],
+  },
+  {
+    id: '4',
+    slug: 'acolyte',
+    title: 'Acolyte',
+    description: 'Une reproduction minutieuse de la page d\'accueil d\'Acolyte, avec des animations GSAP sophistiquées et une gestion précise des mises en page. Ce projet démontre une implémentation avancée du frontend avec des animations subtiles et séquentielles.',
+    client: 'Projet personnel',
+    year: '2024',
+    repository:'https://github.com/SLOURDEL08/Acolyte',
+    website: 'https://acolyte-mu.vercel.app/',
+    tags: ['Développement Frontend', 'Animation', 'Design de mise en page'],
+    techs: [
+      { name: 'Vue.js', icon: 'logos:vue' },
+      { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'GSAP', icon: 'logos:greensock-icon' },
+    ],
+    services: [
+      {
+        title: 'Développement d\'animations',
+        description: 'Mise en œuvre d\'animations subtiles et sophistiquées avec GSAP, avec un timing séquentiel et des transitions fluides entre les éléments.'
+      },
+      {
+        title: 'Ingénierie de mise en page',
+        description: 'Gestion précise des espacements et des alignements, garantissant une reproduction parfaite des mises en page complexes et un comportement responsive.'
+      },
+      {
+        title: 'Intégration Frontend',
+        description: 'Créé avec Vue.js et TypeScript, en mettant l\'accent sur une architecture de code propre et des performances d\'animations optimisées.'
+      }
+    ],
+    imagePath: '/images/work/acolyte/home.png',
+    altImagePath: '/images/work/acolyte/alt.png',
+    date: "2024-02-01",
+    gallery: [
+      '/images/work/acolyte/gallery1.png',
+      '/images/work/acolyte/gallery2.png',
+      '/images/work/acolyte/gallery4.png',
+      '/images/work/acolyte/gallery3.png',
+    ],
+  },
+ 
   {
     id: '5',
     slug: 'ferrari-beverly',
@@ -364,50 +365,9 @@ export const projects: Project[] = [
 
    ],
 },
+
 {
    id: '9',
-   slug: 'diet-ia',
-   title: 'Diet IA',
-   description: 'Une application complète de transformation physique offrant des plans de repas et des recettes personnalisés basés sur les profils et objectifs des utilisateurs. Construite avec Vue.js, Node.js et Firebase pour une expérience utilisateur complète.',
-   client: 'Projet personnel',
-   year: '2024',
-   website: 'diet-ia.vercel.app',
-   tags: ['Développement Full Stack', 'Authentification utilisateur', 'Personnalisation'],
-   techs: [
-     { name: 'Vue.js', icon: 'logos:vue' },
-     { name: 'TypeScript', icon: 'logos:typescript-icon' },
-     { name: 'Node.js', icon: 'logos:nodejs-icon' },
-     { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-     { name: 'Firebase', icon: 'logos:firebase' },
-   ],
-   services: [
-     {
-       title: 'Développement Backend',
-       description: 'Implémentation du backend Node.js avec TypeScript, incluant middleware, systèmes d\'authentification et opérations CRUD.'
-     },
-     {
-       title: 'Gestion des utilisateurs',
-       description: 'Développement d\'un système complet d\'authentification et de gestion de profil utilisateur avec Firebase, incluant le stockage sécurisé des données.'
-     },
-     {
-       title: 'Système de personnalisation',
-       description: 'Création d\'un système intelligent de recommandation pour les repas et recettes basé sur les profils, objectifs et préférences des utilisateurs.'
-     }
-   ],
-   imagePath: '/images/work/dietia/home.png',
-   altImagePath: '/images/work/dietia/alt.png',
-   date: "2024-03-20",
-   gallery: [
-     '/images/work/dietia/gallery1.png',
-     '/images/work/dietia/gallery2.png',
-     '/images/work/dietia/gallery3.png',
-     '/images/work/dietia/gallery4.png',
-     '/images/work/dietia/gallery5.png',
-     '/images/work/dietia/gallery6.png',
-   ],
-},
-{
-   id: '10',
    slug: 'toast-collectif',
    title: 'Toast Collectif',
    description: 'Un site WordPress personnalisé pour une agence de marketing avec implémentation de suivi sur mesure, optimisation SEO et composants de diaporama personnalisés. Construit avec un focus sur la performance et l\'analyse.',
@@ -448,7 +408,7 @@ export const projects: Project[] = [
    ],
 },
 {
-   id: '11',
+   id: '10',
    slug: 'portfolio',
    title: 'Portfolio V1',
    description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
@@ -488,9 +448,9 @@ export const projects: Project[] = [
    ],
 },
 {
-   id: '12',
+   id: '11',
    slug: 'finance-app',
-   title: 'Application Financière',
+   title: 'Finance App',
    description: 'Une application de gestion financière personnelle avec tableau de bord interactif, suivi des dépenses et visualisation des données. Développée avec des technologies modernes pour offrir une expérience utilisateur intuitive et des analyses financières pertinentes.',
    client: 'Projet personnel',
   year: '2024',
@@ -529,7 +489,7 @@ export const projects: Project[] = [
    ],
 },
 {
-   id: '13',
+   id: '12',
    slug: 'diet-app',
    title: 'Application de Régime',
    description: 'Une application de suivi nutritionnel et de planification de repas, offrant des programmes personnalisés basés sur les objectifs de santé des utilisateurs. Conçue pour simplifier la préparation des repas et le suivi des progrès avec une interface intuitive.',

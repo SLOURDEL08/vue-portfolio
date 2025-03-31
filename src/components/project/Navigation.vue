@@ -14,7 +14,7 @@
             className="w-full rotate-90 h-full object-contain" 
           />
         </div>
-        <span v-hover-slide class="text-3xl text-secondary font-medium">Previous Project</span>
+        <span v-hover-slide class="text-3xl text-secondary font-medium">Projet précédent</span>
       </div>
     </router-link>
 
@@ -24,7 +24,7 @@
       :aria-label="`Projet suivant: ${nextTitle}`"
     >
       <div class="flex items-center gap-3 cursor-pointer group" v-hover-diagonal>
-        <span v-hover-slide class="text-3xl text-secondary font-medium">Next Project</span>
+        <span v-hover-slide class="text-3xl text-secondary font-medium">Projet suivant</span>
         <div class="relative overflow-hidden w-6 h-6">
           <OptimizedImage 
             src="/images/arrow-botleft.png" 
