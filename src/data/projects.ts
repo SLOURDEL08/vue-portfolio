@@ -6,6 +6,7 @@ export interface Project {
   description: string
   client: string
   year: string
+  repository?: string
   website?: string // Optionnel
   tags: string[] // Ancien services renommé en tags
     techs?: Array<{
@@ -35,6 +36,7 @@ export const projects: Project[] = [
     description: 'Une agence fictive de marketing web créée pour mettre en valeur mes compétences en design et en développement front-end. Ce projet met en avant l\'intégration moderne et les composants réutilisables.',
     client: 'Projet personnel',
     year: '2023',
+    repository: 'https://github.com/SLOURDEL08/Digitalizerr-app',
     website: 'https://chipper-rabanadas-970272.netlify.app/',
     tags: ['Design UI/UX', 'Développement Front-end', 'Responsive'],
     techs: [
@@ -78,6 +80,7 @@ export const projects: Project[] = [
     description: 'Une reproduction complexe d\'un site web avec des animations avancées GSAP et des transitions fluides entre les pages.',
     client: 'Projet personnel',
     year: '2024',
+    repository:'https://github.com/SLOURDEL08/breeder-app',
     website: 'https://brand-breeder-app.netlify.app/',
     tags: ['Animations complexes', 'Développement Frontend', 'Design UI/UX'],
     techs: [
@@ -120,6 +123,7 @@ export const projects: Project[] = [
     description: 'Une reproduction minutieuse de la page d\'accueil d\'Acolyte, avec des animations GSAP sophistiquées et une gestion précise des mises en page. Ce projet démontre une implémentation avancée du frontend avec des animations subtiles et séquentielles.',
     client: 'Projet personnel',
     year: '2024',
+    repository:'https://github.com/SLOURDEL08/Acolyte',
     website: 'https://acolyte-mu.vercel.app/',
     tags: ['Développement Frontend', 'Animation', 'Design de mise en page'],
     techs: [
@@ -160,6 +164,7 @@ export const projects: Project[] = [
     description: 'Un site personnalisé Next.js avec un système de formulaire multi-étapes et des animations sophistiquées. Ce projet met en valeur les pratiques modernes de développement web avec un accent sur l\'expérience utilisateur et la performance.',
     client: 'Projet personnel',
     year: '2024',
+    repository: 'https://github.com/SLOURDEL08/digitoile',
     website: 'https://digitoile.fr',
     tags: ['Développement Frontend', 'Design UI/UX', 'Développement de formulaires'],
     techs: [
@@ -205,6 +210,7 @@ export const projects: Project[] = [
     description: 'Une reproduction fidèle de la page d\'accueil de Ferrari Beverly Hills, avec des carrousels personnalisés et des éléments de navigation interactifs. Ce projet démontre une attention minutieuse aux détails du design et des interactions utilisateur fluides.',
     client: 'Projet personnel',
     year: '2024',
+    repository:'https://github.com/SLOURDEL08/FerrariBeverly',
     website: 'https://endearing-bubblegum-84fec1.netlify.app/',
     tags: ['Développement Frontend', 'Intégration UI', 'Design interactif'],
     techs: [
@@ -243,7 +249,8 @@ export const projects: Project[] = [
    title: 'Reactflix',
    description: "Une application multi-pages inspirée de Netflix, avec du contenu dynamique, des composants réutilisables et un système de navigation verticale. Une vitrine de l'architecture des composants React et du design responsive.",
    client: 'Projet personnel',
-   year: '2024',
+     year: '2024',
+   repository:'https://github.com/SLOURDEL08/Reactflix',
    website: 'https://peppy-unicorn-081057.netlify.app',
    tags: ['Développement Frontend', 'Architecture de composants', 'Design UI/UX'],
    techs: [
@@ -283,7 +290,8 @@ export const projects: Project[] = [
    title: 'Tesla',
    description: "Un clone de la page d'accueil de Tesla avec des animations séquentielles de sections et des arrière-plans dynamiques. Ce projet démontre des animations avancées de défilement et des systèmes de navigation responsive.",
    client: 'Projet personnel',
-   year: '2024',
+       year: '2024',
+   repository:'https://github.com/SLOURDEL08/tesla',
    website: 'https://shiny-yeot-0fdc3e.netlify.app',
    tags: ['Développement Frontend', 'Animation', 'Design interactif'],
    techs: [
@@ -322,7 +330,8 @@ export const projects: Project[] = [
    title: 'Uber Eats',
    description: "Une application web dynamique inspirée par Uber Eats, avec des capacités de recherche fonctionnelles et des listes de restaurants interactives. Construite avec React et JavaScript moderne.",
    client: 'Projet personnel',
-   year: '2024',
+         year: '2024',
+   repository:'https://github.com/SLOURDEL08/UberEats',
    website: 'https://fastidious-muffin-3654c6.netlify.app',
    tags: ['Application web', 'Fonctionnalité de recherche', 'Contenu dynamique'],
    techs: [
@@ -444,7 +453,8 @@ export const projects: Project[] = [
    title: 'Portfolio V1',
    description: 'Un site portfolio complet construit avec Next.js, proposant des capacités de filtrage avancées, des vitrines de projets dynamiques et des expériences interactives. Cette plateforme démontre les pratiques modernes de développement web et de conception d\'expérience utilisateur.',
    client: 'Projet personnel',
-   year: '2024',
+  year: '2024',
+   repository:'https://github.com/SLOURDEL08/Portfolio-NEXTJS',
    website: 'https://portfolio.slourdel.fr',
    tags: ['Développement Frontend', 'Conception UX', 'Développement interactif'],
    techs: [
@@ -483,7 +493,8 @@ export const projects: Project[] = [
    title: 'Application Financière',
    description: 'Une application de gestion financière personnelle avec tableau de bord interactif, suivi des dépenses et visualisation des données. Développée avec des technologies modernes pour offrir une expérience utilisateur intuitive et des analyses financières pertinentes.',
    client: 'Projet personnel',
-   year: '2024',
+  year: '2024',
+   repository:'https://github.com/SLOURDEL08/finance-app',
    website: 'https://finance-app.slourdel.fr',
    tags: ['Application web', 'Dashboard interactif', 'Visualisation de données'],
    techs: [
@@ -523,7 +534,8 @@ export const projects: Project[] = [
    title: 'Application de Régime',
    description: 'Une application de suivi nutritionnel et de planification de repas, offrant des programmes personnalisés basés sur les objectifs de santé des utilisateurs. Conçue pour simplifier la préparation des repas et le suivi des progrès avec une interface intuitive.',
    client: 'Projet personnel',
-   year: '2024',
+  year: '2024',
+   repository:'https://github.com/SLOURDEL08/diet-app',
    website: 'https://diet-app.slourdel.fr',
    tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
    techs: [

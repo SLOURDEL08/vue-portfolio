@@ -7,6 +7,7 @@
         :client="project.client"
         :year="project.year"
         :website="project.website"
+        :repository="project.repository"
         :tags="project.tags"
         :techs="project.techs"
       />

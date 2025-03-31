@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {
       path: '/projets',
-      name: 'projets',
+      name: 'projets-liste',
       component: () => import('../views/Work.vue')
     },
     {
