@@ -494,8 +494,7 @@ export const projects: Project[] = [
    title: 'Application de Régime',
    description: 'Une application de suivi nutritionnel et de planification de repas, offrant des programmes personnalisés basés sur les objectifs de santé des utilisateurs. Conçue pour simplifier la préparation des repas et le suivi des progrès avec une interface intuitive.',
    client: 'Projet personnel',
-  year: '2024',
-   repository:'https://github.com/SLOURDEL08/diet-app',
+  year: '2025',
    website: 'https://diet-app.slourdel.fr',
    tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
    techs: [
@@ -520,13 +519,172 @@ export const projects: Project[] = [
    ],
    imagePath: '/images/work/diet-app/home.png',
    altImagePath: '/images/work/diet-app/home.png',
-   date: "2024-03-25",
+   date: "2025-01-25",
    gallery: [
      '/images/work/diet-app/gallery.png',
      '/images/work/diet-app/gallery1.png',
      '/images/work/diet-app/gallery2.png',
      '/images/work/diet-app/gallery3.png',
      '/images/work/diet-app/gallery4.png',
+   ],
+  },
+{
+   id: '13',
+   slug: 'rocket-school',
+   title: 'Rocket School',
+   description: 'Une application de suivi nutritionnel et de planification de repas, offrant des programmes personnalisés basés sur les objectifs de santé des utilisateurs. Conçue pour simplifier la préparation des repas et le suivi des progrès avec une interface intuitive.',
+   client: 'Projet personnel',
+  year: '2023',
+   website: 'https://www.behance.net/gallery/180229181/Rocket-School',
+   tags: ['Landing Page', 'Intégration', 'Tracking GTM'],
+   techs: [
+      { name: 'Wordpress', icon: 'logos:wordpress' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'Google Tag Manager', icon: 'logos:google-tag-manager' },
+   ],
+   services: [
+     {
+       title: 'Développement d\'application mobile',
+       description: 'Création d\'une application React Native cross-platform avec une expérience utilisateur fluide et des performances optimisées.'
+     },
+     {
+       title: 'Système de suivi nutritionnel',
+       description: 'Implémentation d\'un système de suivi des apports nutritionnels avec calcul automatique des calories et des macronutriments.'
+     },
+     {
+       title: 'Planificateur de repas',
+       description: 'Développement d\'un planificateur de repas hebdomadaire avec suggestions personnalisées et liste de courses automatique.'
+     }
+   ],
+   imagePath: '/images/work/rocket-school/home.png',
+   altImagePath: '/images/work/rocket-school/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/rocket-school/gallery1.png',
+     '/images/work/rocket-school/gallery2.png',
+     '/images/work/rocket-school/gallery3.png',
+     '/images/work/rocket-school/gallery4.png',
+     '/images/work/rocket-school/gallery5.png',
+   ],
+  },
+{
+   id: '14',
+   slug: 'portobello',
+   title: 'Portobello',
+   description: 'Site e-commerce de mobilier haut de gamme, conçu pour offir une expérience utilisateur fluide et intuitive. Thème sur-mesure avec intégration de fonctionnalités avancées.',
+   client: 'Projet personnel',
+  year: '2023',
+   website: 'https://portobellodecoration.com/',
+   tags: ['Wordpress', 'Référencement', 'Tracking'],
+   techs: [
+      { name: 'Wordpress', icon: 'logos:wordpress' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'Google Tag Manager', icon: 'logos:google-tag-manager' },
+     
+   ],
+   services: [
+     {
+       title: 'Maintenance',
+       description: 'Maintenance et mise à jour régulière du site pour garantir la sécurité et des performances optimales.'
+     },
+     {
+       title: 'Référencement',
+       description: 'Correction des erreurs de référencement et optimisation du site pour améliorer la visibilité.'
+     },
+     {
+       title: 'Tracking',
+       description: 'Tracking des événements et des conversions + installation du pixel Facebook pour le remarketing.'
+     }
+   ],
+   imagePath: '/images/work/portobello/home.png',
+   altImagePath: '/images/work/portobello/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/portobello/gallery1.png',
+     '/images/work/portobello/gallery2.png',
+     '/images/work/portobello/gallery3.png',
+     '/images/work/portobello/gallery4.png',
+     '/images/work/portobello/gallery5.png',
+   ],
+  },
+{
+   id: '15',
+   slug: 'sirius-securite',
+   title: 'Sirius Sécurité',
+   description: 'Site vitrine pour une entreprise de sécurisé, conçu pour présenter les services et l\'expertise de l\'entreprise. Thème sur-mesure avec intégration de fonctionnalités avancées.',
+   client: 'Projet personnel',
+  year: '2024',
+   website: 'https://siriussecurite.fr',
+   tags: ['Vitrine', 'Référencement', 'Sur-mesure'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+  
+  ],
+   services: [
+     {
+       title: 'Développement d\'application mobile',
+       description: 'Création d\'une application React Native cross-platform avec une expérience utilisateur fluide et des performances optimisées.'
+     },
+     {
+       title: 'Système de suivi nutritionnel',
+       description: 'Implémentation d\'un système de suivi des apports nutritionnels avec calcul automatique des calories et des macronutriments.'
+     },
+     {
+       title: 'Planificateur de repas',
+       description: 'Développement d\'un planificateur de repas hebdomadaire avec suggestions personnalisées et liste de courses automatique.'
+     }
+   ],
+   imagePath: '/images/work/sirius-securite/home.png',
+   altImagePath: '/images/work/sirius-securite/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/sirius-securite/gallery1.png',
+     '/images/work/sirius-securite/gallery2.png',
+     '/images/work/sirius-securite/gallery3.png',
+     '/images/work/sirius-securite/gallery4.png',
+     '/images/work/sirius-securite/gallery5.png',
+   ],
+  },
+{
+   id: '16',
+   slug: 'paulsavine',
+   title: 'Paul Savine',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   website: 'https://paulsavine.fr',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/paulsavine/home.png',
+   altImagePath: '/images/work/paulsavine/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/paulsavine/gallery1.png',
+     '/images/work/paulsavine/gallery2.png',
+     '/images/work/paulsavine/gallery3.png',
+     '/images/work/paulsavine/gallery4.png',
+     '/images/work/paulsavine/gallery5.png',
+          '/images/work/paulsavine/gallery6.png',
+     '/images/work/paulsavine/gallery7.png',
+
    ],
 },
 ]
