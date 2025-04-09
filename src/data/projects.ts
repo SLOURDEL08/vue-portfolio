@@ -686,6 +686,240 @@ export const projects: Project[] = [
      '/images/work/paulsavine/gallery7.png',
 
    ],
+  },
+{
+   id: '17',
+   slug: 'couvrassistance',
+   title: 'Couvrassistance',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   website: 'https://paulsavine.fr',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/couvrassistance/home.png',
+   altImagePath: '/images/work/couvrassistance/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/couvrassistance/gallery1.png',
+     '/images/work/couvrassistance/gallery2.png',
+     '/images/work/couvrassistance/gallery3.png',
+     '/images/work/couvrassistance/gallery4.png',
+     '/images/work/couvrassistance/gallery5.png',
+          '/images/work/couvrassistance/gallery6.png',
+
+   ],
+  },
+{
+   id: '18',
+   slug: 'les-vanniers',
+   title: 'Les Vanniers',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   website: 'https://paulsavine.fr',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/lesvanniers/home.png',
+   altImagePath: '/images/work/lesvanniers/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/lesvanniers/gallery1.png',
+     '/images/work/lesvanniers/gallery2.png',
+     '/images/work/lesvanniers/gallery3.png',
+     '/images/work/lesvanniers/gallery4.png',
+     '/images/work/lesvanniers/gallery5.png',
+          '/images/work/lesvanniers/gallery6.png',
+     '/images/work/lesvanniers/gallery7.png',
+
+   ],
+  },
+{
+   id: '19',
+   slug: 'webagency',
+   title: 'Web Agency',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   website: 'https://paulsavine.fr',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/webagency/home.png',
+   altImagePath: '/images/work/webagency/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/webagency/gallery1.png',
+     '/images/work/webagency/gallery2.png',
+     '/images/work/webagency/gallery3.png',
+     '/images/work/webagency/gallery4.png',
+     '/images/work/webagency/gallery5.png',
+          '/images/work/webagency/gallery6.png',
+
+   ],
+  },
+{
+   id: '20',
+   slug: 'codersmonkey',
+   title: 'Coders Monkey',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+  repository:'https://github.com/SLOURDEL08/Coders-Monkey',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/codersmonkey/home.png',
+   altImagePath: '/images/work/codersmonkey/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/codersmonkey/gallery1.png',
+     '/images/work/codersmonkey/gallery2.png',
+     '/images/work/codersmonkey/gallery3.png',
+     '/images/work/codersmonkey/gallery4.png',
+     '/images/work/codersmonkey/gallery5.png',
+          '/images/work/codersmonkey/gallery6.png',
+
+   ],
+  },
+{
+   id: '21',
+   slug: 'booki',
+   title: 'Booki',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   repository: 'https://github.com/SLOURDEL08/BOOKI',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/booki/home.png',
+   altImagePath: '/images/work/booki/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/booki/gallery1.png',
+     '/images/work/booki/gallery2.png',
+     '/images/work/booki/gallery3.png',
+     '/images/work/booki/gallery4.png',
+     '/images/work/booki/gallery5.png',
+
+   ],
+  },
+{
+   id: '22',
+   slug: 'kanban',
+   title: 'Kanban Manager',
+   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   client: 'Projet personnel',
+  year: '2024',
+   repository: 'https://github.com/SLOURDEL08/Kanban-Manager',
+   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   techs: [
+     { name: 'Wordpress', icon: 'logos:wordpress' },
+   ],
+   services: [
+     {
+       title: 'Création d\'une maquette sur-mesure',
+       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+     },
+     {
+       title: 'Formulaire de contact',
+       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+     },
+     {
+       title: 'Section blog',
+       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+     }
+   ],
+   imagePath: '/images/work/kanban/home.png',
+   altImagePath: '/images/work/kanban/home.png',
+   date: "2023-03-25",
+   gallery: [
+     '/images/work/kanban/gallery1.png',
+     '/images/work/kanban/gallery2.png',
+     '/images/work/kanban/gallery3.png',
+     '/images/work/kanban/gallery4.png',
+     '/images/work/kanban/gallery5.png',
+          '/images/work/kanban/gallery6.png',
+
+   ],
 },
 ]
 
