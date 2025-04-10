@@ -691,11 +691,11 @@ export const projects: Project[] = [
    id: '17',
    slug: 'couvrassistance',
    title: 'Couvrassistance',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   description: 'Création d\'une maquette sur-mesure selon plusieurs inspiration du client. Design moderne et épuré pour faciliter la navigation et la compréhension des services.',
    client: 'Projet personnel',
   year: '2024',
-   website: 'https://paulsavine.fr',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   website: 'https://couvrassistance.fr',
+   tags: ['Worpdress', 'Vitrine', 'Intégration'],
    techs: [
      { name: 'Wordpress', icon: 'logos:wordpress' },
    ],
@@ -730,10 +730,10 @@ export const projects: Project[] = [
    id: '18',
    slug: 'les-vanniers',
    title: 'Les Vanniers',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   description: 'Conception de maquette sur-mesure sur Figma et intégration sur Wordpress pour un restaurant. Intégration de fonctionnalités de réservation et menu intéractif.',
    client: 'Projet personnel',
   year: '2024',
-   website: 'https://paulsavine.fr',
+   website: 'https://lesvanniers.fr',
    tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
    techs: [
      { name: 'Wordpress', icon: 'logos:wordpress' },
@@ -770,13 +770,13 @@ export const projects: Project[] = [
    id: '19',
    slug: 'webagency',
    title: 'Web Agency',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   description: 'Conception et intégration d\'une maquette sur-mesure pour une agence web avec design moderne épuré. ',
    client: 'Projet personnel',
   year: '2024',
-   website: 'https://paulsavine.fr',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['Intégration', 'Responsive',],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+         { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+
    ],
    services: [
      {
@@ -809,26 +809,28 @@ export const projects: Project[] = [
    id: '20',
    slug: 'codersmonkey',
    title: 'Coders Monkey',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   description: 'Application web moderne et complète avec onboarding et bonne pratique de développement pour une maintenance durable du code.',
    client: 'Projet personnel',
   year: '2024',
   repository:'https://github.com/SLOURDEL08/Coders-Monkey',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['Full-stack', 'Application', 'Intégration'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'React', icon: 'logos:react' },
+     { name: 'Javascript', icon: 'logos:javascript' },
+     { name: 'Tailwind', icon: 'logos:tailwindcss' },
    ],
    services: [
      {
-       title: 'Création d\'une maquette sur-mesure',
-       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+       title: 'Intégration',
+       description: 'Intégration de la maquette sur-mesure designé sur Figma et du design système avec des composant réutilisables.'
      },
      {
-       title: 'Formulaire de contact',
-       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+       title: 'Authentification',
+       description: 'Mise en place d\'une système d\'authentification avec Onboarding et gestion des utilisateurs.'
      },
      {
-       title: 'Section blog',
-       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+       title: 'Composant réutilisable',
+       description: 'Gestion intélligente des composants pour facilité la réutilisation et la maintenance du code.'
      }
    ],
    imagePath: '/images/work/codersmonkey/home.png',
@@ -845,72 +847,71 @@ export const projects: Project[] = [
    ],
   },
 {
-   id: '21',
-   slug: 'booki',
-   title: 'Booki',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
-   client: 'Projet personnel',
+  id: '21',
+  slug: 'booki',
+  title: 'Booki',
+  description: 'Intégration d\'une maquette sur-mesure designé sur Figma avec optimisation. Le site est entièrement responsive et adapté aux mobiles et tablettes.',
+  client: 'Projet personnel',
   year: '2024',
-   repository: 'https://github.com/SLOURDEL08/BOOKI',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
-   techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
-   ],
-   services: [
-     {
-       title: 'Création d\'une maquette sur-mesure',
-       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
-     },
-     {
-       title: 'Formulaire de contact',
-       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
-     },
-     {
-       title: 'Section blog',
-       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
-     }
-   ],
-   imagePath: '/images/work/booki/home.png',
-   altImagePath: '/images/work/booki/home.png',
-   date: "2023-03-25",
-   gallery: [
-     '/images/work/booki/gallery1.png',
-     '/images/work/booki/gallery2.png',
-     '/images/work/booki/gallery3.png',
-     '/images/work/booki/gallery4.png',
-     '/images/work/booki/gallery5.png',
-
-   ],
-  },
+  repository: 'https://github.com/SLOURDEL08/BOOKI',
+  tags: ['Intégration', 'Responsive', 'Booking'],
+  techs: [
+    { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+    { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+  ],
+  services: [
+    {
+      title: 'Intégration',
+      description: 'Intégration de la maquette sur-mesure designé sur Figma, avec un design moderne et épuré.'
+    },
+    {
+      title: 'Responsive',
+      description: 'Adaptation de la maquette pour les mobiles et tablettes.'
+    },
+  ],
+  imagePath: '/images/work/booki/home.png',
+  altImagePath: '/images/work/booki/home.png',
+  date: "2022-12-20",
+  gallery: [
+    '/images/work/booki/gallery1.png',
+    '/images/work/booki/gallery2.png',
+    '/images/work/booki/gallery3.png',
+    '/images/work/booki/gallery4.png',
+    '/images/work/booki/gallery5.png',
+  ],
+},
 {
    id: '22',
    slug: 'kanban',
    title: 'Kanban Manager',
-   description: 'Site vitrine pour une entreprise de conception de mobilier pour pharmacie',
+   description: 'Système de gestion de projet Kanban avec fonctionnalités avancées de gestion des tâches, relations entre utilisateurs et projets. Fonctionnalités drag and drop pour une expérience utilisateur fluide et intuitive.',
    client: 'Projet personnel',
   year: '2024',
    repository: 'https://github.com/SLOURDEL08/Kanban-Manager',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['CRM', 'Full-stack', 'Gestion de projet'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'Vue', icon: 'logos:vue' },
+     { name: 'Nuxt', icon: 'logos:nuxt' },
+     { name: 'Pinia', icon: 'logos:pinia' },
+     { name: 'AppWrite', icon: 'logos:appwrite' },
    ],
    services: [
      {
-       title: 'Création d\'une maquette sur-mesure',
-       description: 'Maquette sur-mesure designé sur Figma, avec un design moderne et epuré.'
+       title: 'Interface utilisateur',
+       description: 'Mise en place d\'une interface utilisateur moderne avec Nuxt Et Vue 3.'
      },
      {
-       title: 'Formulaire de contact',
-       description: 'Mise en place d\'un formulaire de contact simple et intuitif'
+       title: 'Backend',
+       description: 'Vue Query pour la gestion avec le serveur et AppWrite pour la base de données avec relations entre utilisateurs et projets.'
      },
      {
-       title: 'Section blog',
-       description: 'Blog pour pouvoir publier des articles sur les nouveautés de l\'entreprise.'
+       title: 'Validation de formulaire',
+       description: 'VeeValidate pour la validation des formulaires et Pinia pour la gestion de l\'état.'
      }
    ],
    imagePath: '/images/work/kanban/home.png',
    altImagePath: '/images/work/kanban/home.png',
-   date: "2023-03-25",
+   date: "2024-08-10",
    gallery: [
      '/images/work/kanban/gallery1.png',
      '/images/work/kanban/gallery2.png',

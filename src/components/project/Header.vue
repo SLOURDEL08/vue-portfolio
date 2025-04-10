@@ -1,10 +1,10 @@
 <template>
   <header class="space-y-12">
     <div>
-      <div class="space-y-4 max-lg:block gap-16 flex items-end justify-between">
+                <h1 class="smart-bigtitle max-md:!text-5xl text-secondary mb-4 max-md:w-[70%]">{{ title }}</h1>
+      <div class=" max-lg:block gap-16 flex items-start justify-between">
         <!-- Section principale du titre -->
         <div class="w-[70%] max-lg:w-full">
-          <h1 class="smart-bigtitle max-md:!text-5xl text-secondary mb-4 max-md:w-[70%]">{{ title }}</h1>
           <p class="smart-subtitle text-secondary max-md:text-2xl !font-[600]">{{ description }}</p>
            <!-- Technologies utilisées -->
       <section class="mt-8" aria-label="Technologies utilisées">
@@ -34,7 +34,7 @@
         <!-- Détails du projet -->
         <section class="w-[30%] max-lg:w-full text-right" aria-label="Détails du projet">
           <!-- Client -->
-          <div class="flex items-center justify-between w-full py-4">
+          <div class="flex items-center justify-between w-full pb-4">
             <h2 class="text-xl text-secondary font-medium">(Client)</h2>
             <p class="font-semibold text-secondary text-xl">{{ client }}</p>
           </div>
@@ -70,9 +70,8 @@
               target="_blank" 
               rel="noopener noreferrer"
               class="font-semibold text-secondary text-lg underline text-right"
-              :aria-label="`Voir le code source sur ${formattedRepositoryUser}/${formattedRepositoryName} (s'ouvre dans un nouvel onglet)`"
+              :aria-label="`Voir le code source du projet ${formattedRepositoryName} (s'ouvre dans un nouvel onglet)`"
             >
-              <span class="block">{{ formattedRepositoryUser }}</span>
               <span class="block">/{{ formattedRepositoryName }}</span>
             </a>
           </div>
