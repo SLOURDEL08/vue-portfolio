@@ -129,28 +129,7 @@ const formattedWebsite = computed(() => {
   return props.website.replace(/^https?:\/\//i, '')
 })
 
-// Propriétés calculées pour séparer le nom d'utilisateur et le nom du repository
-const formattedRepositoryUser = computed(() => {
-  if (!props.repository) return ''
-  
-  try {
-    const url = new URL(props.repository)
-    
-    // Pour GitHub, GitLab, etc.
-    if (url.hostname.includes('github.com') || url.hostname.includes('gitlab.com')) {
-      const pathParts = url.pathname.split('/').filter(part => part)
-      if (pathParts.length >= 2) {
-        return pathParts[0] // Nom d'utilisateur
-      }
-    }
-    
-    // Fallback pour les autres URL
-    return url.hostname
-  } catch (e) {
-    // Si l'URL n'est pas valide, retourner la chaîne d'origine
-    return props.repository
-  }
-})
+
 
 const formattedRepositoryName = computed(() => {
   if (!props.repository) return ''
