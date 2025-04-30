@@ -38,7 +38,7 @@ export const projects: Project[] = [
     year: '2024',
     repository: 'https://github.com/SLOURDEL08/digitoile',
     website: 'https://digitoile.fr',
-    tags: ['Développement Frontend', 'Design UI/UX', 'Développement de formulaires'],
+    tags: ['Frontend', 'Design','Vitrine', 'Sur-mesure'],
     techs: [
       { name: 'Next.js', icon: 'logos:nextjs-icon' },
       { name: 'Figma', icon: 'logos:figma' },
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     year: '2023',
     repository: 'https://github.com/SLOURDEL08/Digitalizerr-app',
     website: 'https://chipper-rabanadas-970272.netlify.app/',
-    tags: ['Design UI/UX', 'Développement Front-end', 'Responsive'],
+    tags: ['Design', 'Front-end','Sur-mesure', 'Vitrine'],
     techs: [
       { name: 'React', icon: 'logos:react' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     year: '2024',
     repository:'https://github.com/SLOURDEL08/breeder-app',
     website: 'https://brand-breeder-app.netlify.app/',
-    tags: ['Animations complexes', 'Développement Frontend', 'Design UI/UX'],
+    tags: ['Frontend', 'Animation', 'Design', 'Vitrine'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     year: '2024',
     repository:'https://github.com/SLOURDEL08/Acolyte',
     website: 'https://acolyte-mu.vercel.app/',
-    tags: ['Développement Frontend', 'Animation', 'Design de mise en page'],
+    tags: ['Frontend', 'Animation', 'Vitrine'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     year: '2024',
     repository:'https://github.com/SLOURDEL08/FerrariBeverly',
     website: 'https://endearing-bubblegum-84fec1.netlify.app/',
-    tags: ['Développement Frontend', 'Intégration UI', 'Design interactif'],
+    tags: ['Frontend', 'Intégration', 'Vitrine'],
     techs: [
       { name: 'React', icon: 'logos:react' },
       { name: 'JavaScript', icon: 'logos:javascript' },
@@ -253,7 +253,7 @@ export const projects: Project[] = [
      year: '2024',
    repository:'https://github.com/SLOURDEL08/Reactflix',
    website: 'https://peppy-unicorn-081057.netlify.app',
-   tags: ['Développement Frontend', 'Architecture de composants', 'Design UI/UX'],
+   tags: ['Frontend', 'WebApp', 'Fullstack'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -294,7 +294,7 @@ export const projects: Project[] = [
        year: '2024',
    repository:'https://github.com/SLOURDEL08/tesla',
    website: 'https://shiny-yeot-0fdc3e.netlify.app',
-   tags: ['Développement Frontend', 'Animation', 'Design interactif'],
+   tags: ['Frontend', 'Animation', 'Design'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -334,7 +334,7 @@ export const projects: Project[] = [
          year: '2024',
    repository:'https://github.com/SLOURDEL08/UberEats',
    website: 'https://fastidious-muffin-3654c6.netlify.app',
-   tags: ['Application web', 'Fonctionnalité de recherche', 'Contenu dynamique'],
+   tags: ['WebApp', 'Intégration', 'Fullstack'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -374,9 +374,9 @@ export const projects: Project[] = [
    client: 'Toast Collectif',
    year: '2024',
    website: 'https://toast-collectif.fr',
-   tags: ['Développement WordPress', 'Analytiques', 'Composants personnalisés'],
+   tags: ['WordPress', 'Sur-mesure', 'Vitrine', 'Tracking'],
    techs: [
-     { name: 'WordPress', icon: 'logos:wordpress-icon' },
+     { name: 'WordPress', icon: 'logos:WordPress-icon' },
      { name: 'JavaScript', icon: 'logos:javascript' },
      { name: 'Figma', icon: 'logos:figma' },
      { name: 'Google Tag Manager', icon: 'logos:google-tag-manager' },
@@ -416,7 +416,7 @@ export const projects: Project[] = [
   year: '2024',
    repository:'https://github.com/SLOURDEL08/Portfolio-NEXTJS',
    website: 'https://portfolio.slourdel.fr',
-   tags: ['Développement Frontend', 'Conception UX', 'Développement interactif'],
+   tags: ['Frontend', 'Conception', 'Dynamique'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -456,7 +456,7 @@ export const projects: Project[] = [
   year: '2024',
    repository:'https://github.com/SLOURDEL08/finance-app',
    website: 'https://finance-app.slourdel.fr',
-   tags: ['Application web', 'Dashboard interactif', 'Visualisation de données'],
+   tags: ['WebApp', 'Fullstack'],
    techs: [
      { name: 'Next.js', icon: 'logos:nextjs-icon' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -496,7 +496,7 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2025',
    website: 'https://diet-app.slourdel.fr',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['WebApp', 'Fullstack', 'Design'],
    techs: [
      { name: 'React Native', icon: 'logos:react' },
      { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -536,9 +536,9 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2023',
    website: 'https://www.behance.net/gallery/180229181/Rocket-School',
-   tags: ['Landing Page', 'Intégration', 'Tracking GTM'],
+   tags: ['Landing Page', 'Intégration', 'Tracking'],
    techs: [
-      { name: 'Wordpress', icon: 'logos:wordpress' },
+      { name: 'WordPress', icon: 'logos:WordPress' },
       { name: 'JavaScript', icon: 'logos:javascript' },
       { name: 'Figma', icon: 'logos:figma' },
       { name: 'Google Tag Manager', icon: 'logos:google-tag-manager' },
@@ -576,9 +576,9 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2023',
    website: 'https://portobellodecoration.com/',
-   tags: ['Wordpress', 'Référencement', 'Tracking'],
+   tags: ['WordPress', 'E-commerce', 'Tracking'],
    techs: [
-      { name: 'Wordpress', icon: 'logos:wordpress' },
+      { name: 'WordPress', icon: 'logos:WordPress' },
       { name: 'JavaScript', icon: 'logos:javascript' },
       { name: 'Figma', icon: 'logos:figma' },
       { name: 'Google Tag Manager', icon: 'logos:google-tag-manager' },
@@ -617,9 +617,9 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2024',
    website: 'https://siriussecurite.fr',
-   tags: ['Vitrine', 'Référencement', 'Sur-mesure'],
+   tags: ['WordPress', 'Vitrine', 'Sur-mesure'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'WordPress', icon: 'logos:WordPress' },
   
   ],
    services: [
@@ -655,9 +655,9 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2024',
    website: 'https://paulsavine.fr',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['WordPress', 'Vitrine', 'Sur-mesure'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'WordPress', icon: 'logos:WordPress' },
    ],
    services: [
      {
@@ -695,9 +695,9 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2024',
    website: 'https://couvrassistance.fr',
-   tags: ['Worpdress', 'Vitrine', 'Intégration'],
+   tags: ['WordPress', 'Vitrine', 'Sur-mesure'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'WordPress', icon: 'logos:WordPress' },
    ],
    services: [
      {
@@ -730,13 +730,13 @@ export const projects: Project[] = [
    id: '18',
    slug: 'les-vanniers',
    title: 'Les Vanniers',
-   description: 'Conception de maquette sur-mesure sur Figma et intégration sur Wordpress pour un restaurant. Intégration de fonctionnalités de réservation et menu intéractif.',
+   description: 'Conception de maquette sur-mesure sur Figma et intégration sur WordPress pour un restaurant. Intégration de fonctionnalités de réservation et menu intéractif.',
    client: 'Projet personnel',
   year: '2024',
    website: 'https://lesvanniers.fr',
-   tags: ['Application mobile', 'Suivi nutritionnel', 'Planification de repas'],
+   tags: ['WordPress', 'Vitrine','Réservation', 'Sur-mesure'],
    techs: [
-     { name: 'Wordpress', icon: 'logos:wordpress' },
+     { name: 'WordPress', icon: 'logos:WordPress' },
    ],
    services: [
      {
@@ -773,7 +773,7 @@ export const projects: Project[] = [
    description: 'Conception et intégration d\'une maquette sur-mesure pour une agence web avec design moderne épuré. ',
    client: 'Projet personnel',
   year: '2024',
-   tags: ['Intégration', 'Responsive',],
+   tags: ['Vitrine','Intégration'],
    techs: [
          { name: 'HTML', icon: 'vscode-icons:file-type-html' },
 
@@ -813,7 +813,7 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2024',
   repository:'https://github.com/SLOURDEL08/Coders-Monkey',
-   tags: ['Full-stack', 'Application', 'Intégration'],
+   tags: ['WebApp','Fullstack', 'Intégration'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'Javascript', icon: 'logos:javascript' },
@@ -854,7 +854,7 @@ export const projects: Project[] = [
   client: 'Projet personnel',
   year: '2024',
   repository: 'https://github.com/SLOURDEL08/BOOKI',
-  tags: ['Intégration', 'Responsive', 'Booking'],
+  tags: ['Vitrine', 'Intégration'],
   techs: [
     { name: 'HTML', icon: 'vscode-icons:file-type-html' },
     { name: 'CSS', icon: 'vscode-icons:file-type-css' },
@@ -888,7 +888,7 @@ export const projects: Project[] = [
    client: 'Projet personnel',
   year: '2024',
    repository: 'https://github.com/SLOURDEL08/Kanban-Manager',
-   tags: ['CRM', 'Full-stack', 'Gestion de projet'],
+   tags: ['Fullstack', 'WebApp',],
    techs: [
      { name: 'Vue', icon: 'logos:vue' },
      { name: 'Nuxt', icon: 'logos:nuxt' },
