@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-primary max-xs:p-10 max-md:p-14 p-16 min-h-screen">
-    <main class="layout-main">
-      <div class="content-container">
-        <slot></slot>
-      </div>
+  <div class="bg-primary  min-h-screen">
+    <main class="layout-main max-xs:p-10 max-md:p-14 p-16">
+      <!-- Header est toujours au-dessus -->
+      <slot class="" name="header"></slot>
+      
+      <!-- Les sections seront insérées ici -->
+      <slot class=""></slot>
     </main>
   </div>
 </template>
@@ -29,11 +31,18 @@ onMounted(() => {
 </script>
 
 <style>
-.layout-main {
-  min-height: 100vh;
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-.content-container {
+.layout-main {
+  min-height: 100vh;
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+/* Styles pour les conteneurs standard et pleine largeur */
+.container-standard {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;

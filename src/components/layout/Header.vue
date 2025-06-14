@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-16 max-md:mb-10">
+  <header class="mb-16 max-md:mb-10 max-w-[1600px] mx-auto">
     <h1 class="smart-bigtitle mb-6 max-xs:!text-5xl text-secondary">
       Sébastien L.<br class="max-xs:!hidden" /> Développeur Web
     </h1>

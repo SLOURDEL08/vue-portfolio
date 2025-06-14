@@ -128,7 +128,7 @@ export const projects: Project[] = [
     year: '2024',
     repository:'https://github.com/SLOURDEL08/breeder-app',
     website: 'https://brand-breeder-app.netlify.app/',
-    tags: ['Frontend', 'Animation', 'Design', 'Vitrine'],
+    tags: ['Frontend', 'Animation', 'Design', 'Vitrine','Intégration'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     year: '2024',
     repository:'https://github.com/SLOURDEL08/Acolyte',
     website: 'https://acolyte-mu.vercel.app/',
-    tags: ['Frontend', 'Animation', 'Vitrine'],
+    tags: ['Frontend', 'Animation', 'Vitrine','Intégration'],
     techs: [
       { name: 'Vue.js', icon: 'logos:vue' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -773,7 +773,7 @@ export const projects: Project[] = [
    description: 'Conception et intégration d\'une maquette sur-mesure pour une agence web avec design moderne épuré. ',
    client: 'Projet personnel',
   year: '2024',
-   tags: ['Vitrine','Intégration'],
+   tags: ['Vitrine','Maquette'],
    techs: [
          { name: 'HTML', icon: 'vscode-icons:file-type-html' },
 
@@ -796,12 +796,12 @@ export const projects: Project[] = [
    altImagePath: '/images/work/webagency/home.png',
    date: "2023-03-25",
    gallery: [
-     '/images/work/webagency/gallery1.png',
-     '/images/work/webagency/gallery2.png',
-     '/images/work/webagency/gallery3.png',
-     '/images/work/webagency/gallery4.png',
-     '/images/work/webagency/gallery5.png',
-          '/images/work/webagency/gallery6.png',
+     '/images/work/webagency/gallery1.webp',
+     '/images/work/webagency/gallery2.webp',
+     '/images/work/webagency/gallery3.webp',
+     '/images/work/webagency/gallery4.webp',
+     '/images/work/webagency/gallery5.webp',
+     '/images/work/webagency/gallery6.webp',
 
    ],
   },

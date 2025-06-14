@@ -1,9 +1,10 @@
 <template>
-  <DefaultLayout class="-mb-16">
-    <article class="flex max-md:block max-md:-mt-14 max-xs:-mt-10 -mt-16 max-md:-mx-14 -mx-16">
+  <DefaultLayout class="">
+    <article class="flex -mb-16 h-screen overflow-hidden max-md:block max-md:h-auto max-md:-mt-14 max-xs:-mt-10 -mt-16 max-md:-mx-14 -mx-16">
+      
       <!-- Section photo de profil -->
       <div class="w-1/2 max-md:w-full relative">
-        <div class="sticky top-0 max-md:h-[500px] h-screen">
+        <div class="h-full sticky top-0">
           <OptimizedImage 
             src="/images/profilpic-contact.png" 
             webpSrc="/images/profilpic-contact.webp" 
@@ -15,16 +16,16 @@
         </div>
       </div>
 
-      <!-- Section contenu -->
-      <div class="w-1/2 max-md:w-full max-md:p-14 max-xs:p-10 p-16 space-y-8">
+      <!-- Section contenu (scrollable) -->
+      <div class="w-1/2 no-scrollbar max-md:w-full overflow-y-auto max-md:overflow-visible max-md:p-14 max-xs:p-10 p-16 space-y-8">
         <!-- En-tête -->
         <header class="space-y-8">
           <span class="smart-text">(À Propos)</span>
           <h1 class="smart-bigtitle max-md:!text-5xl max-lg:text-6xl max-lg:tracking-wide pt-2">Sébastien LOURDEL</h1>
         </header>
-            
+
         <p class="text-[45px] max-lg:text-3xl max-md:text-2xl leading-[100%] font-[600]">
-          Développeur web Front-End depuis 5 ans, spécialisé en intégration et expérience utilisateur avec de solides compétences en back-end
+          Développeur web Front-End depuis 5 ans...
         </p>
 
         <!-- Biographie -->
@@ -37,9 +38,9 @@
             {{ paragraph }}
           </p>
         </section>
-        
+
         <LineSeparator />
-        
+
         <!-- Compétences -->
         <section class="space-y-8" aria-labelledby="skills-section">
           <h2 id="skills-section" class="smart-subtitle max-md:text-3xl">Compétences</h2>
@@ -54,12 +55,12 @@
             </li>
           </ul>
         </section>
-        
+
         <LineSeparator />
-        
+
         <!-- Formation -->
         <section class="mt-16 max-md:mt-14 max-xs:mt-10 space-y-8" aria-labelledby="education-section">
-          <h2 id="education-section" class="smart-subtitle  max-md:text-3xl">Diplômes & Formation</h2>
+          <h2 id="education-section" class="smart-subtitle max-md:text-3xl">Diplômes & Formation</h2>
           <ul class="space-y-4 pb-4 font-[500] text-xl">
             <template v-for="(item, index) in educationItems" :key="index">
               <li class="flex justify-between gap-2">
@@ -73,6 +74,7 @@
     </article>
   </DefaultLayout>
 </template>
+
 
 <script setup lang="ts">
 import { defineAsyncComponent, reactive } from 'vue'
@@ -116,10 +118,13 @@ const educationItems = reactive([
 ])
 </script>
 
+
+
 <style scoped>
 .sticky {
   transition: transform 0.3s ease-out;
 }
+
 
 
 </style>
