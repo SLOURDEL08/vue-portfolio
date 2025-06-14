@@ -39,15 +39,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineAsyncComponent } from 'vue'
-import { getAllProjects } from '../data/projects'
+import {  defineAsyncComponent } from 'vue'
 
 // Components async
 const DefaultLayout = defineAsyncComponent(() => import('../components/layouts/DefaultLayout.vue'))
-const ScaleSection = defineAsyncComponent(() => import('../components/ScaleSection.vue'))
 const ProjectGrid = defineAsyncComponent(() => import('../components/ProjectGrid.vue'))
-const ScaleContent = defineAsyncComponent(() => import('../components/ScaleContent.vue'))
 
-const projects = getAllProjects()
-const firstFourProjects = computed(() => projects.slice(0, 4))
 </script>
