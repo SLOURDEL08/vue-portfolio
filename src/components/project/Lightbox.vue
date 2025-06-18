@@ -49,14 +49,15 @@
             :key="currentIndex"
             class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center"
           >
-            <OptimizedImage 
-              :src="images[currentIndex]" 
-              :webpSrc="getWebpPath(images[currentIndex])"
-              :alt="`Image ${currentIndex + 1} en plein écran`"
-              className="max-w-full max-h-[80vh] object-contain"
-              sizes="90vw"
-              @click.stop
-            />
+          <OptimizedImage 
+  :src="images[currentIndex]" 
+  :webpSrc="getWebpPath(images[currentIndex])"
+  :alt="`Image ${currentIndex + 1} en plein écran`"
+  className="max-w-full max-h-[80vh] object-contain"
+  :responsive="false" 
+  @click.stop
+/>
+
           </div>
         </Transition>
 

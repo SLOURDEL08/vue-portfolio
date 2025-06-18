@@ -1,12 +1,13 @@
 <template>
   <picture>
     <source
-      v-if="webpSrc"
+      v-if="responsive && webpSrc"
       :srcset="generateSrcSet(webpSrc)"
       :sizes="sizes"
       type="image/webp"
     />
     <source
+      v-if="responsive"
       :srcset="generateSrcSet(src)"
       :sizes="sizes"
       :type="getImageType(src)"
@@ -24,7 +25,6 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   src: {
     type: String,
@@ -53,18 +53,23 @@ defineProps({
   sizes: {
     type: String,
     default: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+  },
+  // ✅ Nouvelle prop pour activer/désactiver le responsive
+  responsive: {
+    type: Boolean,
+    default: true
   }
 });
 
 // Fonction pour générer automatiquement le srcset
 const generateSrcSet = (baseSrc: string) => {
   if (!baseSrc) return '';
-  
+
   // Extraction du nom et de l'extension
   const lastDotIndex = baseSrc.lastIndexOf('.');
   const baseName = baseSrc.substring(0, lastDotIndex);
   const extension = baseSrc.substring(lastDotIndex);
-  
+
   return `
     ${baseName}-sm${extension} 400w,
     ${baseName}-md${extension} 800w,
