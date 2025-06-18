@@ -38,7 +38,7 @@ export const projects: Project[] = [
     year: '2024',
     repository: 'https://github.com/SLOURDEL08/digitoile',
     website: 'https://digitoile.fr',
-    tags: ['Frontend', 'Design','Vitrine', 'Sur-mesure'],
+    tags: ['Frontend', 'Design','Vitrine', 'Sur-mesure','Intégration'],
     techs: [
       { name: 'Next.js', icon: 'logos:nextjs-icon' },
       { name: 'Figma', icon: 'logos:figma' },
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     year: '2023',
     repository: 'https://github.com/SLOURDEL08/Digitalizerr-app',
     website: 'https://chipper-rabanadas-970272.netlify.app/',
-    tags: ['Design', 'Front-end','Sur-mesure', 'Vitrine'],
+    tags: ['Design', 'Front-end','Sur-mesure', 'Vitrine','Intégration'],
     techs: [
       { name: 'React', icon: 'logos:react' },
       { name: 'TypeScript', icon: 'logos:typescript-icon' },
@@ -253,7 +253,7 @@ export const projects: Project[] = [
      year: '2024',
    repository:'https://github.com/SLOURDEL08/Reactflix',
    website: 'https://peppy-unicorn-081057.netlify.app',
-   tags: ['Frontend', 'WebApp', 'Fullstack'],
+   tags: ['Frontend', 'WebApp', 'Intégration'],
    techs: [
      { name: 'React', icon: 'logos:react' },
      { name: 'JavaScript', icon: 'logos:javascript' },
@@ -921,7 +921,79 @@ export const projects: Project[] = [
           '/images/work/kanban/gallery6.png',
 
    ],
-},
+  },
+  {
+    id: '23',
+    slug: 'couvreur1',
+    title: 'Maquette Couvreur 1',
+    description: 'Maquette Figma d’un site vitrine pour un artisan couvreur zingueur. Design moderne, sections claires (présentation, services, réalisations, contact) et navigation intuitive adaptée aux artisans du bâtiment.',
+    client: 'Projet personnel',
+    year: '2024',
+    repository: '',
+    tags: ['Maquette', 'Figma', 'Couvreur'],
+    techs: [
+      { name: 'Figma', icon: 'logos:figma' }
+    ],
+    services: [
+      {
+        title: 'Conception UI/UX',
+        description: 'Création d’une interface utilisateur claire et professionnelle, adaptée aux artisans et aux besoins de leurs clients.'
+      },
+      {
+        title: 'Prototype interactif',
+        description: 'Mise en place d’un prototype Figma interactif pour visualiser la navigation et l’enchaînement des pages.'
+      },
+      {
+        title: 'Identité visuelle',
+        description: 'Définition d’une palette de couleurs, typographie et éléments graphiques cohérents pour refléter le sérieux de l’artisan.'
+      }
+    ],
+    imagePath: '/images/work/couvreur1/home.png',
+    altImagePath: '/images/work/couvreur1/home.png',
+    date: "2024-08-10",
+    gallery: [
+      '/images/work/couvreur1/gallery1.png',
+      '/images/work/couvreur1/gallery2.png',
+      '/images/work/couvreur1/gallery3.png'
+    ],
+  },
+  {
+    id: '24',
+    slug: 'couvreur2',
+    title: 'Maquette Couvreur 2',
+    description: 'Seconde version de maquette Figma pour un site vitrine de couvreur zingueur. Style épuré, plus d’accent sur les photos de réalisations, formulaire de devis intégré et CTA optimisés.',
+    client: 'Projet personnel',
+    year: '2024',
+    repository: '',
+    tags: ['Maquette', 'Figma', 'Couvreur'],
+    techs: [
+      { name: 'Figma', icon: 'logos:figma' }
+    ],
+    services: [
+      {
+        title: 'Refonte UX',
+        description: 'Approfondissement de l’expérience utilisateur avec un focus sur l’accessibilité et la conversion.'
+      },
+      {
+        title: 'Mise en avant des projets',
+        description: 'Structuration de sections dédiées aux réalisations, avec une galerie photos valorisant le savoir-faire.'
+      },
+      {
+        title: 'Optimisation des CTA',
+        description: 'Placement stratégique des boutons de contact et de devis pour encourager les prises de contact.'
+      }
+    ],
+    imagePath: '/images/work/couvreur2/home.png',
+    altImagePath: '/images/work/couvreur2/home.png',
+    date: "2024-08-10",
+    gallery: [
+      '/images/work/couvreur2/gallery1.png',
+      '/images/work/couvreur2/gallery2.png',
+      '/images/work/couvreur2/gallery3.png',
+      '/images/work/couvreur2/gallery4.png'
+    ],
+  },
+  
 ]
 
 export const getProjectBySlug = (slug: string): Project | undefined => {
