@@ -850,36 +850,43 @@ export const projects: Project[] = [
   id: '21',
   slug: 'booki',
   title: 'Booki',
-  description: 'Intégration d\'une maquette sur-mesure designé sur Figma avec optimisation. Le site est entièrement responsive et adapté aux mobiles et tablettes.',
-  client: 'Projet personnel',
+  description: "Intégration de la page d'accueil d'une agence de voyage à partir de maquettes Figma responsive. Réalisation du HTML et du CSS from scratch pour maîtriser la structure et le design, en assurant une compatibilité optimale sur tous les appareils.",
+  client: 'Projet de formation',
   year: '2024',
   repository: 'https://github.com/SLOURDEL08/BOOKI',
-  tags: ['Vitrine', 'Intégration'],
+  tags: ['Formation', 'HTML', 'CSS', 'Responsive'],
   techs: [
+    { name: 'Figma', icon: 'logos:figma' },
     { name: 'HTML', icon: 'vscode-icons:file-type-html' },
     { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+    { name: 'GitHub', icon: 'logos:github-icon' }
   ],
   services: [
     {
-      title: 'Intégration',
-      description: 'Intégration de la maquette sur-mesure designé sur Figma, avec un design moderne et épuré.'
+      title: 'Intégration HTML/CSS',
+      description: "Création du code HTML et CSS sans générateur automatique, pour respecter les maquettes et garantir un design précis."
     },
     {
-      title: 'Responsive',
-      description: 'Adaptation de la maquette pour les mobiles et tablettes.'
+      title: 'Design responsive',
+      description: "Mise en place d'une interface adaptée à toutes les tailles d'écran (mobile, tablette et desktop)."
     },
+    {
+      title: 'Versioning',
+      description: "Gestion du projet avec Git et GitHub pour un suivi de version propre et collaboratif."
+    }
   ],
   imagePath: '/images/work/booki/home.png',
   altImagePath: '/images/work/booki/home.png',
-  date: "2022-12-20",
+  date: "2024-12-20",
   gallery: [
     '/images/work/booki/gallery1.png',
     '/images/work/booki/gallery2.png',
     '/images/work/booki/gallery3.png',
     '/images/work/booki/gallery4.png',
-    '/images/work/booki/gallery5.png',
+    '/images/work/booki/gallery5.png'
   ],
-},
+}
+,
 {
    id: '22',
    slug: 'kanban',
@@ -993,6 +1000,179 @@ export const projects: Project[] = [
       '/images/work/couvreur2/gallery4.png'
     ],
   },
+  {
+    id: '25',
+    slug: 'kasa',
+    title: 'Kasa',
+    description: "Développement d'une application web pour une plateforme de location immobilière à partir de maquettes Figma. Réalisation de l'interface en React avec gestion des routes, composants dynamiques et respect des bonnes pratiques d’accessibilité.",
+    client: 'Projet de formation',
+    year: '2024',
+    repository: '',
+    tags: ['Formation', 'React', 'JavaScript'],
+    techs: [
+      { name: 'React', icon: 'logos:react' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'GitHub', icon: 'logos:github-icon' }
+    ],
+    services: [
+      {
+        title: 'Développement Front-End',
+        description: "Intégration de l'interface utilisateur en React en suivant une architecture de composants modulaires."
+      },
+      {
+        title: 'Routing dynamique',
+        description: "Mise en place de la navigation entre les pages avec React Router pour une expérience fluide."
+      },
+      {
+        title: 'Accessibilité',
+        description: "Respect des standards d’accessibilité pour garantir une utilisation optimale par tous les utilisateurs."
+      }
+    ],
+    imagePath: '/images/work/kasa/home.png',
+    altImagePath: '/images/work/kasa/home.png',
+    date: "2024-08-10",
+    gallery: [
+      '/images/work/kasa/gallery1.png',
+      '/images/work/kasa/gallery2.png',
+      '/images/work/kasa/gallery3.png',
+      '/images/work/kasa/gallery4.png'
+    ],
+  }
+,  
+{
+  id: '26',
+  slug: 'mon-vieux-grimoire',
+  title: 'Mon Vieux Grimoire',
+  description: "Développement back-end d'un site de notation de livres avec Node.js, Express et MongoDB. Création du serveur, gestion des opérations CRUD sécurisées, authentification des utilisateurs, upload et optimisation d'images, le tout structuré selon une architecture MVC et respectant les bonnes pratiques Green Code.",
+  client: 'Projet de formation',
+  year: '2024',
+  repository: '',
+  tags: ['Formation', 'Back-end', 'Node.js', 'Express', 'MongoDB'],
+  techs: [
+    { name: 'Node.js', icon: 'logos:nodejs-icon' },
+    { name: 'Express', icon: 'logos:express' },
+    { name: 'MongoDB', icon: 'logos:mongodb-icon' },
+    { name: 'GitHub', icon: 'logos:github-icon' }
+  ],
+  services: [
+    {
+      title: 'Développement du serveur',
+      description: "Mise en place d'un serveur Node.js avec Express, structuré en MVC pour une organisation claire du code."
+    },
+    {
+      title: 'CRUD sécurisé',
+      description: "Implémentation des opérations de création, lecture, modification et suppression des livres avec contrôle d'accès et validation des données."
+    },
+    {
+      title: 'Authentification & Sécurité',
+      description: "Ajout d'un système d'authentification des utilisateurs, gestion des sessions et protection des données sensibles."
+    },
+    {
+      title: 'Upload & optimisation',
+      description: "Gestion du téléchargement et de l'optimisation des images, tout en respectant les pratiques Green Code."
+    }
+  ],
+  imagePath: '/images/work/monvieuxgrimoire/home.png',
+  altImagePath: '/images/work/monvieuxgrimoire/home.png',
+  date: "2024-08-10",
+  gallery: [
+    '/images/work/monvieuxgrimoire/gallery1.png',
+    '/images/work/monvieuxgrimoire/gallery2.png',
+    '/images/work/monvieuxgrimoire/gallery3.png',
+    '/images/work/monvieuxgrimoire/gallery4.png'
+  ],
+}
+,
+  {
+    id: '27',
+    slug: 'sophie-bluel',
+    title: 'Sophie Bluel',
+    description: "Développement Front-End d'un site vitrine pour une architecte d'intérieur : galerie dynamique des projets, interactions utilisateurs, page de connexion administrateur et modale d'ajout de médias, avec communication via une API.",
+    client: 'Projet de formation',
+    year: '2024',
+    repository: '',
+    tags: ['Formation', 'HTML', 'CSS', 'JavaScript', 'API'],
+    techs: [
+      { name: 'Figma', icon: 'logos:figma' },
+      { name: 'Visual Studio Code', icon: 'vscode-icons:file-type-vscode' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'GitHub', icon: 'logos:github-icon' }
+    ],
+    services: [
+      {
+        title: 'Développement Front-End',
+        description: "Intégration dynamique de la galerie de projets et gestion des interactions utilisateurs en JavaScript pur."
+      },
+      {
+        title: 'Communication avec une API',
+        description: "Mise en place des requêtes pour récupérer, envoyer et mettre à jour les données depuis le back-end fourni."
+      },
+      {
+        title: 'Espace administrateur',
+        description: "Création d'une page de connexion sécurisée et d'une interface pour gérer l'ajout de nouveaux médias via une modale."
+      }
+    ],
+    imagePath: '/images/work/sophiebluel/home.png',
+    altImagePath: '/images/work/sophiebluel/home.png',
+    date: "2024-08-10",
+    gallery: [
+      '/images/work/sophiebluel/gallery1.png',
+      '/images/work/sophiebluel/gallery2.png',
+      '/images/work/sophiebluel/gallery3.png',
+      '/images/work/sophiebluel/gallery4.png',
+      '/images/work/sophiebluel/gallery5.png',
+      '/images/work/sophiebluel/gallery6.png',
+    ],
+  }
+  ,
+  {
+    id: '27',
+    slug: 'nina-carducci',
+    title: 'Nina Carducci',
+    description: "Optimisation SEO, performance et accessibilité pour le site vitrine d'une photographe professionnelle. Analyse des performances avec Lighthouse et Wave, corrections du code, amélioration du chargement, et rédaction d'un rapport d'audit avant/après.",
+    client: 'Projet de formation',
+    year: '2024',
+    repository: '',
+    tags: ['Formation', 'SEO', 'Performance', 'Accessibilité', 'HTML', 'CSS', 'JavaScript'],
+    techs: [
+      { name: 'Lighthouse', icon: 'logos:lighthouse' },
+      { name: 'Wave', icon: 'simple-icons:wave' },
+      { name: 'Chrome DevTools', icon: 'logos:google-chrome' },
+      { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+      { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
+      { name: 'GitHub', icon: 'logos:github-icon' }
+    ],
+    services: [
+      {
+        title: 'Audit SEO et accessibilité',
+        description: "Analyse des performances et de l'accessibilité du site avec Lighthouse et Wave pour identifier les points à améliorer."
+      },
+      {
+        title: 'Optimisation du code',
+        description: "Correction des problèmes de structure HTML, amélioration du temps de chargement, optimisation des ressources et des images."
+      },
+      {
+        title: 'Rapport d’audit',
+        description: "Rédaction d’un rapport détaillé illustrant les résultats avant et après optimisation, avec explications et recommandations."
+      }
+    ],
+    imagePath: '/images/work/ninacarducci/home.png',
+    altImagePath: '/images/work/ninacarducci/home.png',
+    date: "2024-08-10",
+    gallery: [
+      '/images/work/ninacarducci/gallery1.png',
+      '/images/work/ninacarducci/gallery2.png',
+      '/images/work/ninacarducci/gallery3.png',
+      '/images/work/ninacarducci/gallery4.png',
+      '/images/work/ninacarducci/gallery5.png',
+      '/images/work/ninacarducci/gallery6.png',
+       '/images/work/ninacarducci/gallery7.png'
+    ],
+  }
+  
+  
   
 ]
 

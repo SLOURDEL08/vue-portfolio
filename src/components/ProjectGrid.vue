@@ -153,7 +153,7 @@ const handleMouseMove = (event: MouseEvent) => {
 const allProjects = computed(() => getAllProjects() as Project[])
 
 // Liste des catégories (ajuste l'ordre si tu veux)
-const categories = ['Intégration', 'WordPress', 'Fullstack', 'Maquette']
+const categories = ['Intégration', 'WordPress', 'Fullstack', 'Maquette', 'Formation']
 
 // Organise les projets par section
 const sections = computed(() => {
