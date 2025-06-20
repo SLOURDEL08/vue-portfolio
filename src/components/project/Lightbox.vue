@@ -123,6 +123,8 @@ export default defineComponent({
     }
 
     const updateIndex = (index: number) => {
+      console.log('Image originale:', props.images[index])
+      console.log('WebP path:', getWebpPath(props.images[index]))
       emit('update:current-index', index)
     }
 
@@ -173,6 +175,8 @@ export default defineComponent({
     }
   }
 })
+
+
 </script>
 
 <style scoped>

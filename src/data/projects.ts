@@ -606,7 +606,6 @@ export const projects: Project[] = [
      '/images/work/portobello/gallery2.png',
      '/images/work/portobello/gallery3.png',
      '/images/work/portobello/gallery4.png',
-     '/images/work/portobello/gallery5.png',
    ],
   },
 {
@@ -644,7 +643,6 @@ export const projects: Project[] = [
      '/images/work/sirius-securite/gallery2.png',
      '/images/work/sirius-securite/gallery3.png',
      '/images/work/sirius-securite/gallery4.png',
-     '/images/work/sirius-securite/gallery5.png',
    ],
   },
 {
